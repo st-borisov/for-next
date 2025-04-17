@@ -1,0 +1,1208 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.14.0/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="css/modals.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+	<!-- Modal -->
+	<div class="modals">
+		<div class="modal fade" id="modal1" tabindex="-1" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+				<div class="modal-content">
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+						<svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#close-icon"></use>
+						</svg>
+					</button>
+
+					<div class="modal-header">
+						<h2 class="modal-title">выбор квартиры</h2>
+					</div>
+					<div class="modal-body">
+						<form method="post" class="form-appartments">
+							<div class="row">
+								<div class="col-12 col-xl-8">
+									<div class="table-responsive">
+										<table class="table-appartments">
+											<thead>
+												<tr>
+													<th>Башня</th>
+													<th>Этаж</th>
+													<th>Квартира</th>
+													<th>Комнатность</th>
+													<th>Площадь</th>
+													<th></th>
+													<th>Планировки</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Первая</td>
+													<td>12</td>
+													<td>211</td>
+													<td>1-комнатная</td>
+													<td>
+														45 м<sup>2</sup>
+													</td>
+													<td>
+														<a href="#" class="btn-add-favorite"><svg class="svg-icon">
+																<use xlink:href="img/sprite.svg#star"></use>
+															</svg></a>
+													</td>
+													<td>
+														<a href="#" class="btn btn-accent" data-bs-toggle="modal"
+															data-bs-target="#modal2">показать</a>
+													</td>
+												</tr>
+												<tr>
+													<td>Первая</td>
+													<td>3</td>
+													<td>314</td>
+													<td>2-комнатная</td>
+													<td>
+														80 м<sup>2</sup>
+													</td>
+													<td>
+														<a href="#" class="btn-add-favorite"><svg class="svg-icon">
+																<use xlink:href="img/sprite.svg#star"></use>
+															</svg></a>
+													</td>
+													<td>
+														<a href="#" class="btn btn-accent" data-bs-toggle="modal"
+															data-bs-target="#modal2">показать</a>
+													</td>
+												</tr>
+												<tr>
+													<td>Вторая</td>
+													<td>5</td>
+													<td>64</td>
+													<td>3-комнатная</td>
+													<td>
+														95 м<sup>2</sup>
+													</td>
+													<td>
+														<a href="#" class="btn-add-favorite"><svg class="svg-icon">
+																<use xlink:href="img/sprite.svg#star"></use>
+															</svg></a>
+													</td>
+													<td>
+														<a href="#" class="btn btn-accent" data-bs-toggle="modal"
+															data-bs-target="#modal2">показать</a>
+													</td>
+												</tr>
+												<tr>
+													<td>Вторая</td>
+													<td>8</td>
+													<td>12</td>
+													<td>Студия</td>
+													<td>
+														28 м<sup>2</sup>
+													</td>
+													<td>
+														<a href="#" class="btn-add-favorite"><svg class="svg-icon">
+																<use xlink:href="img/sprite.svg#star"></use>
+															</svg></a>
+													</td>
+													<td>
+														<a href="#" class="btn btn-accent" data-bs-toggle="modal"
+															data-bs-target="#modal2">показать</a>
+													</td>
+												</tr>
+												<tr>
+													<td>Третья</td>
+													<td>10</td>
+													<td>34</td>
+													<td>1-комнатная</td>
+													<td>
+														32 м<sup>2</sup>
+													</td>
+													<td>
+														<a href="#" class="btn-add-favorite"><svg class="svg-icon">
+																<use xlink:href="img/sprite.svg#star"></use>
+															</svg></a>
+													</td>
+													<td>
+														<a href="#" class="btn btn-accent" data-bs-toggle="modal"
+															data-bs-target="#modal2">показать</a>
+													</td>
+												</tr>
+												<tr>
+													<td>Третья</td>
+													<td>4</td>
+													<td>78</td>
+													<td>2-комнатная</td>
+													<td>
+														47 м<sup>2</sup>
+													</td>
+													<td>
+														<a href="#" class="btn-add-favorite"><svg class="svg-icon">
+																<use xlink:href="img/sprite.svg#star"></use>
+															</svg></a>
+													</td>
+													<td>
+														<a href="#" class="btn btn-accent" data-bs-toggle="modal"
+															data-bs-target="#modal2">показать</a>
+													</td>
+												</tr>
+												<tr>
+													<td>Первая</td>
+													<td>12</td>
+													<td>211</td>
+													<td>1-комнатная</td>
+													<td>
+														45 м<sup>2</sup>
+													</td>
+													<td>
+														<a href="#" class="btn-add-favorite"><svg class="svg-icon">
+																<use xlink:href="img/sprite.svg#star"></use>
+															</svg></a>
+													</td>
+													<td>
+														<a href="#" class="btn btn-accent" data-bs-toggle="modal"
+															data-bs-target="#modal2">показать</a>
+													</td>
+												</tr>
+												<tr>
+													<td>Первая</td>
+													<td>3</td>
+													<td>314</td>
+													<td>2-комнатная</td>
+													<td>
+														80 м<sup>2</sup>
+													</td>
+													<td>
+														<a href="#" class="btn-add-favorite"><svg class="svg-icon">
+																<use xlink:href="img/sprite.svg#star"></use>
+															</svg></a>
+													</td>
+													<td>
+														<a href="#" class="btn btn-accent" data-bs-toggle="modal"
+															data-bs-target="#modal2">показать</a>
+													</td>
+												</tr>
+												<tr>
+													<td>Вторая</td>
+													<td>5</td>
+													<td>64</td>
+													<td>3-комнатная</td>
+													<td>
+														95 м<sup>2</sup>
+													</td>
+													<td>
+														<a href="#" class="btn-add-favorite"><svg class="svg-icon">
+																<use xlink:href="img/sprite.svg#star"></use>
+															</svg></a>
+													</td>
+													<td>
+														<a href="#" class="btn btn-accent" data-bs-toggle="modal"
+															data-bs-target="#modal2">показать</a>
+													</td>
+												</tr>
+												<tr>
+													<td>Вторая</td>
+													<td>8</td>
+													<td>12</td>
+													<td>Студия</td>
+													<td>
+														28 м<sup>2</sup>
+													</td>
+													<td>
+														<a href="#" class="btn-add-favorite"><svg class="svg-icon">
+																<use xlink:href="img/sprite.svg#star"></use>
+															</svg></a>
+													</td>
+													<td>
+														<a href="#" class="btn btn-accent" data-bs-toggle="modal"
+															data-bs-target="#modal2">показать</a>
+													</td>
+												</tr>
+												<tr>
+													<td>Третья</td>
+													<td>10</td>
+													<td>34</td>
+													<td>1-комнатная</td>
+													<td>
+														32 м<sup>2</sup>
+													</td>
+													<td>
+														<a href="#" class="btn-add-favorite"><svg class="svg-icon">
+																<use xlink:href="img/sprite.svg#star"></use>
+															</svg></a>
+													</td>
+													<td>
+														<a href="#" class="btn btn-accent" data-bs-toggle="modal"
+															data-bs-target="#modal2">показать</a>
+													</td>
+												</tr>
+												<tr>
+													<td>Третья</td>
+													<td>4</td>
+													<td>78</td>
+													<td>2-комнатная</td>
+													<td>
+														47 м<sup>2</sup>
+													</td>
+													<td>
+														<a href="#" class="btn-add-favorite"><svg class="svg-icon">
+																<use xlink:href="img/sprite.svg#star"></use>
+															</svg></a>
+													</td>
+													<td>
+														<a href="#" class="btn btn-accent" data-bs-toggle="modal"
+															data-bs-target="#modal2">показать</a>
+													</td>
+												</tr>
+												<tr>
+													<td>Первая</td>
+													<td>12</td>
+													<td>211</td>
+													<td>1-комнатная</td>
+													<td>
+														45 м<sup>2</sup>
+													</td>
+													<td>
+														<a href="#" class="btn-add-favorite"><svg class="svg-icon">
+																<use xlink:href="img/sprite.svg#star"></use>
+															</svg></a>
+													</td>
+													<td>
+														<a href="#" class="btn btn-accent" data-bs-toggle="modal"
+															data-bs-target="#modal2">показать</a>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<div class="col-12 col-xl-4">
+									<div class="filter-column">
+										<a href="#" class="btn btn-md btn-white btn-clear-filter">
+											<span>Сброить все фильтры</span>
+											<svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#close-icon"></use>
+											</svg>
+										</a>
+
+										<div class="filter-column-item">
+											<div class="row">
+												<div class="col-12 col-md-5 mb-20">
+													<h4>Башня</h4>
+													<label class="label-checkbox">
+														<input type="checkbox" name="checkbox1">
+														<span class="label-checkbox__custom"></span>
+														<span class="label-checkbox__text">Первая</span>
+													</label>
+													<label class="label-checkbox">
+														<input type="checkbox" name="checkbox1" checked>
+														<span class="label-checkbox__custom"></span>
+														<span class="label-checkbox__text">Вторая</span>
+													</label>
+													<label class="label-checkbox">
+														<input type="checkbox" name="checkbox1">
+														<span class="label-checkbox__custom"></span>
+														<span class="label-checkbox__text">Третья</span>
+													</label>
+												</div>
+												<div class="col-12 col-md-7">
+													<h4>Комнатность</h4>
+													<label class="label-checkbox">
+														<input type="checkbox" name="checkbox2">
+														<span class="label-checkbox__custom"></span>
+														<span class="label-checkbox__text">Студия</span>
+													</label>
+													<label class="label-checkbox">
+														<input type="checkbox" name="checkbox2" checked>
+														<span class="label-checkbox__custom"></span>
+														<span class="label-checkbox__text">1-комнатная</span>
+													</label>
+													<label class="label-checkbox">
+														<input type="checkbox" name="checkbox1" checked>
+														<span class="label-checkbox__custom"></span>
+														<span class="label-checkbox__text">2-комнатная</span>
+													</label>
+													<label class="label-checkbox">
+														<input type="checkbox" name="checkbox2">
+														<span class="label-checkbox__custom"></span>
+														<span class="label-checkbox__text">3-комнатная</span>
+													</label>
+												</div>
+											</div>
+										</div>
+
+										<div class="filter-column-item">
+											<div class="row">
+												<div class="col-12">
+													<h4>Площадь</h4>
+													<div class="polzunok-container">
+														<input type="text" class="polzunok-input polzunok-input-1-left" />
+														<input type="text" class="polzunok-input polzunok-input-1-right " />
+														<div class="polzunok polzunok-1"></div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="filter-column-item">
+											<div class="row">
+												<div class="col-12">
+													<h4>Этаж</h4>
+													<div class="polzunok-container">
+														<input type="text" class="polzunok-input polzunok-input-2-left" />
+														<input type="text" class="polzunok-input polzunok-input-2-right " />
+														<div class="polzunok polzunok-2"></div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="filter-column-item">
+											<div class="row">
+												<div class="col-12">
+													<h4>Вид из окон</h4>
+													<ul class="list-checkbox my-ul">
+														<li><label class="label-checkbox">
+																<input type="checkbox" name="checkbox3">
+																<span class="label-checkbox__custom"></span>
+																<span class="label-checkbox__text">Лес</span>
+															</label></li>
+														<li><label class="label-checkbox">
+																<input type="checkbox" name="checkbox3" checked>
+																<span class="label-checkbox__custom"></span>
+																<span class="label-checkbox__text">Арбеково</span>
+															</label></li>
+														<li><label class="label-checkbox">
+																<input type="checkbox" name="checkbox3">
+																<span class="label-checkbox__custom"></span>
+																<span class="label-checkbox__text">Центр</span>
+															</label></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="modal2" tabindex="-1" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+				<div class="modal-content">
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+						<svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#close-icon"></use>
+						</svg>
+					</button>
+
+					<!-- <div class="modal-header">
+						 <h2 class="modal-title">выбор квартиры</h2>
+					 </div> -->
+					<div class="modal-body">
+						<div class="row">
+							<div class="col-12 col-lg-7 order-lg-1">
+								<div class="tab-content">
+									<div class="tab-pane fade show active" id="tab-content1" role="tabpanel" aria-labelledby="1-tab">
+										<div class="apartment-photo">
+											<img src="img/apartment-img.jpg" alt="">
+										</div>
+									</div>
+									<div class="tab-pane fade" id="tab-content2" role="tabpanel" aria-labelledby="2-tab">
+										<div class="apartment-photo">
+											<img src="img/apartment-img.jpg" alt="">
+										</div>
+									</div>
+									<div class="tab-pane fade" id="tab-content3" role="tabpanel" aria-labelledby="3-tab">
+										<div class="apartment-photo">
+											<img src="img/apartment-img.jpg" alt="">
+										</div>
+									</div>
+									<div class="tab-pane fade" id="tab-content4" role="tabpanel" aria-labelledby="4-tab">
+										<div class="apartment-photo">
+											<img src="img/apartment-img.jpg" alt="">
+										</div>
+									</div>
+								</div>
+
+								<ul class="nav nav-tabs" role="tablist">
+									<li class="nav-item" role="presentation">
+										<button class="nav-link active" id="1-tab" data-bs-toggle="tab" data-bs-target="#tab-content1"
+											type="button" role="tab" aria-controls="tab-content1" aria-selected="true">Планировка</button>
+									</li>
+									<li class="nav-item" role="presentation">
+										<button class="nav-link" id="2-tab" data-bs-toggle="tab" data-bs-target="#tab-content2"
+											type="button" role="tab" aria-controls="tab-content2" aria-selected="false">План этажа</button>
+									</li>
+									<li class="nav-item" role="presentation">
+										<button class="nav-link" id="3-tab" data-bs-toggle="tab" data-bs-target="#tab-content3"
+											type="button" role="tab" aria-controls="tab-content3" aria-selected="false">Генплан</button>
+									</li>
+									<li class="nav-item" role="presentation">
+										<button class="nav-link" id="4-tab" data-bs-toggle="tab" data-bs-target="#tab-content4"
+											type="button" role="tab" aria-controls="tab-content4" aria-selected="false">Вид из окна</button>
+									</li>
+								</ul>
+							</div>
+
+							<div class="col-12 col-lg-5">
+								<div class="apartment-information">
+									<a href="#" class="btn btn-white btn-catalog-apartment" data-bs-toggle="modal"
+										data-bs-target="#modal1">
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#arrow-prev"></use>
+										</svg>
+										<span>вернуться к каталогу планировок</span>
+									</a>
+
+									<h2 class="modal-title">1-комнатная квартира</h2>
+									<div class="subtitle">44,27 м<sup>2</sup> №362 в ЖК «GP NEXT»: Башня №1</div>
+
+									<ul class="list-tags-apartment my-ul">
+										<li><a href="#" class="btn btn-sm btn-dark">цена снижена</a></li>
+										<li><a href="#" class="btn btn-sm btn-dark">выгода до 11%</a></li>
+										<li><a href="#" class="btn btn-sm btn-dark">с гардеробной</a></li>
+									</ul>
+
+									<ul class="list-charasteristics-apartment mb-40 my-ul">
+										<li>
+											<p>Площадь</p>
+											<span>44,27 м<sup>2</sup></span>
+										</li>
+										<li>
+											<p>Этаж</p>
+											<span>3<span class="color-gray">из 12</span></span>
+										</li>
+										<li>
+											<p>Срок сдачи</p>
+											<span>I квартал 2023</span>
+										</li>
+									</ul>
+
+									<div class="mb-40 apartment-price">
+										<span>Стоимость от</span>
+										<div class="price">4 000 111 ₽</div>
+										<div class="price-credit">Ипотека от 7 891 ₽/мес</div>
+									</div>
+
+									<a href="#" class="btn btn-lg btn-accent btn-reserved">забронировать эту квартиру</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade modal-v2" id="modal3" tabindex="-1" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+				<div class="modal-content">
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+						<svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#close-icon"></use>
+						</svg>
+					</button>
+
+					<div class="modal-header">
+						<div class="modal-header__icon"><img src="img/key.svg" alt=""></div>
+						<div class="modal-header__text">
+							<h2 class="modal-title">Форма <span class="color-yellow">бронирования</span> <br>
+								квартиры</h2>
+							<div class="modal-header__subtitle">
+								<p>Оставьте Ваши данные и наш менеджер <br>
+									свяжется с Вами в ближайшее время</p>
+							</div>
+						</div>
+					</div>
+					<div class="modal-body">
+						<form method="post" class="form-reserve">
+							<div class="row">
+								<div class="col-12 col-lg-6 mb-16">
+									<label>
+										<input type="text" placeholder="Имя" name="name">
+									</label>
+								</div>
+								<div class="col-12 col-lg-6 mb-16">
+									<label>
+										<input type="text" placeholder="Имя" name="name">
+									</label>
+								</div>
+								<div class="col-12 col-lg-7 col-xl-8 mb-16">
+									<label class="label-checkbox">
+										<input type="checkbox" name="checkbox">
+										<span class="label-checkbox__custom"></span>
+										<span class="label-checkbox__text">Нажимая на кнопку, Вы соглашаетесь с условиями обработки
+											персональных данных</span>
+									</label>
+								</div>
+								<div class="col-12 col-lg-5 col-xl-4">
+									<button type="submit" class="btn btn-lg btn-accent">забронировать</button>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="modal-text-overlay">бронирование</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade modal-v2" id="modal4" tabindex="-1" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+				<div class="modal-content">
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+						<svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#close-icon"></use>
+						</svg>
+					</button>
+
+					<div class="modal-header">
+						<div class="modal-header__icon"><img src="img/documents.svg" alt=""></div>
+						<div class="modal-header__text">
+							<h2 class="modal-title"><span class="color-yellow">Спасибо,</span> <br>
+								Ваша заявка отправлена</h2>
+							<div class="modal-header__subtitle">
+								<p>Менеджер отдела продаж свяжется <br>
+									с Вами в ближайшее время</p>
+							</div>
+						</div>
+					</div>
+					<div class="modal-text-overlay">бронирование</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end -->
+
+	<button data-bs-toggle="modal" data-bs-target="#modal1"
+		class="main-screen__apart main-screen__apart_two position-absolute d-none d-lg-flex align-items-center flex-lg-column-reverse justify-content-center">
+		<span class="main-screen__icon">
+			<span class="main-screen__box box">
+				<svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<g clip-path="url(#clip0_9386_3336)">
+						<path
+							d="M29.6906 6.09479L23.6099 2.72108C22.916 2.36488 22.0873 2.36488 21.382 2.7268L20.8295 3.0335C19.7578 2.08279 18.3521 1.5 16.8093 1.5H15.0667C13.9257 1.5 12.8644 1.9549 12.0781 2.78088C11.2917 3.60714 10.8907 4.68888 10.9485 5.82699C11.0027 6.89329 11.4607 7.88292 12.2385 8.61505L13.3743 9.6845C12.836 9.98633 12.3273 10.3594 11.8698 10.8163C10.2433 12.4405 9.54143 14.7348 9.97027 16.9907L9.16101 17.7989C9.01434 17.9454 9.01434 18.1826 9.16101 18.329L9.71016 18.8778L1.11 27.4668C1.03953 27.5372 1 27.6325 1 27.732V31.1249C1 31.3321 1.16815 31.5 1.37555 31.5H4.65984C4.73718 31.5 4.80479 31.4711 4.86466 31.4311C4.88156 31.4202 4.8996 31.411 4.9145 31.3973C4.92682 31.3858 4.93541 31.3724 4.94601 31.3595C4.96721 31.3349 4.98583 31.3095 5.00015 31.2794C5.00416 31.2705 5.00617 31.2611 5.00961 31.2517C5.01906 31.2273 5.03138 31.2045 5.03539 31.1776L5.3886 28.8988L7.67055 28.546C7.8324 28.5211 7.9593 28.3941 7.98423 28.2324L8.33629 25.9551L10.6157 25.6043C10.7775 25.5794 10.9044 25.4527 10.9293 25.2907L11.2811 23.014L13.5084 22.6709L14.0028 23.165V29.0742C14.0028 30.4114 15.0925 31.5 16.4317 31.5H28.5711C29.9103 31.5 31 30.4114 31 29.0742V8.24741C31 7.33332 30.4938 6.50649 29.6906 6.09479ZM11.6985 5.78894C11.6512 4.85826 11.9792 3.97335 12.6223 3.29786C13.2654 2.62209 14.1334 2.24987 15.0667 2.24987H16.8093C18.066 2.24987 19.2204 2.68989 20.1314 3.42088L15.3231 6.08906C14.509 6.50649 14.0028 7.33332 14.0028 8.24741V9.24562L12.7535 8.06946C12.1173 7.47065 11.7429 6.66098 11.6985 5.78894ZM10.644 17.378C10.7348 17.2876 10.7729 17.1572 10.7454 17.0324C10.2888 14.9634 10.9079 12.8379 12.4006 11.3467C12.8667 10.8813 13.39 10.5088 13.9472 10.2238L15.4196 11.61C14.9063 11.8171 14.4345 12.1261 14.0311 12.5286C13.8845 12.6751 13.8845 12.9126 14.0311 13.0591L19.4077 18.4289C19.4811 18.5021 19.577 18.5388 19.6733 18.5388C19.7693 18.5388 19.8652 18.5021 19.9386 18.4289C21.5674 16.8021 21.5674 14.1554 19.9386 12.5286C19.9343 12.5243 19.9297 12.5209 19.9251 12.5166L19.9237 12.5146L19.9217 12.5132C19.1345 11.7356 18.0929 11.3064 16.9849 11.3064C16.7396 11.3064 16.4984 11.331 16.2615 11.3722L14.7023 9.90422C16.8734 9.1389 19.3888 9.61526 21.1222 11.3467C23.5265 13.7483 23.5265 17.6556 21.1222 20.0574C19.6292 21.5485 17.5008 22.1671 15.4294 21.7105C15.3045 21.6839 15.1738 21.7211 15.083 21.8115L14.3964 22.4973L9.95737 18.0641L10.644 17.378ZM17.0728 13.1663C17.4498 13.5211 17.9359 13.7139 18.4507 13.7139C18.4799 13.7139 18.5091 13.7131 18.5386 13.7117C18.9448 13.6945 19.3258 13.5583 19.6447 13.3231C20.6587 14.5697 20.6645 16.3678 19.6587 17.6187L14.8418 12.8082C15.1976 12.522 15.6035 12.3152 16.037 12.191L17.0728 13.1663ZM16.9886 12.0566C17.7612 12.0574 18.4934 12.3146 19.0924 12.7835C18.9159 12.888 18.7182 12.9532 18.5068 12.9624C18.1631 12.9778 17.8374 12.8559 17.5879 12.6208L16.9886 12.0566ZM10.8947 22.3147C10.7328 22.3396 10.6059 22.4664 10.581 22.628L10.2292 24.9048L7.95014 25.2556C7.788 25.2804 7.6611 25.4072 7.63617 25.5691L7.28383 27.8471L5.00216 28.1995C4.84059 28.2244 4.71369 28.3512 4.68848 28.5128L4.34186 30.7498H1.75082V27.8871L10.241 19.4079L12.8501 22.0135L10.8947 22.3147ZM30.2489 29.0742C30.2489 29.998 29.4961 30.7498 28.5711 30.7498H16.4317C15.5064 30.7498 14.7539 29.998 14.7539 29.0742V23.2008L15.4712 22.4847C17.7294 22.913 20.0268 22.2117 21.653 20.5875C24.3504 17.8936 24.3504 13.5102 21.653 10.8163C19.7887 8.95465 17.1169 8.38131 14.7539 9.09284V8.24741C14.7539 7.61599 15.1034 7.04464 15.6772 6.75024L20.706 3.95961C21.5141 4.83165 22.0315 5.97205 22.1094 7.23204H21.0764C20.869 7.23204 20.7011 7.39969 20.7011 7.60683C20.7011 7.81425 20.869 7.98191 21.0764 7.98191H23.9218C24.1292 7.98191 24.2974 7.81425 24.2974 7.60683C24.2974 7.39969 24.1292 7.23204 23.9218 7.23204H22.8602C22.7851 5.84016 22.2411 4.57359 21.3792 3.58596L21.7358 3.38827C22.2151 3.14279 22.7877 3.14279 23.2561 3.38226L29.3365 6.75625C29.8994 7.04464 30.2489 7.61599 30.2489 8.24741V29.0742Z"
+							fill="#333439" />
+					</g>
+					<defs>
+						<clipPath id="clip0_9386_3336">
+							<rect width="32" height="32" fill="white" transform="translate(0 0.5)" />
+						</clipPath>
+					</defs>
+				</svg>
+			</span>
+		</span>
+		<span class="main-screen__apart_text">выбор квартиры</span>
+	</button>
+
+	<div data-scroll-container>
+
+		<nav class="navbar w-100">
+			<div class="container-fluid">
+				<div class="d-flex align-items-center justify-content-between w-100">
+					<a class="navbar-brand p-0 m-0" href="#">
+						<img src="img/header/logo.svg" alt="лого for next">
+					</a>
+					<div class="navbar-menu">
+						<ul class="d-flex align-items-center">
+							<li><a href="" class="py-4">Бутик квартир</a></li>
+							<li><a href="" class="py-4">Келлеры и паркинг</a></li>
+							<li><a href="" class="py-4">Коммерческие помещения</a></li>
+						</ul>
+					</div>
+					<div class="navbar__right d-flex align-items-center">
+						<a href="tel:+78412515515" class="navbar-phone"><span>8 (8412)</span> 515-515</a>
+						<button class="btn-4 navbar-call">заказать обратный звонок</button>
+						<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+							aria-controls="offcanvasNavbar" aria-label="Переключить навигацию">
+							<span class="navbar-toggler-icon">
+								<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g clip-path="url(#clip0_9362_578)">
+										<path
+											d="M4.6665 20.1482V18.9816H23.3332V20.1482H4.6665ZM4.6665 14.5832V13.4166H23.3332V14.5832H4.6665ZM4.6665 9.01823V7.85156H23.3332V9.01823H4.6665Z"
+											fill="white" />
+									</g>
+									<defs>
+										<clipPath id="clip0_9362_578">
+											<rect width="28" height="28" fill="white" />
+										</clipPath>
+									</defs>
+								</svg>
+							</span>
+						</button>
+						<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+							aria-labelledby="offcanvasNavbarLabel">
+							<div class="offcanvas-header p-4">
+								<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Закрыть">
+									<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M9.20132 23.7772L8.22266 22.8079L15.0213 15.9999L8.22266 9.22653L9.20132 8.25586L16 15.0532L22.7653 8.25719L23.744 9.22653L16.9453 15.9999L23.744 22.8079L22.7653 23.7772L16 16.9825L9.20132 23.7772Z"
+											fill="white" />
+									</svg>
+								</button>
+							</div>
+							<div class="offcanvas-body p-4">
+								<ul class="navbar-nav">
+									<li class="nav-item">
+										<a class="nav-link p-0" href="#">Бутик квартир</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link p-0" href="#">Келлеры и паркинг</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link p-0" href="#">Коммерческие помещения</a>
+									</li>
+								</ul>
+								<a href="tel:+78412515515" class="offcanvas-phone d-block mt-5"><span>8 (8412)</span> 515-515</a>
+								<!-- кнопка выбор квартиры -->
+								<button data-bs-toggle="modal" data-bs-target="#modal1"
+									class="main-screen__apart main-screen__apart_mob d-lg-none d-flex align-items-center flex-lg-column-reverse justify-content-center mt-5">
+									<span class="main-screen__icon">
+										<span class="main-screen__box box">
+											<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<g clip-path="url(#clip0_9362_1238)">
+													<path
+														d="M29.6906 5.59479L23.6099 2.22108C22.916 1.86488 22.0873 1.86488 21.382 2.2268L20.8295 2.5335C19.7578 1.58279 18.3521 1 16.8093 1H15.0667C13.9257 1 12.8644 1.4549 12.0781 2.28088C11.2917 3.10714 10.8907 4.18888 10.9485 5.32699C11.0027 6.39329 11.4607 7.38292 12.2385 8.11505L13.3743 9.1845C12.836 9.48633 12.3273 9.85941 11.8698 10.3163C10.2433 11.9405 9.54143 14.2348 9.97027 16.4907L9.16101 17.2989C9.01434 17.4454 9.01434 17.6826 9.16101 17.829L9.71016 18.3778L1.11 26.9668C1.03953 27.0372 1 27.1325 1 27.232V30.6249C1 30.8321 1.16815 31 1.37555 31H4.65984C4.73718 31 4.80479 30.9711 4.86466 30.9311C4.88156 30.9202 4.8996 30.911 4.9145 30.8973C4.92682 30.8858 4.93541 30.8724 4.94601 30.8595C4.96721 30.8349 4.98583 30.8095 5.00015 30.7794C5.00416 30.7705 5.00617 30.7611 5.00961 30.7517C5.01906 30.7273 5.03138 30.7045 5.03539 30.6776L5.3886 28.3988L7.67055 28.046C7.8324 28.0211 7.9593 27.8941 7.98423 27.7324L8.33629 25.4551L10.6157 25.1043C10.7775 25.0794 10.9044 24.9527 10.9293 24.7907L11.2811 22.514L13.5084 22.1709L14.0028 22.665V28.5742C14.0028 29.9114 15.0925 31 16.4317 31H28.5711C29.9103 31 31 29.9114 31 28.5742V7.74741C31 6.83332 30.4938 6.00649 29.6906 5.59479ZM11.6985 5.28894C11.6512 4.35826 11.9792 3.47335 12.6223 2.79786C13.2654 2.12209 14.1334 1.74987 15.0667 1.74987H16.8093C18.066 1.74987 19.2204 2.18989 20.1314 2.92088L15.3231 5.58906C14.509 6.00649 14.0028 6.83332 14.0028 7.74741V8.74562L12.7535 7.56946C12.1173 6.97065 11.7429 6.16098 11.6985 5.28894ZM10.644 16.878C10.7348 16.7876 10.7729 16.6572 10.7454 16.5324C10.2888 14.4634 10.9079 12.3379 12.4006 10.8467C12.8667 10.3813 13.39 10.0088 13.9472 9.7238L15.4196 11.11C14.9063 11.3171 14.4345 11.6261 14.0311 12.0286C13.8845 12.1751 13.8845 12.4126 14.0311 12.5591L19.4077 17.9289C19.4811 18.0021 19.577 18.0388 19.6733 18.0388C19.7693 18.0388 19.8652 18.0021 19.9386 17.9289C21.5674 16.3021 21.5674 13.6554 19.9386 12.0286C19.9343 12.0243 19.9297 12.0209 19.9251 12.0166L19.9237 12.0146L19.9217 12.0132C19.1345 11.2356 18.0929 10.8064 16.9849 10.8064C16.7396 10.8064 16.4984 10.831 16.2615 10.8722L14.7023 9.40422C16.8734 8.6389 19.3888 9.11526 21.1222 10.8467C23.5265 13.2483 23.5265 17.1556 21.1222 19.5574C19.6292 21.0485 17.5008 21.6671 15.4294 21.2105C15.3045 21.1839 15.1738 21.2211 15.083 21.3115L14.3964 21.9973L9.95737 17.5641L10.644 16.878ZM17.0728 12.6663C17.4498 13.0211 17.9359 13.2139 18.4507 13.2139C18.4799 13.2139 18.5091 13.2131 18.5386 13.2117C18.9448 13.1945 19.3258 13.0583 19.6447 12.8231C20.6587 14.0697 20.6645 15.8678 19.6587 17.1187L14.8418 12.3082C15.1976 12.022 15.6035 11.8152 16.037 11.691L17.0728 12.6663ZM16.9886 11.5566C17.7612 11.5574 18.4934 11.8146 19.0924 12.2835C18.9159 12.388 18.7182 12.4532 18.5068 12.4624C18.1631 12.4778 17.8374 12.3559 17.5879 12.1208L16.9886 11.5566ZM10.8947 21.8147C10.7328 21.8396 10.6059 21.9664 10.581 22.128L10.2292 24.4048L7.95014 24.7556C7.788 24.7804 7.6611 24.9072 7.63617 25.0691L7.28383 27.3471L5.00216 27.6995C4.84059 27.7244 4.71369 27.8512 4.68848 28.0128L4.34186 30.2498H1.75082V27.3871L10.241 18.9079L12.8501 21.5135L10.8947 21.8147ZM30.2489 28.5742C30.2489 29.498 29.4961 30.2498 28.5711 30.2498H16.4317C15.5064 30.2498 14.7539 29.498 14.7539 28.5742V22.7008L15.4712 21.9847C17.7294 22.413 20.0268 21.7117 21.653 20.0875C24.3504 17.3936 24.3504 13.0102 21.653 10.3163C19.7887 8.45465 17.1169 7.88131 14.7539 8.59284V7.74741C14.7539 7.11599 15.1034 6.54464 15.6772 6.25024L20.706 3.45961C21.5141 4.33165 22.0315 5.47205 22.1094 6.73204H21.0764C20.869 6.73204 20.7011 6.89969 20.7011 7.10683C20.7011 7.31425 20.869 7.48191 21.0764 7.48191H23.9218C24.1292 7.48191 24.2974 7.31425 24.2974 7.10683C24.2974 6.89969 24.1292 6.73204 23.9218 6.73204H22.8602C22.7851 5.34016 22.2411 4.07359 21.3792 3.08596L21.7358 2.88827C22.2151 2.64279 22.7877 2.64279 23.2561 2.88226L29.3365 6.25625C29.8994 6.54464 30.2489 7.11599 30.2489 7.74741V28.5742Z"
+														fill="white" />
+												</g>
+												<defs>
+													<clipPath id="clip0_9362_1238">
+														<rect width="32" height="32" fill="white" />
+													</clipPath>
+												</defs>
+											</svg>
+										</span>
+									</span>
+									<span class="main-screen__apart_text">выбор квартиры</span>
+								</button>
+								<!-- end -->
+								<button class="btn-4 offcanvas-call mt-lg-5 mt-4">заказать обратный звонок</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<main>
+
+			<section class="main-screen-two">
+				<div class="main-screen-two__main">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+								<div class="main-screen-two__block d-flex flex-column justify-content-between">
+									<div class="main-screen-two__decor">
+										<svg width="790" height="187" viewBox="0 0 790 187" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path opacity="0.2"
+												d="M45.3372 0.678473L45.1873 0.5H44.9543L1 0.5H0.5L0.5 1L0.5 186V186.5H1H8.94354H9.44354V186L9.44354 9.42858H16.6544L165.578 186.322L165.728 186.5H165.961H187.144H187.644V186L187.644 1V0.5H187.144L179.2 0.5L178.7 0.5V1L178.7 157.221H176.785L45.3372 0.678473ZM404.279 177.571L259.148 177.571V62.2857L358.472 62.2857H358.763L358.907 62.0326L363.408 54.104L363.832 53.3571H362.973L259.148 53.3571V9.42858L389.187 9.42858H389.478L389.622 9.17544L394.123 1.24686L394.547 0.5L393.688 0.5L232.169 0.5L231.669 0.5V1L231.669 186V186.5H232.169L399.778 186.5H400.069L400.213 186.247L404.714 178.318L405.138 177.571H404.279ZM412.793 185.677C412.792 185.678 412.792 185.678 413.175 186L412.792 185.678L412.1 186.5H413.175H423.501H423.734L423.884 186.322L506.379 88.1984L588.874 186.322L589.023 186.5H589.256L623.943 186.5H625.02L624.325 185.677L623.943 186C624.325 185.677 624.325 185.677 624.325 185.677L624.323 185.674L624.315 185.665L624.285 185.63L624.165 185.488L623.693 184.928L621.859 182.756C620.258 180.859 617.921 178.09 614.975 174.598C609.084 167.615 600.76 157.746 591.029 146.2C571.645 123.201 546.68 93.5484 524.243 66.8075L579.312 1.32181L580.004 0.5L578.93 0.5L568.603 0.5H568.372L568.223 0.675657L568.603 1C568.223 0.675657 568.223 0.675728 568.222 0.675867L568.222 0.676483L568.22 0.678933L568.211 0.688712L568.178 0.72785L568.044 0.884957C567.925 1.02492 567.746 1.23561 567.505 1.51856C567.024 2.08445 566.298 2.93941 565.317 4.09581C563.356 6.40862 560.377 9.92722 556.306 14.7507C548.222 24.3274 535.834 39.0478 518.557 59.6877L468.631 0.677054L468.482 0.5H468.25L433.828 0.5L432.754 0.5L433.445 1.32169L500.694 81.3424C479.726 106.22 457.8 132.245 441.091 152.081C432.701 162.041 425.626 170.44 420.649 176.349L414.854 183.23L413.32 185.051L412.926 185.519L412.826 185.638L412.801 185.668L412.794 185.675L412.793 185.677ZM788.859 0.5L788 0.5L609.8 0.5L609.509 0.5L609.365 0.753142L604.864 8.68172L604.44 9.42858H605.299L684.234 9.42858V186V186.5H684.734H708.565H709.063L709.065 186.001L709.593 9.42858L783.499 9.42858H783.79L783.934 9.17544L788.435 1.24686L788.859 0.5Z"
+												stroke="#EAD587" stroke-opacity="0.3" />
+										</svg>
+									</div>
+									<a href="#" class="main-screen-two__link d-flex align-items-center">
+										<svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<g clip-path="url(#clip0_9386_2837)">
+												<path
+													d="M18.6973 26.6666L23.6773 31.6466C23.807 31.7764 23.875 31.9293 23.8813 32.1053C23.8866 32.2813 23.8186 32.4426 23.6773 32.5893C23.5297 32.7368 23.371 32.8115 23.2013 32.8133C23.0315 32.8151 22.8728 32.7431 22.7253 32.5973L16.8826 26.7533C16.6666 26.5382 16.5586 26.2871 16.5586 26C16.5586 25.7128 16.6666 25.4613 16.8826 25.2453L22.7253 19.4026C22.8559 19.2728 23.0101 19.2048 23.1879 19.1986C23.3666 19.1924 23.5297 19.2631 23.6773 19.4106C23.8195 19.5573 23.8915 19.7142 23.8933 19.8813C23.8959 20.0493 23.8239 20.2066 23.6773 20.3533L18.6973 25.3333H35.2039C35.3941 25.3333 35.5533 25.3968 35.6813 25.524C35.8093 25.6511 35.8728 25.8097 35.8719 26C35.871 26.1902 35.8075 26.3488 35.6813 26.476C35.555 26.6031 35.3964 26.6666 35.2053 26.6666H18.6973Z"
+													fill="white" />
+											</g>
+											<defs>
+												<clipPath id="clip0_9386_2837">
+													<rect width="32" height="32" fill="white" transform="translate(10 10)" />
+												</clipPath>
+											</defs>
+										</svg>
+										<span>вернуться<br>
+											на главную</span>
+									</a>
+									<h1 class="title-page">Архитектура<br>
+										<span>и лобби</span>
+									</h1>
+									<!-- <button data-bs-toggle="modal" data-bs-target="#modal1"
+										class="main-screen__apart position-absolute d-lg-none d-flex align-items-center flex-lg-column-reverse justify-content-center">
+										<span class="main-screen__icon">
+											<span class="main-screen__box box">
+												<svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<g clip-path="url(#clip0_9386_3336)">
+														<path
+															d="M29.6906 6.09479L23.6099 2.72108C22.916 2.36488 22.0873 2.36488 21.382 2.7268L20.8295 3.0335C19.7578 2.08279 18.3521 1.5 16.8093 1.5H15.0667C13.9257 1.5 12.8644 1.9549 12.0781 2.78088C11.2917 3.60714 10.8907 4.68888 10.9485 5.82699C11.0027 6.89329 11.4607 7.88292 12.2385 8.61505L13.3743 9.6845C12.836 9.98633 12.3273 10.3594 11.8698 10.8163C10.2433 12.4405 9.54143 14.7348 9.97027 16.9907L9.16101 17.7989C9.01434 17.9454 9.01434 18.1826 9.16101 18.329L9.71016 18.8778L1.11 27.4668C1.03953 27.5372 1 27.6325 1 27.732V31.1249C1 31.3321 1.16815 31.5 1.37555 31.5H4.65984C4.73718 31.5 4.80479 31.4711 4.86466 31.4311C4.88156 31.4202 4.8996 31.411 4.9145 31.3973C4.92682 31.3858 4.93541 31.3724 4.94601 31.3595C4.96721 31.3349 4.98583 31.3095 5.00015 31.2794C5.00416 31.2705 5.00617 31.2611 5.00961 31.2517C5.01906 31.2273 5.03138 31.2045 5.03539 31.1776L5.3886 28.8988L7.67055 28.546C7.8324 28.5211 7.9593 28.3941 7.98423 28.2324L8.33629 25.9551L10.6157 25.6043C10.7775 25.5794 10.9044 25.4527 10.9293 25.2907L11.2811 23.014L13.5084 22.6709L14.0028 23.165V29.0742C14.0028 30.4114 15.0925 31.5 16.4317 31.5H28.5711C29.9103 31.5 31 30.4114 31 29.0742V8.24741C31 7.33332 30.4938 6.50649 29.6906 6.09479ZM11.6985 5.78894C11.6512 4.85826 11.9792 3.97335 12.6223 3.29786C13.2654 2.62209 14.1334 2.24987 15.0667 2.24987H16.8093C18.066 2.24987 19.2204 2.68989 20.1314 3.42088L15.3231 6.08906C14.509 6.50649 14.0028 7.33332 14.0028 8.24741V9.24562L12.7535 8.06946C12.1173 7.47065 11.7429 6.66098 11.6985 5.78894ZM10.644 17.378C10.7348 17.2876 10.7729 17.1572 10.7454 17.0324C10.2888 14.9634 10.9079 12.8379 12.4006 11.3467C12.8667 10.8813 13.39 10.5088 13.9472 10.2238L15.4196 11.61C14.9063 11.8171 14.4345 12.1261 14.0311 12.5286C13.8845 12.6751 13.8845 12.9126 14.0311 13.0591L19.4077 18.4289C19.4811 18.5021 19.577 18.5388 19.6733 18.5388C19.7693 18.5388 19.8652 18.5021 19.9386 18.4289C21.5674 16.8021 21.5674 14.1554 19.9386 12.5286C19.9343 12.5243 19.9297 12.5209 19.9251 12.5166L19.9237 12.5146L19.9217 12.5132C19.1345 11.7356 18.0929 11.3064 16.9849 11.3064C16.7396 11.3064 16.4984 11.331 16.2615 11.3722L14.7023 9.90422C16.8734 9.1389 19.3888 9.61526 21.1222 11.3467C23.5265 13.7483 23.5265 17.6556 21.1222 20.0574C19.6292 21.5485 17.5008 22.1671 15.4294 21.7105C15.3045 21.6839 15.1738 21.7211 15.083 21.8115L14.3964 22.4973L9.95737 18.0641L10.644 17.378ZM17.0728 13.1663C17.4498 13.5211 17.9359 13.7139 18.4507 13.7139C18.4799 13.7139 18.5091 13.7131 18.5386 13.7117C18.9448 13.6945 19.3258 13.5583 19.6447 13.3231C20.6587 14.5697 20.6645 16.3678 19.6587 17.6187L14.8418 12.8082C15.1976 12.522 15.6035 12.3152 16.037 12.191L17.0728 13.1663ZM16.9886 12.0566C17.7612 12.0574 18.4934 12.3146 19.0924 12.7835C18.9159 12.888 18.7182 12.9532 18.5068 12.9624C18.1631 12.9778 17.8374 12.8559 17.5879 12.6208L16.9886 12.0566ZM10.8947 22.3147C10.7328 22.3396 10.6059 22.4664 10.581 22.628L10.2292 24.9048L7.95014 25.2556C7.788 25.2804 7.6611 25.4072 7.63617 25.5691L7.28383 27.8471L5.00216 28.1995C4.84059 28.2244 4.71369 28.3512 4.68848 28.5128L4.34186 30.7498H1.75082V27.8871L10.241 19.4079L12.8501 22.0135L10.8947 22.3147ZM30.2489 29.0742C30.2489 29.998 29.4961 30.7498 28.5711 30.7498H16.4317C15.5064 30.7498 14.7539 29.998 14.7539 29.0742V23.2008L15.4712 22.4847C17.7294 22.913 20.0268 22.2117 21.653 20.5875C24.3504 17.8936 24.3504 13.5102 21.653 10.8163C19.7887 8.95465 17.1169 8.38131 14.7539 9.09284V8.24741C14.7539 7.61599 15.1034 7.04464 15.6772 6.75024L20.706 3.95961C21.5141 4.83165 22.0315 5.97205 22.1094 7.23204H21.0764C20.869 7.23204 20.7011 7.39969 20.7011 7.60683C20.7011 7.81425 20.869 7.98191 21.0764 7.98191H23.9218C24.1292 7.98191 24.2974 7.81425 24.2974 7.60683C24.2974 7.39969 24.1292 7.23204 23.9218 7.23204H22.8602C22.7851 5.84016 22.2411 4.57359 21.3792 3.58596L21.7358 3.38827C22.2151 3.14279 22.7877 3.14279 23.2561 3.38226L29.3365 6.75625C29.8994 7.04464 30.2489 7.61599 30.2489 8.24741V29.0742Z"
+															fill="#333439" />
+													</g>
+													<defs>
+														<clipPath id="clip0_9386_3336">
+															<rect width="32" height="32" fill="white" transform="translate(0 0.5)" />
+														</clipPath>
+													</defs>
+												</svg>
+											</span>
+										</span>
+										<span class="main-screen__apart_text">выбор квартиры</span>
+									</button> -->
+									<div class="main-screen-two__image">
+										<div class="main-screen-two__box box">
+											<img src="img/main-screen-two/bg-image.jpg" alt="фото">
+										</div>
+										<div class="main-screen-two__line"></div>
+									</div>
+									<div class="main-screen-two__decor-2">
+										<svg width="790" height="187" viewBox="0 0 790 187" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path opacity="0.2"
+												d="M45.3372 0.678473L45.1873 0.5H44.9543L1 0.5H0.5L0.5 1L0.5 186V186.5H1H8.94354H9.44354V186L9.44354 9.42858H16.6544L165.578 186.322L165.728 186.5H165.961H187.144H187.644V186L187.644 1V0.5H187.144L179.2 0.5L178.7 0.5V1L178.7 157.221H176.785L45.3372 0.678473ZM404.279 177.571L259.148 177.571V62.2857L358.472 62.2857H358.763L358.907 62.0326L363.408 54.104L363.832 53.3571H362.973L259.148 53.3571V9.42858L389.187 9.42858H389.478L389.622 9.17544L394.123 1.24686L394.547 0.5L393.688 0.5L232.169 0.5L231.669 0.5V1L231.669 186V186.5H232.169L399.778 186.5H400.069L400.213 186.247L404.714 178.318L405.138 177.571H404.279ZM412.793 185.677C412.792 185.678 412.792 185.678 413.175 186L412.792 185.678L412.1 186.5H413.175H423.501H423.734L423.884 186.322L506.379 88.1984L588.874 186.322L589.023 186.5H589.256L623.943 186.5H625.02L624.325 185.677L623.943 186C624.325 185.677 624.325 185.677 624.325 185.677L624.323 185.674L624.315 185.665L624.285 185.63L624.165 185.488L623.693 184.928L621.859 182.756C620.258 180.859 617.921 178.09 614.975 174.598C609.084 167.615 600.76 157.746 591.029 146.2C571.645 123.201 546.68 93.5484 524.243 66.8075L579.312 1.32181L580.004 0.5L578.93 0.5L568.603 0.5H568.372L568.223 0.675657L568.603 1C568.223 0.675657 568.223 0.675728 568.222 0.675867L568.222 0.676483L568.22 0.678933L568.211 0.688712L568.178 0.72785L568.044 0.884957C567.925 1.02492 567.746 1.23561 567.505 1.51856C567.024 2.08445 566.298 2.93941 565.317 4.09581C563.356 6.40862 560.377 9.92722 556.306 14.7507C548.222 24.3274 535.834 39.0478 518.557 59.6877L468.631 0.677054L468.482 0.5H468.25L433.828 0.5L432.754 0.5L433.445 1.32169L500.694 81.3424C479.726 106.22 457.8 132.245 441.091 152.081C432.701 162.041 425.626 170.44 420.649 176.349L414.854 183.23L413.32 185.051L412.926 185.519L412.826 185.638L412.801 185.668L412.794 185.675L412.793 185.677ZM788.859 0.5L788 0.5L609.8 0.5L609.509 0.5L609.365 0.753142L604.864 8.68172L604.44 9.42858H605.299L684.234 9.42858V186V186.5H684.734H708.565H709.063L709.065 186.001L709.593 9.42858L783.499 9.42858H783.79L783.934 9.17544L788.435 1.24686L788.859 0.5Z"
+												stroke="#EAD587" stroke-opacity="0.3" />
+										</svg>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="item-page-slider section">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div
+								class="item-page-slider__header mb-sm-5 mb-4 d-flex justify-content-between align-items-center flex-wrap">
+								<h2 class="section-title">Фасады</h2>
+								<div class="item-page-slider-arrows d-flex">
+									<button class="slick-prev slick-arrow item-page-slider-arrows-prev" aria-label="Previous"
+										type="button">
+										<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<g clip-path="url(#clip0_9402_3888)">
+												<path
+													d="M34.146 24.9998H11C10.716 24.9998 10.478 24.9045 10.286 24.7138C10.094 24.5232 9.99868 24.2852 10 23.9998C10.0013 23.7145 10.0967 23.4765 10.286 23.2858C10.4753 23.0952 10.7133 22.9998 11 22.9998H34.146L26.676 15.5318C26.4813 15.3358 26.38 15.1058 26.372 14.8418C26.364 14.5778 26.4653 14.3358 26.676 14.1158C26.8973 13.8945 27.1353 13.7825 27.39 13.7798C27.6447 13.7772 27.8827 13.8852 28.104 14.1038L36.87 22.8698C37.0433 23.0432 37.1653 23.2212 37.236 23.4038C37.3067 23.5865 37.342 23.7852 37.342 23.9998C37.342 24.2145 37.3067 24.4132 37.236 24.5958C37.1653 24.7785 37.0433 24.9572 36.87 25.1318L28.104 33.8958C27.9093 34.0905 27.678 34.1925 27.41 34.2018C27.142 34.2112 26.8973 34.1052 26.676 33.8838C26.4627 33.6638 26.3547 33.4278 26.352 33.1758C26.3493 32.9238 26.4573 32.6878 26.676 32.4678L34.146 24.9998Z"
+													fill="#333439" />
+											</g>
+											<defs>
+												<clipPath id="clip0_9402_3888">
+													<rect width="48" height="48" fill="white" />
+												</clipPath>
+											</defs>
+										</svg>
+									</button>
+									<button class="slick-next slick-arrow item-page-slider-arrows-next" aria-label="Next" type="button">
+										<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<g clip-path="url(#clip0_9402_3888)">
+												<path
+													d="M34.146 24.9998H11C10.716 24.9998 10.478 24.9045 10.286 24.7138C10.094 24.5232 9.99868 24.2852 10 23.9998C10.0013 23.7145 10.0967 23.4765 10.286 23.2858C10.4753 23.0952 10.7133 22.9998 11 22.9998H34.146L26.676 15.5318C26.4813 15.3358 26.38 15.1058 26.372 14.8418C26.364 14.5778 26.4653 14.3358 26.676 14.1158C26.8973 13.8945 27.1353 13.7825 27.39 13.7798C27.6447 13.7772 27.8827 13.8852 28.104 14.1038L36.87 22.8698C37.0433 23.0432 37.1653 23.2212 37.236 23.4038C37.3067 23.5865 37.342 23.7852 37.342 23.9998C37.342 24.2145 37.3067 24.4132 37.236 24.5958C37.1653 24.7785 37.0433 24.9572 36.87 25.1318L28.104 33.8958C27.9093 34.0905 27.678 34.1925 27.41 34.2018C27.142 34.2112 26.8973 34.1052 26.676 33.8838C26.4627 33.6638 26.3547 33.4278 26.352 33.1758C26.3493 32.9238 26.4573 32.6878 26.676 32.4678L34.146 24.9998Z"
+													fill="#333439" />
+											</g>
+											<defs>
+												<clipPath id="clip0_9402_3888">
+													<rect width="48" height="48" fill="white" />
+												</clipPath>
+											</defs>
+										</svg>
+									</button>
+								</div>
+							</div>
+							<div class="item-page-slider__content">
+								<div class="item-page-slider-slick slider-1">
+									<div class="item-page-slider-slick__slide">
+										<img src="img/item-page/image.jpg" alt="фото">
+									</div>
+									<div class="item-page-slider-slick__slide">
+										<img src="img/item-page/image.jpg" alt="фото">
+									</div>
+									<div class="item-page-slider-slick__slide">
+										<img src="img/item-page/image.jpg" alt="фото">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="item-page-slider item-page-slider-dark section">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div
+								class="item-page-slider__header mb-sm-5 mb-4 d-flex justify-content-between align-items-center flex-wrap">
+								<h2 class="section-title">интерьер</h2>
+								<div class="item-page-slider-arrows d-flex">
+									<button class="slick-prev slick-arrow item-page-slider-arrows-prev" aria-label="Previous"
+										type="button">
+										<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<g clip-path="url(#clip0_9402_399)">
+												<path
+													d="M34.146 25.0001H11C10.716 25.0001 10.478 24.9047 10.286 24.7141C10.094 24.5234 9.99868 24.2854 10 24.0001C10.0013 23.7147 10.0967 23.4767 10.286 23.2861C10.4753 23.0954 10.7133 23.0001 11 23.0001H34.146L26.676 15.5321C26.4813 15.3361 26.38 15.1061 26.372 14.8421C26.364 14.5781 26.4653 14.3361 26.676 14.1161C26.8973 13.8947 27.1353 13.7827 27.39 13.7801C27.6447 13.7774 27.8827 13.8854 28.104 14.1041L36.87 22.8701C37.0433 23.0434 37.1653 23.2214 37.236 23.4041C37.3067 23.5867 37.342 23.7854 37.342 24.0001C37.342 24.2147 37.3067 24.4134 37.236 24.5961C37.1653 24.7787 37.0433 24.9574 36.87 25.1321L28.104 33.8961C27.9093 34.0907 27.678 34.1927 27.41 34.2021C27.142 34.2114 26.8973 34.1054 26.676 33.8841C26.4627 33.6641 26.3547 33.4281 26.352 33.1761C26.3493 32.9241 26.4573 32.6881 26.676 32.4681L34.146 25.0001Z"
+													fill="#EAD587" />
+											</g>
+											<defs>
+												<clipPath id="clip0_9402_399">
+													<rect width="48" height="48" fill="white" />
+												</clipPath>
+											</defs>
+										</svg>
+									</button>
+									<button class="slick-next slick-arrow item-page-slider-arrows-next" aria-label="Next" type="button">
+										<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<g clip-path="url(#clip0_9402_399)">
+												<path
+													d="M34.146 25.0001H11C10.716 25.0001 10.478 24.9047 10.286 24.7141C10.094 24.5234 9.99868 24.2854 10 24.0001C10.0013 23.7147 10.0967 23.4767 10.286 23.2861C10.4753 23.0954 10.7133 23.0001 11 23.0001H34.146L26.676 15.5321C26.4813 15.3361 26.38 15.1061 26.372 14.8421C26.364 14.5781 26.4653 14.3361 26.676 14.1161C26.8973 13.8947 27.1353 13.7827 27.39 13.7801C27.6447 13.7774 27.8827 13.8854 28.104 14.1041L36.87 22.8701C37.0433 23.0434 37.1653 23.2214 37.236 23.4041C37.3067 23.5867 37.342 23.7854 37.342 24.0001C37.342 24.2147 37.3067 24.4134 37.236 24.5961C37.1653 24.7787 37.0433 24.9574 36.87 25.1321L28.104 33.8961C27.9093 34.0907 27.678 34.1927 27.41 34.2021C27.142 34.2114 26.8973 34.1054 26.676 33.8841C26.4627 33.6641 26.3547 33.4281 26.352 33.1761C26.3493 32.9241 26.4573 32.6881 26.676 32.4681L34.146 25.0001Z"
+													fill="#EAD587" />
+											</g>
+											<defs>
+												<clipPath id="clip0_9402_399">
+													<rect width="48" height="48" fill="white" />
+												</clipPath>
+											</defs>
+										</svg>
+									</button>
+								</div>
+							</div>
+							<div class="item-page-slider__content">
+								<div class="item-page-slider-slick slider-2">
+									<div class="item-page-slider-slick__slide">
+										<img src="img/item-page/image.jpg" alt="фото">
+									</div>
+									<div class="item-page-slider-slick__slide">
+										<img src="img/item-page/image.jpg" alt="фото">
+									</div>
+									<div class="item-page-slider-slick__slide">
+										<img src="img/item-page/image.jpg" alt="фото">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="item-page-slider section">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div
+								class="item-page-slider__header mb-sm-5 mb-4 d-flex justify-content-between align-items-center flex-wrap">
+								<h2 class="section-title">благоустройство</h2>
+								<div class="item-page-slider-arrows d-flex">
+									<button class="slick-prev slick-arrow item-page-slider-arrows-prev" aria-label="Previous"
+										type="button">
+										<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<g clip-path="url(#clip0_9402_3888)">
+												<path
+													d="M34.146 24.9998H11C10.716 24.9998 10.478 24.9045 10.286 24.7138C10.094 24.5232 9.99868 24.2852 10 23.9998C10.0013 23.7145 10.0967 23.4765 10.286 23.2858C10.4753 23.0952 10.7133 22.9998 11 22.9998H34.146L26.676 15.5318C26.4813 15.3358 26.38 15.1058 26.372 14.8418C26.364 14.5778 26.4653 14.3358 26.676 14.1158C26.8973 13.8945 27.1353 13.7825 27.39 13.7798C27.6447 13.7772 27.8827 13.8852 28.104 14.1038L36.87 22.8698C37.0433 23.0432 37.1653 23.2212 37.236 23.4038C37.3067 23.5865 37.342 23.7852 37.342 23.9998C37.342 24.2145 37.3067 24.4132 37.236 24.5958C37.1653 24.7785 37.0433 24.9572 36.87 25.1318L28.104 33.8958C27.9093 34.0905 27.678 34.1925 27.41 34.2018C27.142 34.2112 26.8973 34.1052 26.676 33.8838C26.4627 33.6638 26.3547 33.4278 26.352 33.1758C26.3493 32.9238 26.4573 32.6878 26.676 32.4678L34.146 24.9998Z"
+													fill="#333439" />
+											</g>
+											<defs>
+												<clipPath id="clip0_9402_3888">
+													<rect width="48" height="48" fill="white" />
+												</clipPath>
+											</defs>
+										</svg>
+									</button>
+									<button class="slick-next slick-arrow item-page-slider-arrows-next" aria-label="Next" type="button">
+										<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<g clip-path="url(#clip0_9402_3888)">
+												<path
+													d="M34.146 24.9998H11C10.716 24.9998 10.478 24.9045 10.286 24.7138C10.094 24.5232 9.99868 24.2852 10 23.9998C10.0013 23.7145 10.0967 23.4765 10.286 23.2858C10.4753 23.0952 10.7133 22.9998 11 22.9998H34.146L26.676 15.5318C26.4813 15.3358 26.38 15.1058 26.372 14.8418C26.364 14.5778 26.4653 14.3358 26.676 14.1158C26.8973 13.8945 27.1353 13.7825 27.39 13.7798C27.6447 13.7772 27.8827 13.8852 28.104 14.1038L36.87 22.8698C37.0433 23.0432 37.1653 23.2212 37.236 23.4038C37.3067 23.5865 37.342 23.7852 37.342 23.9998C37.342 24.2145 37.3067 24.4132 37.236 24.5958C37.1653 24.7785 37.0433 24.9572 36.87 25.1318L28.104 33.8958C27.9093 34.0905 27.678 34.1925 27.41 34.2018C27.142 34.2112 26.8973 34.1052 26.676 33.8838C26.4627 33.6638 26.3547 33.4278 26.352 33.1758C26.3493 32.9238 26.4573 32.6878 26.676 32.4678L34.146 24.9998Z"
+													fill="#333439" />
+											</g>
+											<defs>
+												<clipPath id="clip0_9402_3888">
+													<rect width="48" height="48" fill="white" />
+												</clipPath>
+											</defs>
+										</svg>
+									</button>
+								</div>
+							</div>
+							<div class="item-page-slider__content">
+								<div class="item-page-slider-slick slider-3">
+									<div class="item-page-slider-slick__slide">
+										<img src="img/item-page/image.jpg" alt="фото">
+									</div>
+									<div class="item-page-slider-slick__slide">
+										<img src="img/item-page/image.jpg" alt="фото">
+									</div>
+									<div class="item-page-slider-slick__slide">
+										<img src="img/item-page/image.jpg" alt="фото">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="item-page-slider item-page-slider-dark section">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div
+								class="item-page-slider__header mb-sm-5 mb-4 d-flex justify-content-between align-items-center flex-wrap">
+								<h2 class="section-title">детский клуб</h2>
+								<div class="item-page-slider-arrows d-flex">
+									<button class="slick-prev slick-arrow item-page-slider-arrows-prev" aria-label="Previous"
+										type="button">
+										<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<g clip-path="url(#clip0_9402_399)">
+												<path
+													d="M34.146 25.0001H11C10.716 25.0001 10.478 24.9047 10.286 24.7141C10.094 24.5234 9.99868 24.2854 10 24.0001C10.0013 23.7147 10.0967 23.4767 10.286 23.2861C10.4753 23.0954 10.7133 23.0001 11 23.0001H34.146L26.676 15.5321C26.4813 15.3361 26.38 15.1061 26.372 14.8421C26.364 14.5781 26.4653 14.3361 26.676 14.1161C26.8973 13.8947 27.1353 13.7827 27.39 13.7801C27.6447 13.7774 27.8827 13.8854 28.104 14.1041L36.87 22.8701C37.0433 23.0434 37.1653 23.2214 37.236 23.4041C37.3067 23.5867 37.342 23.7854 37.342 24.0001C37.342 24.2147 37.3067 24.4134 37.236 24.5961C37.1653 24.7787 37.0433 24.9574 36.87 25.1321L28.104 33.8961C27.9093 34.0907 27.678 34.1927 27.41 34.2021C27.142 34.2114 26.8973 34.1054 26.676 33.8841C26.4627 33.6641 26.3547 33.4281 26.352 33.1761C26.3493 32.9241 26.4573 32.6881 26.676 32.4681L34.146 25.0001Z"
+													fill="#EAD587" />
+											</g>
+											<defs>
+												<clipPath id="clip0_9402_399">
+													<rect width="48" height="48" fill="white" />
+												</clipPath>
+											</defs>
+										</svg>
+									</button>
+									<button class="slick-next slick-arrow item-page-slider-arrows-next" aria-label="Next" type="button">
+										<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<g clip-path="url(#clip0_9402_399)">
+												<path
+													d="M34.146 25.0001H11C10.716 25.0001 10.478 24.9047 10.286 24.7141C10.094 24.5234 9.99868 24.2854 10 24.0001C10.0013 23.7147 10.0967 23.4767 10.286 23.2861C10.4753 23.0954 10.7133 23.0001 11 23.0001H34.146L26.676 15.5321C26.4813 15.3361 26.38 15.1061 26.372 14.8421C26.364 14.5781 26.4653 14.3361 26.676 14.1161C26.8973 13.8947 27.1353 13.7827 27.39 13.7801C27.6447 13.7774 27.8827 13.8854 28.104 14.1041L36.87 22.8701C37.0433 23.0434 37.1653 23.2214 37.236 23.4041C37.3067 23.5867 37.342 23.7854 37.342 24.0001C37.342 24.2147 37.3067 24.4134 37.236 24.5961C37.1653 24.7787 37.0433 24.9574 36.87 25.1321L28.104 33.8961C27.9093 34.0907 27.678 34.1927 27.41 34.2021C27.142 34.2114 26.8973 34.1054 26.676 33.8841C26.4627 33.6641 26.3547 33.4281 26.352 33.1761C26.3493 32.9241 26.4573 32.6881 26.676 32.4681L34.146 25.0001Z"
+													fill="#EAD587" />
+											</g>
+											<defs>
+												<clipPath id="clip0_9402_399">
+													<rect width="48" height="48" fill="white" />
+												</clipPath>
+											</defs>
+										</svg>
+									</button>
+								</div>
+							</div>
+							<div class="item-page-slider__content">
+								<div class="item-page-slider-slick slider-2">
+									<div class="item-page-slider-slick__slide">
+										<img src="img/item-page/image.jpg" alt="фото">
+									</div>
+									<div class="item-page-slider-slick__slide">
+										<img src="img/item-page/image.jpg" alt="фото">
+									</div>
+									<div class="item-page-slider-slick__slide">
+										<img src="img/item-page/image.jpg" alt="фото">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="item-page-slider section">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div
+								class="item-page-slider__header mb-sm-5 mb-4 d-flex justify-content-between align-items-center flex-wrap">
+								<h2 class="section-title">фитнес зал</h2>
+								<div class="item-page-slider-arrows d-flex">
+									<button class="slick-prev slick-arrow item-page-slider-arrows-prev" aria-label="Previous"
+										type="button">
+										<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<g clip-path="url(#clip0_9402_399)">
+												<path
+													d="M34.146 25.0001H11C10.716 25.0001 10.478 24.9047 10.286 24.7141C10.094 24.5234 9.99868 24.2854 10 24.0001C10.0013 23.7147 10.0967 23.4767 10.286 23.2861C10.4753 23.0954 10.7133 23.0001 11 23.0001H34.146L26.676 15.5321C26.4813 15.3361 26.38 15.1061 26.372 14.8421C26.364 14.5781 26.4653 14.3361 26.676 14.1161C26.8973 13.8947 27.1353 13.7827 27.39 13.7801C27.6447 13.7774 27.8827 13.8854 28.104 14.1041L36.87 22.8701C37.0433 23.0434 37.1653 23.2214 37.236 23.4041C37.3067 23.5867 37.342 23.7854 37.342 24.0001C37.342 24.2147 37.3067 24.4134 37.236 24.5961C37.1653 24.7787 37.0433 24.9574 36.87 25.1321L28.104 33.8961C27.9093 34.0907 27.678 34.1927 27.41 34.2021C27.142 34.2114 26.8973 34.1054 26.676 33.8841C26.4627 33.6641 26.3547 33.4281 26.352 33.1761C26.3493 32.9241 26.4573 32.6881 26.676 32.4681L34.146 25.0001Z"
+													fill="#EAD587" />
+											</g>
+											<defs>
+												<clipPath id="clip0_9402_399">
+													<rect width="48" height="48" fill="white" />
+												</clipPath>
+											</defs>
+										</svg>
+									</button>
+									<button class="slick-next slick-arrow item-page-slider-arrows-next" aria-label="Next" type="button">
+										<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<g clip-path="url(#clip0_9402_399)">
+												<path
+													d="M34.146 25.0001H11C10.716 25.0001 10.478 24.9047 10.286 24.7141C10.094 24.5234 9.99868 24.2854 10 24.0001C10.0013 23.7147 10.0967 23.4767 10.286 23.2861C10.4753 23.0954 10.7133 23.0001 11 23.0001H34.146L26.676 15.5321C26.4813 15.3361 26.38 15.1061 26.372 14.8421C26.364 14.5781 26.4653 14.3361 26.676 14.1161C26.8973 13.8947 27.1353 13.7827 27.39 13.7801C27.6447 13.7774 27.8827 13.8854 28.104 14.1041L36.87 22.8701C37.0433 23.0434 37.1653 23.2214 37.236 23.4041C37.3067 23.5867 37.342 23.7854 37.342 24.0001C37.342 24.2147 37.3067 24.4134 37.236 24.5961C37.1653 24.7787 37.0433 24.9574 36.87 25.1321L28.104 33.8961C27.9093 34.0907 27.678 34.1927 27.41 34.2021C27.142 34.2114 26.8973 34.1054 26.676 33.8841C26.4627 33.6641 26.3547 33.4281 26.352 33.1761C26.3493 32.9241 26.4573 32.6881 26.676 32.4681L34.146 25.0001Z"
+													fill="#EAD587" />
+											</g>
+											<defs>
+												<clipPath id="clip0_9402_399">
+													<rect width="48" height="48" fill="white" />
+												</clipPath>
+											</defs>
+										</svg>
+									</button>
+								</div>
+							</div>
+							<div class="item-page-slider__content">
+								<div class="item-page-slider-slick slider-2">
+									<div class="item-page-slider-slick__slide">
+										<img src="img/item-page/image.jpg" alt="фото">
+									</div>
+									<div class="item-page-slider-slick__slide">
+										<img src="img/item-page/image.jpg" alt="фото">
+									</div>
+									<div class="item-page-slider-slick__slide">
+										<img src="img/item-page/image.jpg" alt="фото">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="item-page-slider item-page-slider-dark section">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div
+								class="item-page-slider__header mb-sm-5 mb-4 d-flex justify-content-between align-items-center flex-wrap">
+								<h2 class="section-title">коворкинг</h2>
+								<div class="item-page-slider-arrows d-flex">
+									<button class="slick-prev slick-arrow item-page-slider-arrows-prev" aria-label="Previous"
+										type="button">
+										<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<g clip-path="url(#clip0_9402_399)">
+												<path
+													d="M34.146 25.0001H11C10.716 25.0001 10.478 24.9047 10.286 24.7141C10.094 24.5234 9.99868 24.2854 10 24.0001C10.0013 23.7147 10.0967 23.4767 10.286 23.2861C10.4753 23.0954 10.7133 23.0001 11 23.0001H34.146L26.676 15.5321C26.4813 15.3361 26.38 15.1061 26.372 14.8421C26.364 14.5781 26.4653 14.3361 26.676 14.1161C26.8973 13.8947 27.1353 13.7827 27.39 13.7801C27.6447 13.7774 27.8827 13.8854 28.104 14.1041L36.87 22.8701C37.0433 23.0434 37.1653 23.2214 37.236 23.4041C37.3067 23.5867 37.342 23.7854 37.342 24.0001C37.342 24.2147 37.3067 24.4134 37.236 24.5961C37.1653 24.7787 37.0433 24.9574 36.87 25.1321L28.104 33.8961C27.9093 34.0907 27.678 34.1927 27.41 34.2021C27.142 34.2114 26.8973 34.1054 26.676 33.8841C26.4627 33.6641 26.3547 33.4281 26.352 33.1761C26.3493 32.9241 26.4573 32.6881 26.676 32.4681L34.146 25.0001Z"
+													fill="#EAD587" />
+											</g>
+											<defs>
+												<clipPath id="clip0_9402_399">
+													<rect width="48" height="48" fill="white" />
+												</clipPath>
+											</defs>
+										</svg>
+									</button>
+									<button class="slick-next slick-arrow item-page-slider-arrows-next" aria-label="Next" type="button">
+										<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<g clip-path="url(#clip0_9402_399)">
+												<path
+													d="M34.146 25.0001H11C10.716 25.0001 10.478 24.9047 10.286 24.7141C10.094 24.5234 9.99868 24.2854 10 24.0001C10.0013 23.7147 10.0967 23.4767 10.286 23.2861C10.4753 23.0954 10.7133 23.0001 11 23.0001H34.146L26.676 15.5321C26.4813 15.3361 26.38 15.1061 26.372 14.8421C26.364 14.5781 26.4653 14.3361 26.676 14.1161C26.8973 13.8947 27.1353 13.7827 27.39 13.7801C27.6447 13.7774 27.8827 13.8854 28.104 14.1041L36.87 22.8701C37.0433 23.0434 37.1653 23.2214 37.236 23.4041C37.3067 23.5867 37.342 23.7854 37.342 24.0001C37.342 24.2147 37.3067 24.4134 37.236 24.5961C37.1653 24.7787 37.0433 24.9574 36.87 25.1321L28.104 33.8961C27.9093 34.0907 27.678 34.1927 27.41 34.2021C27.142 34.2114 26.8973 34.1054 26.676 33.8841C26.4627 33.6641 26.3547 33.4281 26.352 33.1761C26.3493 32.9241 26.4573 32.6881 26.676 32.4681L34.146 25.0001Z"
+													fill="#EAD587" />
+											</g>
+											<defs>
+												<clipPath id="clip0_9402_399">
+													<rect width="48" height="48" fill="white" />
+												</clipPath>
+											</defs>
+										</svg>
+									</button>
+								</div>
+							</div>
+							<div class="item-page-slider__content">
+								<div class="item-page-slider-slick slider-2">
+									<div class="item-page-slider-slick__slide">
+										<img src="img/item-page/image.jpg" alt="фото">
+									</div>
+									<div class="item-page-slider-slick__slide">
+										<img src="img/item-page/image.jpg" alt="фото">
+									</div>
+									<div class="item-page-slider-slick__slide">
+										<img src="img/item-page/image.jpg" alt="фото">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</main>
+
+		<footer class="footer section">
+			<div class="container">
+				<div class="row g-5 align-items-stretch">
+					<div class="col-lg-5 col-12">
+						<div class="footer__contacts p-lg-5 p-4">
+							<div class="footer__top mb-5">
+								<h2 class="section-title mb-3">Офис продаж</h2>
+								<p class="mb-3">г. Пенза, ул. Лозицкой, 1А, первый этаж, центральный вход <span>(со стороны пр.
+										Строителей)</span></p>
+								<a href="tel:+78412515515">8 (8412) 515-515</a>
+							</div>
+							<div class="footer__center mb-5">
+								<h4 class="item-name mb-3">Режим работы:</h4>
+								<div class="footer-schedule mb-3">
+									<div class="footer-schedule__wrap">
+										<div class="footer-schedule__col py-2 px-3">
+											<p class="">ПН - ПТ</p>
+										</div>
+										<div class="footer-schedule__col py-2 px-3">
+											<p class="">9:00-18:00</p>
+										</div>
+										<div class="footer-schedule__col py-2 px-3">
+											<p>СБ</p>
+										</div>
+										<div class="footer-schedule__col py-2 px-3">
+											<p>10:00-13:00</p>
+										</div>
+									</div>
+								</div>
+								<p class="footer__text">Встречи по предварительной записи</p>
+							</div>
+							<div class="footer__bottom">
+								<div class="footer__link d-flex align-items-center">
+									<p class="me-3">Email:</p>
+									<a href="mailto:info@grandpark.house">info@grandpark.house</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-7 col-12">
+						<div class="footer__address">
+							<div class="footer__map">
+								<iframe
+									src="https://yandex.ru/map-widget/v1/?um=constructor%3A3a83b190bc0332fb5cb4b55fa0c60989e8c5c819f3e1b1166995a06bd5cdb034&amp;source=constructor"></iframe>
+							</div>
+							<div class="footer__socials d-flex pt-4 ps-sm-4 p-0">
+								<p>Для быстрой связи
+									напишите нам в чат:</p>
+								<div class="footer__links d-flex ms-3">
+									<a href="#" target="_blank">
+										<div class="footer__box box">
+											<img src="img/footer/vk.svg" alt="vk">
+										</div>
+									</a>
+									<a href="#" target="_blank">
+										<div class="footer__box box">
+											<img src="img/footer/whatsapp.svg" alt="whatsapp">
+										</div>
+									</a>
+									<a href="#" target="_blank">
+										<div class="footer__box box">
+											<img src="img/footer/viber.svg" alt="viber">
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+
+	<script src="js/jquery-3.7.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+		crossorigin="anonymous"></script>
+	<script src="js/gsap.min.js"></script>
+	<script src="js/ScrollTrigger.min.js"></script>
+	<script src="js/locomotive-scroll.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.14.0/jquery-ui.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+
+
+	<script src="js/common.js"></script>
+	<script src="js/script.js"></script>
+</body>
+
+</html>

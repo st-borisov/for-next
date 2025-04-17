@@ -1,0 +1,1061 @@
+.modals .modal-dialog {
+	max-width: 91.25rem;
+}
+.modals .modal-dialog .modal-body {
+	overflow-x: hidden;
+}
+.modals .modal-content {
+	border: 0.0625rem solid #d2d9db;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	padding: 4rem;
+	background: #eef1f2;
+}
+.modals .modal-content .btn-close {
+	margin: 0;
+	padding: 0.625rem;
+	position: absolute;
+	top: 4rem;
+	right: 4rem;
+	z-index: 1;
+	opacity: 1;
+	width: 3.25rem;
+	height: 3.25rem;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 0.0625rem solid #333439;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	fill: #333439;
+	background: transparent;
+	z-index: 2;
+}
+.modals .modal-content .btn-close:hover,
+.modals .modal-content .btn-close:focus,
+.modals .modal-content .btn-close:active {
+	fill: #333439;
+	background: #ead587;
+	border-color: #ead587;
+}
+.modals .modal-header {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	border: none;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+}
+.modals .modal-header__icon {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	margin: 0 1.75rem 0 0;
+	width: 6.25rem;
+	height: 6.25rem;
+	min-width: 6.25rem;
+	border: 0.0625rem solid rgba(234, 213, 135, 0.3);
+	padding: 1.25rem;
+}
+.modals .modal-header__subtitle {
+	font-size: 0.875rem;
+	font-weight: 300;
+	color: rgba(255, 255, 255, 0.5);
+	margin: 0.5rem 0 0;
+}
+.modals .modal-body {
+	padding: 0;
+	width: 100%;
+	border: none;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	margin: 1.75rem 0 0;
+}
+.modals .modal-title {
+	text-transform: uppercase;
+	padding: 0 3.25rem 0 0;
+}
+.modals .table-appartments {
+	font-size: 1.25rem;
+	width: 100%;
+}
+.modals .table-appartments td,
+.modals .table-appartments th {
+	vertical-align: middle;
+	padding: 0.4375rem 1.1563rem;
+	border: 0.0625rem solid #d2d9db;
+	font-weight: 300;
+}
+.modals .table-appartments td sup,
+.modals .table-appartments th sup {
+	font-size: 0.875rem;
+}
+.modals .table-appartments th {
+	text-align: center;
+	padding: 0.75rem 1rem;
+	color: #fff;
+	background: #333439;
+	font-weight: 600;
+}
+.modals .btn-add-favorite {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	width: 1.5rem;
+	height: 1.375rem;
+	min-width: 1.5rem;
+	fill: #333439;
+}
+.modals .btn-add-favorite:hover,
+.modals .btn-add-favorite:focus,
+.modals .btn-add-favorite:active {
+	fill: #ead587;
+}
+.modals .btn-clear-filter {
+	width: 100%;
+}
+.modals .btn-clear-filter svg {
+	width: 1.125rem;
+	height: 1.125rem;
+	min-width: 1.125rem;
+	margin-left: 0.25rem;
+	fill: #333439;
+}
+.modals .filter-column {
+	width: 100%;
+	max-width: 22.875rem;
+	margin-left: auto;
+}
+.modals .list-checkbox {
+	width: 100%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: start;
+	-webkit-align-items: flex-start;
+	-ms-flex-align: start;
+	align-items: flex-start;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+.modals .list-checkbox li {
+	margin: 0 0.625rem 0.625rem 0;
+	-webkit-box-flex: 1;
+	-webkit-flex: auto;
+	-ms-flex: auto;
+	flex: auto;
+}
+.modals .list-checkbox li:last-child {
+	margin: 0;
+}
+.modals .filter-column-item {
+	margin: 2.5rem 0 0;
+}
+.modals .filter-column-item h4 {
+	width: 100%;
+	margin: 0 0 0.625rem;
+	font-size: 1.25rem;
+}
+.modals .polzunok-container {
+	width: 100%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: start;
+	-webkit-align-items: flex-start;
+	-ms-flex-align: start;
+	align-items: flex-start;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+.modals .polzunok-input {
+	width: -webkit-calc(50% - 0.75rem);
+	width: calc(50% - 0.75rem);
+	margin: 0 0 0 auto;
+}
+.modals .polzunok-input:first-child {
+	margin: 0;
+}
+.modals .polzunok {
+	width: 100%;
+	margin: 0.5625rem 0 0;
+	height: 0.25rem;
+	border: none;
+	-webkit-border-radius: 0.4375rem;
+	border-radius: 0.4375rem;
+}
+.modals .polzunok.ui-widget-content {
+	border: none;
+}
+.modals .polzunok .ui-widget-header {
+	background: #333439;
+	border: none;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+}
+.modals .polzunok .ui-slider-handle {
+	border: none;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	cursor: pointer;
+	width: 0.875rem;
+	height: 0.875rem;
+	background: #333439;
+}
+.modals #modal2 .modal-content {
+	padding: 5rem;
+}
+.modals #modal2 .btn-close {
+	top: 1rem;
+	right: 1rem;
+}
+.modals .btn-catalog-apartment {
+	height: auto;
+	margin: 0 0 2.5rem;
+	padding: 0.5rem 0.625rem 0.5rem 0;
+	-webkit-box-pack: start;
+	-webkit-justify-content: flex-start;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+	text-transform: none;
+	font-size: 1.25rem;
+	text-align: left;
+	color: #333439;
+	line-height: 1.5rem;
+	border-color: #d2d9db;
+	width: 100%;
+}
+.modals .btn-catalog-apartment span {
+	text-decoration: underline;
+	max-width: 18.75rem;
+}
+.modals .btn-catalog-apartment svg {
+	padding: 0.625rem;
+	fill: #333439;
+	width: 3.25rem;
+	height: 3.25rem;
+	min-width: 3.25rem;
+	margin: 0 0.5rem 0 0;
+}
+.modals .apartment-photo {
+	width: 100%;
+	height: 33.75rem;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	position: relative;
+	z-index: 1;
+	background: #fff;
+	border: 0.0625rem solid #d2d9db;
+}
+.modals .apartment-photo img {
+	width: 100%;
+	height: 100%;
+	-o-object-fit: cover;
+	object-fit: cover;
+}
+.modals .apartment-information {
+	max-width: 29.875rem;
+	width: 100%;
+}
+.modals .apartment-information .modal-title {
+	font-size: 2rem;
+	padding: 0;
+}
+.modals .apartment-information .subtitle {
+	font-size: 1.25rem;
+	margin: 0.25rem 0 1.75rem;
+}
+.modals .apartment-information .subtitle sup {
+	font-size: 0.875rem;
+}
+.modals .list-tags-apartment {
+	width: 100%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: start;
+	-webkit-align-items: flex-start;
+	-ms-flex-align: start;
+	align-items: flex-start;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin: 0 0 1.25rem;
+}
+.modals .list-tags-apartment li {
+	margin: 0 0.5rem 0.5rem 0;
+}
+.modals .list-tags-apartment li:last-child {
+	margin: 0 0 0.5rem;
+}
+.modals .list-charasteristics-apartment {
+	width: 100%;
+	font-size: 1.25rem;
+}
+.modals .list-charasteristics-apartment li {
+	width: 100%;
+	position: relative;
+	z-index: 1;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: start;
+	-webkit-align-items: start;
+	-ms-flex-align: start;
+	align-items: start;
+	margin: 0 0 0.75rem;
+}
+.modals .list-charasteristics-apartment li::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 0.0625rem;
+	background: rgba(0, 0, 0, 0.4);
+	top: 0.75rem;
+}
+.modals .list-charasteristics-apartment li:last-child {
+	margin: 0;
+}
+.modals .list-charasteristics-apartment li sup {
+	font-size: 0.875rem;
+}
+.modals .list-charasteristics-apartment li span {
+	margin-left: auto;
+	position: relative;
+	z-index: 1;
+	padding-left: 0.5rem;
+	background: #eef1f2;
+}
+.modals .list-charasteristics-apartment li p {
+	padding-right: 0.5rem;
+	position: relative;
+	z-index: 1;
+	background: #eef1f2;
+}
+.modals .apartment-price {
+	width: 100%;
+	font-size: 1.25rem;
+}
+.modals .apartment-price .price {
+	margin: 0.5rem 0;
+	font-size: 2.5rem;
+	line-height: 1;
+}
+.modals .apartment-price span,
+.modals .apartment-price .price-credit {
+	color: rgba(0, 0, 0, 0.4);
+}
+.modals .apartment-price span {
+	font-size: 0.875rem;
+}
+.modals .modal-v2 .modal-dialog {
+	max-width: 56.75rem;
+}
+.modals .modal-v2 .modal-content {
+	background: #333439;
+	color: #fff;
+	padding: 4rem;
+	z-index: 1;
+}
+.modals .modal-v2 .modal-header {
+	-webkit-box-pack: start;
+	-webkit-justify-content: start;
+	-ms-flex-pack: start;
+	justify-content: start;
+	-webkit-box-align: start;
+	-webkit-align-items: flex-start;
+	-ms-flex-align: start;
+	align-items: flex-start;
+}
+.modals .modal-v2 .btn-close {
+	border-color: #fff;
+	width: 2rem;
+	height: 2rem;
+	min-width: 2rem;
+	padding: 0.1875rem;
+	fill: #fff;
+}
+.modals .modal-v2 .modal-title {
+	text-transform: none;
+	font-size: 2rem;
+	font-weight: normal;
+	line-height: 1;
+	font-family: "Geologica", sans-serif;
+	padding: 0 2rem 0 0;
+}
+.modals .modal-text-overlay {
+	position: absolute;
+	z-index: -1;
+	bottom: -2.875rem;
+	left: 50%;
+	-webkit-transform: translate(-50%, 0);
+	-ms-transform: translate(-50%, 0);
+	transform: translate(-50%, 0);
+	font-size: 6.875rem;
+	color: transparent;
+	text-transform: uppercase;
+	-webkit-text-stroke-width: 0.0625rem;
+	-webkit-text-stroke-color: rgba(234, 213, 135, 0.3);
+}
+.modals .form-reserve input {
+	height: 3.375rem;
+}
+.modals .form-reserve input::-webkit-input-placeholder {
+	color: rgba(51, 52, 57, 0.4);
+}
+.modals .form-reserve input:-ms-input-placeholder {
+	color: rgba(51, 52, 57, 0.4);
+}
+.modals .form-reserve input::-ms-input-placeholder {
+	color: rgba(51, 52, 57, 0.4);
+}
+.modals .form-reserve input::placeholder {
+	color: rgba(51, 52, 57, 0.4);
+}
+.modals .form-reserve [type="submit"] {
+	width: 100%;
+}
+.modals .form-reserve .label-checkbox {
+	padding: 0.625rem 0;
+	border: none;
+	-webkit-box-align: start;
+	-webkit-align-items: flex-start;
+	-ms-flex-align: start;
+	align-items: flex-start;
+	color: rgba(255, 255, 255, 0.5);
+	font-size: 0.875rem;
+	/* lw: 18.75rem; */
+}
+.modals .form-reserve .label-checkbox input {
+	display: none;
+}
+.modals .form-reserve .label-checkbox input:checked ~ .label-checkbox__custom {
+	background: #fff;
+}
+.modals .form-reserve .label-checkbox input:checked ~ .label-checkbox__text {
+	color: #fff;
+}
+.modals .form-reserve .label-checkbox__custom {
+	width: 1.125rem;
+	height: 1.125rem;
+	min-width: 1.125rem;
+	background: transparent;
+	border: 0.0625rem solid #fff;
+}
+
+@media only screen and (max-width: 1500px) {
+	.modals .modal-content {
+		padding: 24px;
+	}
+	.modals .modal-content .btn-close {
+		top: 44px;
+		right: 24px;
+	}
+	.modals .table-appartments {
+		font-size: 16px;
+	}
+	.modals .table-appartments th sup,
+	.modals .table-appartments td sup {
+		font-size: 12px;
+	}
+	.modals .modal-v2 .modal-content {
+		padding: 30px 24px 60px;
+	}
+	.modals .modal-v2 .modal-dialog {
+		max-width: 700px;
+	}
+	.modals .modal-text-overlay {
+		font-size: 80px;
+		bottom: -30px;
+	}
+}
+@media only screen and (max-width: 1200px) {
+	.modals .filter-column {
+		max-width: none;
+		margin: 20px 0 0;
+	}
+	.modals #modal2 .modal-content {
+		padding: 50px;
+	}
+}
+@media only screen and (max-width: 992px) {
+	.modals h2 {
+		font-size: 30px;
+	}
+	.modals .modal-content .btn-close {
+		width: 32px;
+		height: 32px;
+		padding: 5px;
+		top: 35px;
+	}
+	.modals .modal-body {
+		margin: 20px 0 0;
+	}
+	.modals .apartment-information {
+		margin: 40px 0 0;
+		max-width: none;
+	}
+	.modals .btn-catalog-apartment {
+		margin: 0 0 30px;
+	}
+	.modals .apartment-photo {
+		height: 400px;
+	}
+}
+@media only screen and (max-width: 576px) {
+	.modals h2 {
+		font-size: 24px;
+	}
+	.modals .table-appartments {
+		font-size: 14px;
+	}
+	.modals .table-appartments th {
+		padding: 8px 12px;
+	}
+	.modals .table-appartments tr {
+		padding: 6px 10px;
+	}
+	.modals .table-appartments th sup,
+	.modals .table-appartments td sup {
+		font-size: 10px;
+	}
+	.modals .filter-column-item {
+		margin: 30px 0 0;
+	}
+	.modals .mb-40 {
+		margin-bottom: 20px;
+	}
+	.modals .nav-tabs {
+		font-size: 16px;
+		line-height: normal;
+	}
+	.modals .nav-tabs .nav-link {
+		padding: 6px 10px;
+	}
+	.modals .btn-catalog-apartment {
+		font-size: 16px;
+	}
+	.modals .btn-catalog-apartment svg {
+		width: 40px;
+		height: 40px;
+		min-width: 40px;
+		padding: 5px;
+	}
+	.modals .apartment-photo {
+		height: auto;
+	}
+	.modals .apartment-photo::before {
+		height: 30px;
+		width: 30px;
+	}
+	.modals .apartment-information .modal-title {
+		font-size: 24px;
+	}
+	.modals .apartment-information .subtitle {
+		font-size: 16px;
+		margin: 4px 0 20px;
+	}
+	.modals .list-charasteristics-apartment {
+		font-size: 16px;
+	}
+	.modals .list-charasteristics-apartment sup {
+		font-size: 12px;
+	}
+	.modals .apartment-price {
+		font-size: 16px;
+	}
+	.modals .apartment-price .price {
+		font-size: 30px;
+	}
+	.modals #modal2 .modal-content {
+		padding: 20px;
+	}
+	.modals .btn-lg {
+		font-size: 16px;
+		padding: 10px 16px;
+	}
+	.modals .modal-header__icon {
+		margin: 0 16px 0 0;
+		width: 60px;
+		height: 60px;
+		min-width: 60px;
+		padding: 15px;
+	}
+	.modals .modal-v2 .modal-title {
+		font-size: 22px;
+	}
+	.modals .modal-text-overlay {
+		font-size: 60px;
+		bottom: -20px;
+	}
+}
+@media only screen and (max-width: 370px) {
+	.modals .modal-header__icon {
+		width: 50px;
+		height: 50px;
+		min-width: 50px;
+		padding: 10px;
+	}
+}
+
+.modals {
+	font-size: 1rem;
+	min-width: 20rem;
+	position: relative;
+	line-height: normal;
+	font-family: "Geologica", sans-serif;
+	font-weight: normal;
+	background: #fff;
+	color: #333439;
+}
+.modals article,
+.modals aside,
+.modals details,
+.modals figcaption,
+.modals figure,
+.modals footer,
+.modals header,
+.modals hgroup,
+.modals menu,
+.modals nav,
+.modals section {
+	display: block;
+}
+.modals blockquote,
+.modals q {
+	quotes: none;
+}
+.modals blockquote:before,
+.modals blockquote:after,
+.modals q:before,
+.modals q:after {
+	content: "";
+	content: none;
+}
+.modals table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.modals img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+.modals .text-center {
+	text-align: center;
+}
+.modals a {
+	display: block;
+	text-decoration: none;
+	-webkit-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
+	transition: 0.3s ease;
+	outline: none;
+	width: -webkit-fit-content;
+	width: -moz-fit-content;
+	width: fit-content;
+}
+.modals a:hover,
+.modals a:focus {
+	text-decoration: none;
+}
+.modals input,
+.modals textarea,
+.modals select {
+	outline: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	padding: 0 1.5rem;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: "Geologica", sans-serif;
+	border: 0.0625rem solid #d2d9db;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	width: 100%;
+	height: 2.625rem;
+	background: #fff;
+	color: #000;
+	font-size: 1rem;
+	font-weight: 300;
+	cursor: pointer;
+}
+.modals input::-webkit-input-placeholder,
+.modals textarea::-webkit-input-placeholder,
+.modals select::-webkit-input-placeholder {
+	color: #595959;
+}
+.modals input:-ms-input-placeholder,
+.modals textarea:-ms-input-placeholder,
+.modals select:-ms-input-placeholder {
+	color: #595959;
+}
+.modals input::-ms-input-placeholder,
+.modals textarea::-ms-input-placeholder,
+.modals select::-ms-input-placeholder {
+	color: #595959;
+}
+.modals input::placeholder,
+.modals textarea::placeholder,
+.modals select::placeholder {
+	color: #595959;
+}
+.modals input:hover,
+.modals input:focus,
+.modals textarea:hover,
+.modals textarea:focus,
+.modals select:hover,
+.modals select:focus {
+	outline: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+.modals input[type="radio"],
+.modals input[type="checkbox"] {
+	width: auto;
+	height: auto;
+	-webkit-appearance: auto;
+	-moz-appearance: auto;
+	appearance: auto;
+	margin: 0 0.3125rem 0 0;
+	display: inline;
+}
+.modals label {
+	display: block;
+	width: 100%;
+	margin: 0 0 0.8125rem;
+}
+.modals label:last-child {
+	margin: 0;
+}
+.modals textarea {
+	resize: none;
+	padding: 0.75rem 1.0625rem;
+	height: 6.4375rem;
+}
+.modals button,
+.modals .btn {
+	outline: none;
+	-webkit-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
+	transition: 0.3s ease;
+	cursor: pointer;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	font-family: "Geologica", sans-serif;
+	padding: 0;
+	margin: 0;
+	border: none;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+}
+.modals button:hover,
+.modals button:focus,
+.modals .btn:hover,
+.modals .btn:focus {
+	outline: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+.modals .btn {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	text-align: center;
+	padding: 0.75rem 1.5rem;
+	text-transform: uppercase;
+	color: #333439;
+	font-size: 0.875rem;
+	line-height: 1.2;
+	font-weight: 300;
+	height: 2.5rem;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	-webkit-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
+	transition: 0.3s ease;
+}
+.modals .btn-lg {
+	height: 3.25rem;
+	padding: 0.9375rem 2rem;
+	font-size: 1.125rem;
+}
+.modals .btn-md {
+	height: 3.125rem;
+}
+.modals .btn-sm {
+	font-size: 0.875rem;
+	padding: 0.3125rem 0.75rem;
+	height: 1.625rem;
+	text-transform: none;
+}
+.modals .btn-accent {
+	background: #ead587;
+}
+.modals .btn-accent:hover,
+.modals .btn-accent:focus,
+.modals .btn-accent:active {
+	background: #333439;
+	color: #fff;
+}
+.modals .btn-white {
+	background: #fff;
+	border: 0.0625rem solid #333439;
+	color: #333439;
+}
+.modals .btn-white:hover,
+.modals .btn-white:focus,
+.modals .btn-white:active {
+	background: #333439;
+	color: #fff;
+}
+.modals .btn-white:hover svg,
+.modals .btn-white:focus svg,
+.modals .btn-white:active svg {
+	fill: #fff;
+}
+.modals .btn-dark {
+	background: #333439;
+	color: #fff;
+}
+.modals .btn-dark:hover,
+.modals .btn-dark:focus,
+.modals .btn-dark:active {
+	background: #ead587;
+	color: #333439;
+}
+.modals .svg-icon {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+.modals strong,
+.modals b {
+	font-weight: bold;
+	display: inline-block;
+}
+.modals ul,
+.modals ol {
+	padding: 0 0 0 1.25rem;
+}
+.modals .my-ul {
+	list-style: none;
+	padding: 0;
+}
+.modals .list-dots {
+	list-style-type: disc;
+}
+.modals h2 {
+	width: 100%;
+	font-weight: 600;
+	font-size: 3.125rem;
+	line-height: normal;
+	margin: 0;
+	font-family: "Montserrat", sans-serif;
+}
+.modals .container {
+	padding: 0 0.75rem;
+}
+.modals .row {
+	margin: 0 -0.75rem;
+}
+.modals .row > * {
+	padding: 0 0.75rem;
+}
+.modals .mb-16 {
+	margin-bottom: 1rem;
+}
+.modals .mb-20 {
+	margin-bottom: 1.25rem;
+}
+.modals .mb-40 {
+	margin-bottom: 2.5rem;
+}
+.modals .color-gray {
+	color: rgba(0, 0, 0, 0.4);
+}
+.modals .color-yellow {
+	color: #ead587;
+}
+.modals .nav-tabs {
+	width: 100%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: start;
+	-webkit-align-items: flex-start;
+	-ms-flex-align: start;
+	align-items: flex-start;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin: 1rem 0 0;
+	font-size: 1.25rem;
+	line-height: 1.5rem;
+	border: none;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+}
+.modals .nav-tabs .nav-item {
+	margin: 0 1rem 0.25rem 0;
+}
+.modals .nav-tabs .nav-item:last-child {
+	margin: 0;
+}
+.modals .nav-tabs .nav-link {
+	padding: 0.5rem 1.5625rem;
+	color: #333439;
+	background: #fff;
+	border: 0.0625rem solid #d2d9db;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	margin: 0;
+}
+.modals .nav-tabs .nav-link:hover,
+.modals .nav-tabs .nav-link:focus,
+.modals .nav-tabs .nav-link:active,
+.modals .nav-tabs .nav-link.active {
+	background: #333439;
+	color: #fff;
+}
+.modals .slick-slider {
+	width: 100%;
+}
+.modals .slick-slide {
+	outline: none;
+}
+.modals .label-checkbox {
+	position: relative;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	color: rgba(0, 0, 0, 0.4);
+	font-size: 1rem;
+	font-weight: normal;
+	margin: 0 0 0.625rem;
+	padding: 0.75rem;
+	z-index: 1;
+	cursor: pointer;
+}
+.modals .label-checkbox:last-child {
+	margin: 0;
+}
+.modals .label-checkbox input {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	z-index: -1;
+	background: #fff;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	border: 0.0625rem solid #d2d9db;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+.modals .label-checkbox input:checked {
+	border-color: #333439;
+}
+.modals .label-checkbox input:checked + .label-checkbox__custom::before {
+	background: url("../img/checked.svg") no-repeat center;
+	-webkit-background-size: 100% 100%;
+	background-size: 100%;
+	border: none;
+}
+.modals .label-checkbox input:checked ~ .label-checkbox__text {
+	color: #333439;
+}
+.modals .label-checkbox__custom {
+	margin: 0 0.5rem 0 0;
+	padding: 0.25rem;
+	position: relative;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	border: none;
+	background-color: #fff;
+	width: 1.5rem;
+	height: 1.5rem;
+	min-width: 1.5rem;
+	cursor: pointer;
+	z-index: 1;
+}
+.modals .label-checkbox__custom::before {
+	content: "";
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	border: 0.0625rem solid #000;
+	width: 1rem;
+	height: 1rem;
+}

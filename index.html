@@ -1,0 +1,2240 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.14.0/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="css/modals.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+	<!-- Modal -->
+	<div class="modals">
+		<div class="modal fade" id="modal1" tabindex="-1" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+				<div class="modal-content">
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+						<svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#close-icon"></use>
+						</svg>
+					</button>
+
+					<div class="modal-header">
+						<h2 class="modal-title">выбор квартиры</h2>
+					</div>
+					<div class="modal-body">
+						<form method="post" class="form-appartments">
+							<div class="row">
+								<div class="col-12 col-xl-8">
+									<div class="table-responsive">
+										<table class="table-appartments">
+											<thead>
+												<tr>
+													<th>Башня</th>
+													<th>Этаж</th>
+													<th>Квартира</th>
+													<th>Комнатность</th>
+													<th>Площадь</th>
+													<th></th>
+													<th>Планировки</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Первая</td>
+													<td>12</td>
+													<td>211</td>
+													<td>1-комнатная</td>
+													<td>
+														45 м<sup>2</sup>
+													</td>
+													<td>
+														<a href="#" class="btn-add-favorite"><svg class="svg-icon">
+																<use xlink:href="img/sprite.svg#star"></use>
+															</svg></a>
+													</td>
+													<td>
+														<a href="#" class="btn btn-accent" data-bs-toggle="modal"
+															data-bs-target="#modal2">показать</a>
+													</td>
+												</tr>
+												<tr>
+													<td>Первая</td>
+													<td>3</td>
+													<td>314</td>
+													<td>2-комнатная</td>
+													<td>
+														80 м<sup>2</sup>
+													</td>
+													<td>
+														<a href="#" class="btn-add-favorite"><svg class="svg-icon">
+																<use xlink:href="img/sprite.svg#star"></use>
+															</svg></a>
+													</td>
+													<td>
+														<a href="#" class="btn btn-accent" data-bs-toggle="modal"
+															data-bs-target="#modal2">показать</a>
+													</td>
+												</tr>
+												<tr>
+													<td>Вторая</td>
+													<td>5</td>
+													<td>64</td>
+													<td>3-комнатная</td>
+													<td>
+														95 м<sup>2</sup>
+													</td>
+													<td>
+														<a href="#" class="btn-add-favorite"><svg class="svg-icon">
+																<use xlink:href="img/sprite.svg#star"></use>
+															</svg></a>
+													</td>
+													<td>
+														<a href="#" class="btn btn-accent" data-bs-toggle="modal"
+															data-bs-target="#modal2">показать</a>
+													</td>
+												</tr>
+												<tr>
+													<td>Вторая</td>
+													<td>8</td>
+													<td>12</td>
+													<td>Студия</td>
+													<td>
+														28 м<sup>2</sup>
+													</td>
+													<td>
+														<a href="#" class="btn-add-favorite"><svg class="svg-icon">
+																<use xlink:href="img/sprite.svg#star"></use>
+															</svg></a>
+													</td>
+													<td>
+														<a href="#" class="btn btn-accent" data-bs-toggle="modal"
+															data-bs-target="#modal2">показать</a>
+													</td>
+												</tr>
+												<tr>
+													<td>Третья</td>
+													<td>10</td>
+													<td>34</td>
+													<td>1-комнатная</td>
+													<td>
+														32 м<sup>2</sup>
+													</td>
+													<td>
+														<a href="#" class="btn-add-favorite"><svg class="svg-icon">
+																<use xlink:href="img/sprite.svg#star"></use>
+															</svg></a>
+													</td>
+													<td>
+														<a href="#" class="btn btn-accent" data-bs-toggle="modal"
+															data-bs-target="#modal2">показать</a>
+													</td>
+												</tr>
+												<tr>
+													<td>Третья</td>
+													<td>4</td>
+													<td>78</td>
+													<td>2-комнатная</td>
+													<td>
+														47 м<sup>2</sup>
+													</td>
+													<td>
+														<a href="#" class="btn-add-favorite"><svg class="svg-icon">
+																<use xlink:href="img/sprite.svg#star"></use>
+															</svg></a>
+													</td>
+													<td>
+														<a href="#" class="btn btn-accent" data-bs-toggle="modal"
+															data-bs-target="#modal2">показать</a>
+													</td>
+												</tr>
+												<tr>
+													<td>Первая</td>
+													<td>12</td>
+													<td>211</td>
+													<td>1-комнатная</td>
+													<td>
+														45 м<sup>2</sup>
+													</td>
+													<td>
+														<a href="#" class="btn-add-favorite"><svg class="svg-icon">
+																<use xlink:href="img/sprite.svg#star"></use>
+															</svg></a>
+													</td>
+													<td>
+														<a href="#" class="btn btn-accent" data-bs-toggle="modal"
+															data-bs-target="#modal2">показать</a>
+													</td>
+												</tr>
+												<tr>
+													<td>Первая</td>
+													<td>3</td>
+													<td>314</td>
+													<td>2-комнатная</td>
+													<td>
+														80 м<sup>2</sup>
+													</td>
+													<td>
+														<a href="#" class="btn-add-favorite"><svg class="svg-icon">
+																<use xlink:href="img/sprite.svg#star"></use>
+															</svg></a>
+													</td>
+													<td>
+														<a href="#" class="btn btn-accent" data-bs-toggle="modal"
+															data-bs-target="#modal2">показать</a>
+													</td>
+												</tr>
+												<tr>
+													<td>Вторая</td>
+													<td>5</td>
+													<td>64</td>
+													<td>3-комнатная</td>
+													<td>
+														95 м<sup>2</sup>
+													</td>
+													<td>
+														<a href="#" class="btn-add-favorite"><svg class="svg-icon">
+																<use xlink:href="img/sprite.svg#star"></use>
+															</svg></a>
+													</td>
+													<td>
+														<a href="#" class="btn btn-accent" data-bs-toggle="modal"
+															data-bs-target="#modal2">показать</a>
+													</td>
+												</tr>
+												<tr>
+													<td>Вторая</td>
+													<td>8</td>
+													<td>12</td>
+													<td>Студия</td>
+													<td>
+														28 м<sup>2</sup>
+													</td>
+													<td>
+														<a href="#" class="btn-add-favorite"><svg class="svg-icon">
+																<use xlink:href="img/sprite.svg#star"></use>
+															</svg></a>
+													</td>
+													<td>
+														<a href="#" class="btn btn-accent" data-bs-toggle="modal"
+															data-bs-target="#modal2">показать</a>
+													</td>
+												</tr>
+												<tr>
+													<td>Третья</td>
+													<td>10</td>
+													<td>34</td>
+													<td>1-комнатная</td>
+													<td>
+														32 м<sup>2</sup>
+													</td>
+													<td>
+														<a href="#" class="btn-add-favorite"><svg class="svg-icon">
+																<use xlink:href="img/sprite.svg#star"></use>
+															</svg></a>
+													</td>
+													<td>
+														<a href="#" class="btn btn-accent" data-bs-toggle="modal"
+															data-bs-target="#modal2">показать</a>
+													</td>
+												</tr>
+												<tr>
+													<td>Третья</td>
+													<td>4</td>
+													<td>78</td>
+													<td>2-комнатная</td>
+													<td>
+														47 м<sup>2</sup>
+													</td>
+													<td>
+														<a href="#" class="btn-add-favorite"><svg class="svg-icon">
+																<use xlink:href="img/sprite.svg#star"></use>
+															</svg></a>
+													</td>
+													<td>
+														<a href="#" class="btn btn-accent" data-bs-toggle="modal"
+															data-bs-target="#modal2">показать</a>
+													</td>
+												</tr>
+												<tr>
+													<td>Первая</td>
+													<td>12</td>
+													<td>211</td>
+													<td>1-комнатная</td>
+													<td>
+														45 м<sup>2</sup>
+													</td>
+													<td>
+														<a href="#" class="btn-add-favorite"><svg class="svg-icon">
+																<use xlink:href="img/sprite.svg#star"></use>
+															</svg></a>
+													</td>
+													<td>
+														<a href="#" class="btn btn-accent" data-bs-toggle="modal"
+															data-bs-target="#modal2">показать</a>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<div class="col-12 col-xl-4">
+									<div class="filter-column">
+										<a href="#" class="btn btn-md btn-white btn-clear-filter">
+											<span>Сброить все фильтры</span>
+											<svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#close-icon"></use>
+											</svg>
+										</a>
+
+										<div class="filter-column-item">
+											<div class="row">
+												<div class="col-12 col-md-5 mb-20">
+													<h4>Башня</h4>
+													<label class="label-checkbox">
+														<input type="checkbox" name="checkbox1">
+														<span class="label-checkbox__custom"></span>
+														<span class="label-checkbox__text">Первая</span>
+													</label>
+													<label class="label-checkbox">
+														<input type="checkbox" name="checkbox1" checked>
+														<span class="label-checkbox__custom"></span>
+														<span class="label-checkbox__text">Вторая</span>
+													</label>
+													<label class="label-checkbox">
+														<input type="checkbox" name="checkbox1">
+														<span class="label-checkbox__custom"></span>
+														<span class="label-checkbox__text">Третья</span>
+													</label>
+												</div>
+												<div class="col-12 col-md-7">
+													<h4>Комнатность</h4>
+													<label class="label-checkbox">
+														<input type="checkbox" name="checkbox2">
+														<span class="label-checkbox__custom"></span>
+														<span class="label-checkbox__text">Студия</span>
+													</label>
+													<label class="label-checkbox">
+														<input type="checkbox" name="checkbox2" checked>
+														<span class="label-checkbox__custom"></span>
+														<span class="label-checkbox__text">1-комнатная</span>
+													</label>
+													<label class="label-checkbox">
+														<input type="checkbox" name="checkbox1" checked>
+														<span class="label-checkbox__custom"></span>
+														<span class="label-checkbox__text">2-комнатная</span>
+													</label>
+													<label class="label-checkbox">
+														<input type="checkbox" name="checkbox2">
+														<span class="label-checkbox__custom"></span>
+														<span class="label-checkbox__text">3-комнатная</span>
+													</label>
+												</div>
+											</div>
+										</div>
+
+										<div class="filter-column-item">
+											<div class="row">
+												<div class="col-12">
+													<h4>Площадь</h4>
+													<div class="polzunok-container">
+														<input type="text" class="polzunok-input polzunok-input-1-left" />
+														<input type="text" class="polzunok-input polzunok-input-1-right " />
+														<div class="polzunok polzunok-1"></div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="filter-column-item">
+											<div class="row">
+												<div class="col-12">
+													<h4>Этаж</h4>
+													<div class="polzunok-container">
+														<input type="text" class="polzunok-input polzunok-input-2-left" />
+														<input type="text" class="polzunok-input polzunok-input-2-right " />
+														<div class="polzunok polzunok-2"></div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="filter-column-item">
+											<div class="row">
+												<div class="col-12">
+													<h4>Вид из окон</h4>
+													<ul class="list-checkbox my-ul">
+														<li><label class="label-checkbox">
+																<input type="checkbox" name="checkbox3">
+																<span class="label-checkbox__custom"></span>
+																<span class="label-checkbox__text">Лес</span>
+															</label></li>
+														<li><label class="label-checkbox">
+																<input type="checkbox" name="checkbox3" checked>
+																<span class="label-checkbox__custom"></span>
+																<span class="label-checkbox__text">Арбеково</span>
+															</label></li>
+														<li><label class="label-checkbox">
+																<input type="checkbox" name="checkbox3">
+																<span class="label-checkbox__custom"></span>
+																<span class="label-checkbox__text">Центр</span>
+															</label></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="modal2" tabindex="-1" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+				<div class="modal-content">
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+						<svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#close-icon"></use>
+						</svg>
+					</button>
+
+					<!-- <div class="modal-header">
+						 <h2 class="modal-title">выбор квартиры</h2>
+					 </div> -->
+					<div class="modal-body">
+						<div class="row">
+							<div class="col-12 col-lg-7 order-lg-1">
+								<div class="tab-content">
+									<div class="tab-pane fade show active" id="tab-content1" role="tabpanel" aria-labelledby="1-tab">
+										<div class="apartment-photo">
+											<img src="img/apartment-img.jpg" alt="">
+										</div>
+									</div>
+									<div class="tab-pane fade" id="tab-content2" role="tabpanel" aria-labelledby="2-tab">
+										<div class="apartment-photo">
+											<img src="img/apartment-img.jpg" alt="">
+										</div>
+									</div>
+									<div class="tab-pane fade" id="tab-content3" role="tabpanel" aria-labelledby="3-tab">
+										<div class="apartment-photo">
+											<img src="img/apartment-img.jpg" alt="">
+										</div>
+									</div>
+									<div class="tab-pane fade" id="tab-content4" role="tabpanel" aria-labelledby="4-tab">
+										<div class="apartment-photo">
+											<img src="img/apartment-img.jpg" alt="">
+										</div>
+									</div>
+								</div>
+
+								<ul class="nav nav-tabs" role="tablist">
+									<li class="nav-item" role="presentation">
+										<button class="nav-link active" id="1-tab" data-bs-toggle="tab" data-bs-target="#tab-content1"
+											type="button" role="tab" aria-controls="tab-content1" aria-selected="true">Планировка</button>
+									</li>
+									<li class="nav-item" role="presentation">
+										<button class="nav-link" id="2-tab" data-bs-toggle="tab" data-bs-target="#tab-content2"
+											type="button" role="tab" aria-controls="tab-content2" aria-selected="false">План этажа</button>
+									</li>
+									<li class="nav-item" role="presentation">
+										<button class="nav-link" id="3-tab" data-bs-toggle="tab" data-bs-target="#tab-content3"
+											type="button" role="tab" aria-controls="tab-content3" aria-selected="false">Генплан</button>
+									</li>
+									<li class="nav-item" role="presentation">
+										<button class="nav-link" id="4-tab" data-bs-toggle="tab" data-bs-target="#tab-content4"
+											type="button" role="tab" aria-controls="tab-content4" aria-selected="false">Вид из окна</button>
+									</li>
+								</ul>
+							</div>
+
+							<div class="col-12 col-lg-5">
+								<div class="apartment-information">
+									<a href="#" class="btn btn-white btn-catalog-apartment" data-bs-toggle="modal"
+										data-bs-target="#modal1">
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#arrow-prev"></use>
+										</svg>
+										<span>вернуться к каталогу планировок</span>
+									</a>
+
+									<h2 class="modal-title">1-комнатная квартира</h2>
+									<div class="subtitle">44,27 м<sup>2</sup> №362 в ЖК «GP NEXT»: Башня №1</div>
+
+									<ul class="list-tags-apartment my-ul">
+										<li><a href="#" class="btn btn-sm btn-dark">цена снижена</a></li>
+										<li><a href="#" class="btn btn-sm btn-dark">выгода до 11%</a></li>
+										<li><a href="#" class="btn btn-sm btn-dark">с гардеробной</a></li>
+									</ul>
+
+									<ul class="list-charasteristics-apartment mb-40 my-ul">
+										<li>
+											<p>Площадь</p>
+											<span>44,27 м<sup>2</sup></span>
+										</li>
+										<li>
+											<p>Этаж</p>
+											<span>3<span class="color-gray">из 12</span></span>
+										</li>
+										<li>
+											<p>Срок сдачи</p>
+											<span>I квартал 2023</span>
+										</li>
+									</ul>
+
+									<div class="mb-40 apartment-price">
+										<span>Стоимость от</span>
+										<div class="price">4 000 111 ₽</div>
+										<div class="price-credit">Ипотека от 7 891 ₽/мес</div>
+									</div>
+
+									<a href="#" class="btn btn-lg btn-accent btn-reserved" data-bs-toggle="modal"
+										data-bs-target="#modal3">забронировать эту квартиру</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade modal-v2" id="modal3" tabindex="-1" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+				<div class="modal-content">
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+						<svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#close-icon"></use>
+						</svg>
+					</button>
+
+					<div class="modal-header">
+						<div class="modal-header__icon"><img src="img/key.svg" alt=""></div>
+						<div class="modal-header__text">
+							<h2 class="modal-title">Форма <span class="color-yellow">бронирования</span> <br>
+								квартиры</h2>
+							<div class="modal-header__subtitle">
+								<p>Оставьте Ваши данные и наш менеджер <br>
+									свяжется с Вами в ближайшее время</p>
+							</div>
+						</div>
+					</div>
+					<div class="modal-body">
+						<form method="post" class="form-reserve">
+							<div class="row">
+								<div class="col-12 col-lg-6 mb-16">
+									<label>
+										<input type="text" placeholder="Имя" name="name">
+									</label>
+								</div>
+								<div class="col-12 col-lg-6 mb-16">
+									<label>
+										<input type="text" placeholder="Имя" name="name">
+									</label>
+								</div>
+								<div class="col-12 col-lg-7 col-xl-8 mb-16">
+									<label class="label-checkbox">
+										<input type="checkbox" name="checkbox">
+										<span class="label-checkbox__custom"></span>
+										<span class="label-checkbox__text">Нажимая на кнопку, Вы соглашаетесь с условиями обработки
+											персональных данных</span>
+									</label>
+								</div>
+								<div class="col-12 col-lg-5 col-xl-4">
+									<button type="submit" class="btn btn-lg btn-accent">забронировать</button>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="modal-text-overlay">бронирование</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade modal-v2" id="modal4" tabindex="-1" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+				<div class="modal-content">
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+						<svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#close-icon"></use>
+						</svg>
+					</button>
+
+					<div class="modal-header">
+						<div class="modal-header__icon"><img src="img/documents.svg" alt=""></div>
+						<div class="modal-header__text">
+							<h2 class="modal-title"><span class="color-yellow">Спасибо,</span> <br>
+								Ваша заявка отправлена</h2>
+							<div class="modal-header__subtitle">
+								<p>Менеджер отдела продаж свяжется <br>
+									с Вами в ближайшее время</p>
+							</div>
+						</div>
+					</div>
+					<div class="modal-text-overlay">бронирование</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end -->
+
+	<!-- модальные окна в блоке резиденты -->
+	<!-- 1 -->
+	<div class="residents-modal modal fade" id="residents-modal-1" tabindex="-1" aria-labelledby="exampleModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-content__header d-flex align-items-start">
+					<p class="modal-content__title">Многофункциональная спортивная площадка Sport & Power</p>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть">
+						<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M9.20132 23.7773L8.22266 22.808L15.0213 16L8.22266 9.22665L9.20132 8.25598L16 15.0533L22.7653 8.25731L23.744 9.22665L16.9453 16L23.744 22.808L22.7653 23.7773L16 16.9826L9.20132 23.7773Z"
+								fill="#333439" />
+						</svg>
+					</button>
+				</div>
+				<div class="modal-content__info mt-sm-4 mt-3">
+					<div class="modal-content__text_bold">
+						<p>Площадка, созданная для спортивного отдыха.</p>
+					</div>
+					<div class="modal-content__text mt-sm-4 mt-3">
+						<p>Занимайтесь различными видами физической активности: от игры в футбол и баскетбол до пробежек и
+							занятий
+							фитнесом на свежем воздухе.</p>
+						<p>Это пространство, где жители смогут активно проводить время, укреплять здоровье и формировать
+							дружеские
+							связи.</p>
+					</div>
+				</div>
+				<div class="modal-content__images-one mt-sm-5 mt-4">
+					<div class="modal-content__image box">
+						<img src="img/index/residents/modal-image-1.jpg" alt="фото">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end -->
+	<!-- 2 -->
+	<div class="residents-modal modal fade" id="residents-modal-2" tabindex="-1" aria-labelledby="exampleModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-content__header d-flex align-items-start justify-content-between
+					">
+					<p class="modal-content__title">Детский игровой клуб Play & Win</p>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть">
+						<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M9.20132 23.7773L8.22266 22.808L15.0213 16L8.22266 9.22665L9.20132 8.25598L16 15.0533L22.7653 8.25731L23.744 9.22665L16.9453 16L23.744 22.808L22.7653 23.7773L16 16.9826L9.20132 23.7773Z"
+								fill="#333439" />
+						</svg>
+					</button>
+				</div>
+				<div class="modal-content__info mt-sm-4 mt-3">
+					<div class="modal-content__text_bold">
+						<p>Игровая, созданная для любопытных детей</p>
+					</div>
+					<div class="modal-content__text mt-sm-4 mt-3">
+						<p>Место, где ваши дети могут свободно развиваться, общаться и весело проводить время в дружелюбной
+							обстановке.</p>
+						<p>Небольшое пространство – а сколько возможностей! Выпустить пар на батуте, собрать магнитный пазл,
+							исследовать игровой комплекс, порисовать на стенах.В этом пространстве ничто не ограничивает фантазию
+							детей, и всё способствует созданию новых впечатлений.</p>
+					</div>
+				</div>
+				<div class="modal-content__images mt-sm-5 mt-4">
+					<div class="modal-content__image box">
+						<img src="img/index/residents/modal-image-2.jpg" alt="фото">
+					</div>
+					<div class="modal-content__image box">
+						<img src="img/index/residents/modal-image-2-1.jpg" alt="фото">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end -->
+	<!-- 3 -->
+	<div class="residents-modal modal fade" id="residents-modal-3" tabindex="-1" aria-labelledby="exampleModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-content__header d-flex align-items-start justify-content-between
+				">
+					<p class="modal-content__title">Собственный фитнес-зал Fit & Relax</p>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть">
+						<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M9.20132 23.7773L8.22266 22.808L15.0213 16L8.22266 9.22665L9.20132 8.25598L16 15.0533L22.7653 8.25731L23.744 9.22665L16.9453 16L23.744 22.808L22.7653 23.7773L16 16.9826L9.20132 23.7773Z"
+								fill="#333439" />
+						</svg>
+					</button>
+				</div>
+				<div class="modal-content__info mt-sm-4 mt-3">
+					<div class="modal-content__text_bold">
+						<p>Зал, созданный для спокойных тренировок.</p>
+					</div>
+					<div class="modal-content__text mt-sm-4 mt-3">
+						<p>Просто подключите свое устройство к телевизору и выберите тренировку из обширной библиотеки
+							онлайн-уроков. Вам не нужно беспокоиться о расписании групповых занятий — вы сами решаете, когда и как
+							заниматься.</p>
+						<p>Об оборудовании позаботились мы: гантели, утяжелители, МФР-роллеры, фитнес-резинки – всё, что нужно
+							для
+							ваших эффективных тренировок.</p>
+						<p>Нет повода, чтобы пропустить тренировку.</p>
+					</div>
+				</div>
+				<div class="modal-content__images mt-sm-5 mt-4">
+					<div class="modal-content__image box">
+						<img src="img/index/residents/modal-image-2.jpg" alt="фото">
+					</div>
+					<div class="modal-content__image box">
+						<img src="img/index/residents/modal-image-2-1.jpg" alt="фото">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end -->
+	<!-- 4 -->
+	<div class="residents-modal modal fade" id="residents-modal-4" tabindex="-1" aria-labelledby="exampleModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-content__header d-flex align-items-start justify-content-between
+			">
+					<p class="modal-content__title">Пространство для работы
+						Work & Talk</p>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть">
+						<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M9.20132 23.7773L8.22266 22.808L15.0213 16L8.22266 9.22665L9.20132 8.25598L16 15.0533L22.7653 8.25731L23.744 9.22665L16.9453 16L23.744 22.808L22.7653 23.7773L16 16.9826L9.20132 23.7773Z"
+								fill="#333439" />
+						</svg>
+					</button>
+				</div>
+				<div class="modal-content__info mt-sm-4 mt-3">
+					<div class="modal-content__text_bold">
+						<p>Коворкинг, созданный для работы и общения</p>
+					</div>
+					<div class="modal-content__text mt-sm-4 mt-3">
+						<p>"Work & Talk" идеально подходит для проведения видеоконференций – уютная атмосфера и современное
+							оборудование помогут вам создать продуктивную
+							рабочую среду.</p>
+						<p>А в выходной собирайтесь с друзьями поиграть в настольные игры или обсудить новые фильмы.</p>
+					</div>
+				</div>
+				<div class="modal-content__images mt-sm-5 mt-4">
+					<div class="modal-content__image box">
+						<img src="img/index/residents/modal-image-2.jpg" alt="фото">
+					</div>
+					<div class="modal-content__image box">
+						<img src="img/index/residents/modal-image-2-1.jpg" alt="фото">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end -->
+
+	<!-- кнопка выбор квартиры на десктопе -->
+	<button data-bs-toggle="modal" data-bs-target="#modal1"
+		class="main-screen__apart d-none d-lg-flex align-items-center flex-lg-column-reverse justify-content-center">
+		<span class="main-screen__icon">
+			<span class="main-screen__box box">
+				<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<g clip-path="url(#clip0_9362_1238)">
+						<path
+							d="M29.6906 5.59479L23.6099 2.22108C22.916 1.86488 22.0873 1.86488 21.382 2.2268L20.8295 2.5335C19.7578 1.58279 18.3521 1 16.8093 1H15.0667C13.9257 1 12.8644 1.4549 12.0781 2.28088C11.2917 3.10714 10.8907 4.18888 10.9485 5.32699C11.0027 6.39329 11.4607 7.38292 12.2385 8.11505L13.3743 9.1845C12.836 9.48633 12.3273 9.85941 11.8698 10.3163C10.2433 11.9405 9.54143 14.2348 9.97027 16.4907L9.16101 17.2989C9.01434 17.4454 9.01434 17.6826 9.16101 17.829L9.71016 18.3778L1.11 26.9668C1.03953 27.0372 1 27.1325 1 27.232V30.6249C1 30.8321 1.16815 31 1.37555 31H4.65984C4.73718 31 4.80479 30.9711 4.86466 30.9311C4.88156 30.9202 4.8996 30.911 4.9145 30.8973C4.92682 30.8858 4.93541 30.8724 4.94601 30.8595C4.96721 30.8349 4.98583 30.8095 5.00015 30.7794C5.00416 30.7705 5.00617 30.7611 5.00961 30.7517C5.01906 30.7273 5.03138 30.7045 5.03539 30.6776L5.3886 28.3988L7.67055 28.046C7.8324 28.0211 7.9593 27.8941 7.98423 27.7324L8.33629 25.4551L10.6157 25.1043C10.7775 25.0794 10.9044 24.9527 10.9293 24.7907L11.2811 22.514L13.5084 22.1709L14.0028 22.665V28.5742C14.0028 29.9114 15.0925 31 16.4317 31H28.5711C29.9103 31 31 29.9114 31 28.5742V7.74741C31 6.83332 30.4938 6.00649 29.6906 5.59479ZM11.6985 5.28894C11.6512 4.35826 11.9792 3.47335 12.6223 2.79786C13.2654 2.12209 14.1334 1.74987 15.0667 1.74987H16.8093C18.066 1.74987 19.2204 2.18989 20.1314 2.92088L15.3231 5.58906C14.509 6.00649 14.0028 6.83332 14.0028 7.74741V8.74562L12.7535 7.56946C12.1173 6.97065 11.7429 6.16098 11.6985 5.28894ZM10.644 16.878C10.7348 16.7876 10.7729 16.6572 10.7454 16.5324C10.2888 14.4634 10.9079 12.3379 12.4006 10.8467C12.8667 10.3813 13.39 10.0088 13.9472 9.7238L15.4196 11.11C14.9063 11.3171 14.4345 11.6261 14.0311 12.0286C13.8845 12.1751 13.8845 12.4126 14.0311 12.5591L19.4077 17.9289C19.4811 18.0021 19.577 18.0388 19.6733 18.0388C19.7693 18.0388 19.8652 18.0021 19.9386 17.9289C21.5674 16.3021 21.5674 13.6554 19.9386 12.0286C19.9343 12.0243 19.9297 12.0209 19.9251 12.0166L19.9237 12.0146L19.9217 12.0132C19.1345 11.2356 18.0929 10.8064 16.9849 10.8064C16.7396 10.8064 16.4984 10.831 16.2615 10.8722L14.7023 9.40422C16.8734 8.6389 19.3888 9.11526 21.1222 10.8467C23.5265 13.2483 23.5265 17.1556 21.1222 19.5574C19.6292 21.0485 17.5008 21.6671 15.4294 21.2105C15.3045 21.1839 15.1738 21.2211 15.083 21.3115L14.3964 21.9973L9.95737 17.5641L10.644 16.878ZM17.0728 12.6663C17.4498 13.0211 17.9359 13.2139 18.4507 13.2139C18.4799 13.2139 18.5091 13.2131 18.5386 13.2117C18.9448 13.1945 19.3258 13.0583 19.6447 12.8231C20.6587 14.0697 20.6645 15.8678 19.6587 17.1187L14.8418 12.3082C15.1976 12.022 15.6035 11.8152 16.037 11.691L17.0728 12.6663ZM16.9886 11.5566C17.7612 11.5574 18.4934 11.8146 19.0924 12.2835C18.9159 12.388 18.7182 12.4532 18.5068 12.4624C18.1631 12.4778 17.8374 12.3559 17.5879 12.1208L16.9886 11.5566ZM10.8947 21.8147C10.7328 21.8396 10.6059 21.9664 10.581 22.128L10.2292 24.4048L7.95014 24.7556C7.788 24.7804 7.6611 24.9072 7.63617 25.0691L7.28383 27.3471L5.00216 27.6995C4.84059 27.7244 4.71369 27.8512 4.68848 28.0128L4.34186 30.2498H1.75082V27.3871L10.241 18.9079L12.8501 21.5135L10.8947 21.8147ZM30.2489 28.5742C30.2489 29.498 29.4961 30.2498 28.5711 30.2498H16.4317C15.5064 30.2498 14.7539 29.498 14.7539 28.5742V22.7008L15.4712 21.9847C17.7294 22.413 20.0268 21.7117 21.653 20.0875C24.3504 17.3936 24.3504 13.0102 21.653 10.3163C19.7887 8.45465 17.1169 7.88131 14.7539 8.59284V7.74741C14.7539 7.11599 15.1034 6.54464 15.6772 6.25024L20.706 3.45961C21.5141 4.33165 22.0315 5.47205 22.1094 6.73204H21.0764C20.869 6.73204 20.7011 6.89969 20.7011 7.10683C20.7011 7.31425 20.869 7.48191 21.0764 7.48191H23.9218C24.1292 7.48191 24.2974 7.31425 24.2974 7.10683C24.2974 6.89969 24.1292 6.73204 23.9218 6.73204H22.8602C22.7851 5.34016 22.2411 4.07359 21.3792 3.08596L21.7358 2.88827C22.2151 2.64279 22.7877 2.64279 23.2561 2.88226L29.3365 6.25625C29.8994 6.54464 30.2489 7.11599 30.2489 7.74741V28.5742Z"
+							fill="white" />
+					</g>
+					<defs>
+						<clipPath id="clip0_9362_1238">
+							<rect width="32" height="32" fill="white" />
+						</clipPath>
+					</defs>
+				</svg>
+			</span>
+		</span>
+		<span class="main-screen__apart_text">выбор квартиры</span>
+	</button>
+	<!-- end -->
+
+	<div data-scroll-container>
+
+		<nav class="navbar w-100">
+			<div class="container-fluid">
+				<div class="d-flex align-items-center justify-content-between w-100">
+					<a class="navbar-brand p-0 m-0" href="#">
+						<img src="img/header/logo.svg" alt="лого for next">
+					</a>
+					<div class="navbar-menu">
+						<ul class="d-flex align-items-center">
+							<li><a href="" class="py-4">Бутик квартир</a></li>
+							<li><a href="" class="py-4">Келлеры и паркинг</a></li>
+							<li><a href="" class="py-4">Коммерческие помещения</a></li>
+						</ul>
+					</div>
+					<div class="navbar__right d-flex align-items-center">
+						<a href="tel:+78412515515" class="navbar-phone"><span>8 (8412)</span> 515-515</a>
+						<button class="btn-4 navbar-call">заказать обратный звонок</button>
+						<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+							aria-controls="offcanvasNavbar" aria-label="Переключить навигацию">
+							<span class="navbar-toggler-icon">
+								<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g clip-path="url(#clip0_9362_578)">
+										<path
+											d="M4.6665 20.1482V18.9816H23.3332V20.1482H4.6665ZM4.6665 14.5832V13.4166H23.3332V14.5832H4.6665ZM4.6665 9.01823V7.85156H23.3332V9.01823H4.6665Z"
+											fill="white" />
+									</g>
+									<defs>
+										<clipPath id="clip0_9362_578">
+											<rect width="28" height="28" fill="white" />
+										</clipPath>
+									</defs>
+								</svg>
+							</span>
+						</button>
+						<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+							aria-labelledby="offcanvasNavbarLabel">
+							<div class="offcanvas-header p-4">
+								<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Закрыть">
+									<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M9.20132 23.7772L8.22266 22.8079L15.0213 15.9999L8.22266 9.22653L9.20132 8.25586L16 15.0532L22.7653 8.25719L23.744 9.22653L16.9453 15.9999L23.744 22.8079L22.7653 23.7772L16 16.9825L9.20132 23.7772Z"
+											fill="white" />
+									</svg>
+								</button>
+							</div>
+							<div class="offcanvas-body p-4">
+								<ul class="navbar-nav">
+									<li class="nav-item">
+										<a class="nav-link p-0" href="#">Бутик квартир</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link p-0" href="#">Келлеры и паркинг</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link p-0" href="#">Коммерческие помещения</a>
+									</li>
+								</ul>
+								<a href="tel:+78412515515" class="offcanvas-phone d-block mt-5"><span>8 (8412)</span> 515-515</a>
+								<!-- кнопка выбор квартиры -->
+								<button data-bs-toggle="modal" data-bs-target="#modal1"
+									class="main-screen__apart main-screen__apart_mob d-lg-none d-flex align-items-center flex-lg-column-reverse justify-content-center mt-5">
+									<span class="main-screen__icon">
+										<span class="main-screen__box box">
+											<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<g clip-path="url(#clip0_9362_1238)">
+													<path
+														d="M29.6906 5.59479L23.6099 2.22108C22.916 1.86488 22.0873 1.86488 21.382 2.2268L20.8295 2.5335C19.7578 1.58279 18.3521 1 16.8093 1H15.0667C13.9257 1 12.8644 1.4549 12.0781 2.28088C11.2917 3.10714 10.8907 4.18888 10.9485 5.32699C11.0027 6.39329 11.4607 7.38292 12.2385 8.11505L13.3743 9.1845C12.836 9.48633 12.3273 9.85941 11.8698 10.3163C10.2433 11.9405 9.54143 14.2348 9.97027 16.4907L9.16101 17.2989C9.01434 17.4454 9.01434 17.6826 9.16101 17.829L9.71016 18.3778L1.11 26.9668C1.03953 27.0372 1 27.1325 1 27.232V30.6249C1 30.8321 1.16815 31 1.37555 31H4.65984C4.73718 31 4.80479 30.9711 4.86466 30.9311C4.88156 30.9202 4.8996 30.911 4.9145 30.8973C4.92682 30.8858 4.93541 30.8724 4.94601 30.8595C4.96721 30.8349 4.98583 30.8095 5.00015 30.7794C5.00416 30.7705 5.00617 30.7611 5.00961 30.7517C5.01906 30.7273 5.03138 30.7045 5.03539 30.6776L5.3886 28.3988L7.67055 28.046C7.8324 28.0211 7.9593 27.8941 7.98423 27.7324L8.33629 25.4551L10.6157 25.1043C10.7775 25.0794 10.9044 24.9527 10.9293 24.7907L11.2811 22.514L13.5084 22.1709L14.0028 22.665V28.5742C14.0028 29.9114 15.0925 31 16.4317 31H28.5711C29.9103 31 31 29.9114 31 28.5742V7.74741C31 6.83332 30.4938 6.00649 29.6906 5.59479ZM11.6985 5.28894C11.6512 4.35826 11.9792 3.47335 12.6223 2.79786C13.2654 2.12209 14.1334 1.74987 15.0667 1.74987H16.8093C18.066 1.74987 19.2204 2.18989 20.1314 2.92088L15.3231 5.58906C14.509 6.00649 14.0028 6.83332 14.0028 7.74741V8.74562L12.7535 7.56946C12.1173 6.97065 11.7429 6.16098 11.6985 5.28894ZM10.644 16.878C10.7348 16.7876 10.7729 16.6572 10.7454 16.5324C10.2888 14.4634 10.9079 12.3379 12.4006 10.8467C12.8667 10.3813 13.39 10.0088 13.9472 9.7238L15.4196 11.11C14.9063 11.3171 14.4345 11.6261 14.0311 12.0286C13.8845 12.1751 13.8845 12.4126 14.0311 12.5591L19.4077 17.9289C19.4811 18.0021 19.577 18.0388 19.6733 18.0388C19.7693 18.0388 19.8652 18.0021 19.9386 17.9289C21.5674 16.3021 21.5674 13.6554 19.9386 12.0286C19.9343 12.0243 19.9297 12.0209 19.9251 12.0166L19.9237 12.0146L19.9217 12.0132C19.1345 11.2356 18.0929 10.8064 16.9849 10.8064C16.7396 10.8064 16.4984 10.831 16.2615 10.8722L14.7023 9.40422C16.8734 8.6389 19.3888 9.11526 21.1222 10.8467C23.5265 13.2483 23.5265 17.1556 21.1222 19.5574C19.6292 21.0485 17.5008 21.6671 15.4294 21.2105C15.3045 21.1839 15.1738 21.2211 15.083 21.3115L14.3964 21.9973L9.95737 17.5641L10.644 16.878ZM17.0728 12.6663C17.4498 13.0211 17.9359 13.2139 18.4507 13.2139C18.4799 13.2139 18.5091 13.2131 18.5386 13.2117C18.9448 13.1945 19.3258 13.0583 19.6447 12.8231C20.6587 14.0697 20.6645 15.8678 19.6587 17.1187L14.8418 12.3082C15.1976 12.022 15.6035 11.8152 16.037 11.691L17.0728 12.6663ZM16.9886 11.5566C17.7612 11.5574 18.4934 11.8146 19.0924 12.2835C18.9159 12.388 18.7182 12.4532 18.5068 12.4624C18.1631 12.4778 17.8374 12.3559 17.5879 12.1208L16.9886 11.5566ZM10.8947 21.8147C10.7328 21.8396 10.6059 21.9664 10.581 22.128L10.2292 24.4048L7.95014 24.7556C7.788 24.7804 7.6611 24.9072 7.63617 25.0691L7.28383 27.3471L5.00216 27.6995C4.84059 27.7244 4.71369 27.8512 4.68848 28.0128L4.34186 30.2498H1.75082V27.3871L10.241 18.9079L12.8501 21.5135L10.8947 21.8147ZM30.2489 28.5742C30.2489 29.498 29.4961 30.2498 28.5711 30.2498H16.4317C15.5064 30.2498 14.7539 29.498 14.7539 28.5742V22.7008L15.4712 21.9847C17.7294 22.413 20.0268 21.7117 21.653 20.0875C24.3504 17.3936 24.3504 13.0102 21.653 10.3163C19.7887 8.45465 17.1169 7.88131 14.7539 8.59284V7.74741C14.7539 7.11599 15.1034 6.54464 15.6772 6.25024L20.706 3.45961C21.5141 4.33165 22.0315 5.47205 22.1094 6.73204H21.0764C20.869 6.73204 20.7011 6.89969 20.7011 7.10683C20.7011 7.31425 20.869 7.48191 21.0764 7.48191H23.9218C24.1292 7.48191 24.2974 7.31425 24.2974 7.10683C24.2974 6.89969 24.1292 6.73204 23.9218 6.73204H22.8602C22.7851 5.34016 22.2411 4.07359 21.3792 3.08596L21.7358 2.88827C22.2151 2.64279 22.7877 2.64279 23.2561 2.88226L29.3365 6.25625C29.8994 6.54464 30.2489 7.11599 30.2489 7.74741V28.5742Z"
+														fill="white" />
+												</g>
+												<defs>
+													<clipPath id="clip0_9362_1238">
+														<rect width="32" height="32" fill="white" />
+													</clipPath>
+												</defs>
+											</svg>
+										</span>
+									</span>
+									<span class="main-screen__apart_text">выбор квартиры</span>
+								</button>
+								<!-- end -->
+								<button class="btn-4 offcanvas-call mt-lg-5 mt-4">заказать обратный звонок</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<main>
+
+			<!-- главный экран -->
+			<section class="main-screen">
+				<div class="container">
+					<div class="row vh-100">
+						<div class="col-12 h-100 d-flex flex-column align-items-center justify-content-end text-center">
+							<!-- видео-фон -->
+							<div class="main-screen__video">
+								<video autoplay muted loop playsinline>
+									<source src="video/Penza_Grandpark_Main.mp4" type="video/mp4">
+								</video>
+							</div>
+							<!-- end -->
+							<h1 class="title-page">FOR NEXT
+								<br><span><span class="hyphen">-</span> создавая будущее</span>
+							</h1>
+							<p>Многофункциональный проект
+								для жизни и бизнеса</p>
+							<button class="btn-4 main-screen__btn mt-4">Получить буклет</button>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Жизнь на главном проспекте города Пензы -->
+			<section class="infrastructure section">
+				<div class="container">
+					<div class="row flex-column-reverse flex-lg-row">
+						<div class="col-lg-7 col-12">
+							<div class="infrastructure__wrapper position-relative d-flex flex-column h-100 mt-5 mt-lg-0">
+								<div class="infrastructure__image box image-parallax-small">
+									<img src="img/index/infrastructure/image-big.jpg" alt="фото">
+								</div>
+								<div
+									class="infrastructure-item infrastructure-item_1 position-absolute d-flex align-items-start flex-row-reverse flex-lg-row text-end text-lg-start">
+									<div class="infrastructure-item__box_1 box">
+										<img src="img/index/infrastructure/image-small-1.jpg" alt="фото">
+									</div>
+									<p class="py-2 px-lg-3 ms-lg-3 me-3 me-lg-0">Фермерские<br>
+										лавки</p>
+								</div>
+								<div
+									class="infrastructure-item infrastructure-item_2 position-absolute d-flex flex-lg-column flex-column-reverse">
+									<div class="infrastructure-item__box_2 box">
+										<img src="img/index/infrastructure/image-small-2.jpg" alt="фото">
+									</div>
+									<p class="py-2 px-lg-3 mt-lg-3 mb-3 mb-lg-0">Ресторан</p>
+								</div>
+								<div
+									class="infrastructure-item infrastructure-item_3 position-absolute d-flex align-items-lg-start flex-row-reverse flex-lg-row align-items-end text-end text-lg-start">
+									<div class="infrastructure-item__box_3 box">
+										<img src="img/index/infrastructure/image-small-3.jpg" alt="фото">
+									</div>
+									<p class="py-2 px-lg-3 ms-lg-3 me-3 me-lg-0">Кофейни<br>
+										и булочные</p>
+								</div>
+								<div class="infrastructure-item infrastructure-item_4 position-absolute d-flex flex-column">
+									<div class="infrastructure-item__box_4 box">
+										<img src="img/index/infrastructure/image-small-4.jpg" alt="фото">
+									</div>
+									<p class="py-2 px-lg-3 mt-3">Боулинг</p>
+								</div>
+								<div
+									class="infrastructure-item infrastructure-item_5 position-absolute d-flex flex-lg-column flex-column-reverse">
+									<div class="infrastructure-item__box_5 box">
+										<img src="img/index/infrastructure/image-small-5.jpg" alt="фото">
+									</div>
+									<p class="py-2 px-lg-3 mt-lg-3 mb-3 mb-lg-0">Салоны красоты</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-5 col-12">
+							<div class="infrastructure__desc">
+								<div class="infrastructure__header">
+									<h2 class="section-title title-animate"><span class="color">Жизнь</span>
+										на главном проспекте
+										города Пензы</h2>
+									<p class="mt-3">Пользуйтесь всеми преимуществами<br>
+										городской жизни:</p>
+								</div>
+								<div class="infrastructure-list mt-sm-4 mt-3">
+									<div class="row g-sm-3">
+										<div class="col-sm-6 col-12">
+											<div class="infrastructure-list__item pb-sm-3 pb-2">
+												<p class="infrastructure__num text-border">01</p>
+												<p class="infrastructure__text">Боулинг</p>
+											</div>
+											<div class="infrastructure-list__item pb-sm-3 pb-2">
+												<p class="infrastructure__num text-border">02</p>
+												<p class="infrastructure__text">Ресторан</p>
+											</div>
+											<div class="infrastructure-list__item pb-sm-3 pb-2">
+												<p class="infrastructure__num text-border">03</p>
+												<p class="infrastructure__text">Коворкинг</p>
+											</div>
+											<div class="infrastructure-list__item pb-sm-3 pb-2">
+												<p class="infrastructure__num text-border">04</p>
+												<p class="infrastructure__text">Кофейня</p>
+											</div>
+											<div class="infrastructure-list__item pb-sm-3 pb-2">
+												<p class="infrastructure__num text-border">05</p>
+												<p class="infrastructure__text">Магазины</p>
+											</div>
+											<div class="infrastructure-list__item pb-sm-3 pb-2">
+												<p class="infrastructure__num text-border">06</p>
+												<p class="infrastructure__text">Барбершоп</p>
+											</div>
+											<div class="infrastructure-list__item pb-sm-3 pb-2">
+												<p class="infrastructure__num text-border">07</p>
+												<p class="infrastructure__text">Дом быта</p>
+											</div>
+										</div>
+										<div class="col-sm-6 col-12">
+											<div class="infrastructure-list__item pb-sm-3 pb-2">
+												<p class="infrastructure__num text-border">08</p>
+												<p class="infrastructure__text">Минимаркет</p>
+											</div>
+											<div class="infrastructure-list__item pb-sm-3 pb-2">
+												<p class="infrastructure__num text-border">09</p>
+												<p class="infrastructure__text">Аптека</p>
+											</div>
+											<div class="infrastructure-list__item pb-sm-3 pb-2">
+												<p class="infrastructure__num text-border">10</p>
+												<p class="infrastructure__text">Кондитерская</p>
+											</div>
+											<div class="infrastructure-list__item pb-sm-3 pb-2">
+												<p class="infrastructure__num text-border">11</p>
+												<p class="infrastructure__text">Винотека</p>
+											</div>
+											<div class="infrastructure-list__item pb-sm-3 pb-2">
+												<p class="infrastructure__num text-border">12</p>
+												<p class="infrastructure__text">Студия красоты</p>
+											</div>
+											<div class="infrastructure-list__item pb-sm-3 pb-2">
+												<p class="infrastructure__num text-border">13</p>
+												<p class="infrastructure__text">Стоматология</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<button
+									class="infrastructure__more mt-2 mt-sm-0 btn-1 d-flex align-items-center justify-content-center d-sm-none">
+									<span>показать еще</span>
+									<svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g clip-path="url(#clip0_9402_395)">
+											<path
+												d="M9.0333 13.0811L8.11597 13.9998L16.5 22.3838L24.884 13.9998L23.9666 13.0811L16.5 20.5145L9.0333 13.0811Z"
+												fill="#333439" />
+										</g>
+										<defs>
+											<clipPath id="clip0_9402_395">
+												<rect width="32" height="32" fill="white" transform="translate(0.5)" />
+											</clipPath>
+										</defs>
+									</svg>
+								</button>
+								<div class="infrastructure__border p-sm-4 mt-sm-4">
+									<p>Мы не продаем ритейл, а управляем им сами,
+										чтобы гарантировать высокий уровень услуг</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- карта -->
+			<section class="map">
+				<div class="map__main position-relative">
+					<div class="map__tabs position-absolute z-1 end-0 top-0 p-lg-4">
+						<h2 class="section-title mb-sm-4 mb-3">Инфраструктура</h2>
+						<ul class="nav nav-tabs d-flex" id="myTab" role="tablist">
+							<li class="nav-item" role="presentation">
+								<button class="nav-link active btn-4" id="social-tab" data-bs-toggle="tab"
+									data-bs-target="#social-tab-pane" type="button" role="tab" aria-controls="social-tab-pane"
+									aria-selected="true">Социальная</button>
+							</li>
+							<li class="nav-item" role="presentation">
+								<button class="nav-link btn-4" id="shops-tab" data-bs-toggle="tab" data-bs-target="#shops-tab-pane"
+									type="button" role="tab" aria-controls="shops-tab-pane" aria-selected="false">Покупки и
+									услуги</button>
+							</li>
+						</ul>
+					</div>
+					<div class="tab-content" id="myTabContent">
+						<div class="tab-pane fade show active" id="social-tab-pane" role="tabpanel" aria-labelledby="social-tab"
+							tabindex="0">
+							<div class="map__image_wrapper">
+								<div class="map__image box">
+									<img src="img/index/map/image.png" alt="карта">
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="shops-tab-pane" role="tabpanel" aria-labelledby="shops-tab" tabindex="0">
+							<div class="map__image_wrapper">
+								<div class="map__image box">
+									<img src="img/index/map/image.png" alt="карта">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="map__overlay d-lg-none">
+						<div class="map__overlay_wrapper d-flex align-items-center">
+							<div class="map__overlay_image">
+								<svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g clip-path="url(#clip0_9282_6399)">
+										<path
+											d="M17.1733 48.3561C16.4268 48.3561 15.7213 48.2173 15.0569 47.9396C14.3925 47.6619 13.79 47.2542 13.2495 46.7167L3.49829 36.9879L4.78606 35.6441C5.13544 35.2933 5.54006 35.0745 5.99993 34.9879C6.45979 34.9013 6.93384 34.9237 7.42207 35.0551L11.9729 36.0876V18.1663C11.9729 17.8483 12.0804 17.5825 12.2955 17.369C12.5105 17.154 12.777 17.0465 13.095 17.0465C13.413 17.0465 13.6788 17.154 13.8923 17.369C14.1058 17.584 14.2126 17.8497 14.2126 18.1663V39.0506L6.96072 37.2253L14.7948 45.1445C15.1338 45.4835 15.4981 45.7306 15.8878 45.8859C16.279 46.0411 16.7097 46.1188 17.18 46.1188H24.9806C26.5199 46.1188 27.8383 45.5708 28.9357 44.4749C30.0316 43.3775 30.5796 42.0591 30.5796 40.5198V33.4135C30.5796 33.0955 30.6871 32.829 30.9021 32.614C31.1171 32.399 31.3836 32.2922 31.7016 32.2937C32.0196 32.2952 32.2854 32.4019 32.4989 32.614C32.7124 32.826 32.8192 33.0925 32.8192 33.4135V40.5198C32.8192 42.6952 32.057 44.5451 30.5325 46.0695C29.0081 47.5939 27.1567 48.3569 24.9783 48.3584L17.1733 48.3561ZM18.1766 33.9734V24.9702C18.1766 24.6537 18.2834 24.3879 18.4969 24.1729C18.7119 23.9594 18.9784 23.8526 19.2964 23.8526C19.6145 23.8526 19.8802 23.9594 20.0937 24.1729C20.3073 24.3864 20.4148 24.6529 20.4163 24.9724V33.9734H18.1766ZM24.3781 33.9734V28.072C24.3781 27.7555 24.4856 27.4897 24.7006 27.2747C24.9156 27.0597 25.1814 26.9522 25.4979 26.9522C25.8144 26.9522 26.0802 27.0597 26.2952 27.2747C26.5102 27.4897 26.6177 27.7555 26.6177 28.072V33.9734H24.3781ZM36.1338 22.473C33.3985 22.473 30.8737 21.7713 28.5594 20.3678C26.2452 18.9643 24.3915 17.0808 22.9985 14.7173C24.3915 12.3582 26.2452 10.477 28.5594 9.07349C30.8737 7.67 33.3992 6.96826 36.136 6.96826C38.8728 6.96826 41.3976 7.67 43.7104 9.07349C46.0231 10.477 47.8768 12.3605 49.2713 14.724C47.8783 17.0831 46.0246 18.9643 43.7104 20.3678C41.3961 21.7728 38.8706 22.473 36.1338 22.473ZM36.1293 20.2357C38.2047 20.2357 40.1628 19.7355 42.0038 18.7351C43.8447 17.7378 45.3916 16.4007 46.6442 14.724C45.3916 13.0473 43.8462 11.7088 42.0083 10.7084C40.1703 9.70804 38.2144 9.20787 36.1405 9.20787C34.0666 9.20787 32.1085 9.70804 30.266 10.7084C28.4236 11.7088 26.8768 13.0465 25.6256 14.7218C26.8783 16.3985 28.4236 17.7363 30.2615 18.7351C32.0995 19.734 34.0554 20.2357 36.1293 20.2357ZM36.1405 16.9614C35.5194 16.9614 34.9901 16.7441 34.5526 16.3096C34.1137 15.8737 33.8942 15.3459 33.8942 14.7262C33.8942 14.1066 34.1114 13.5766 34.5459 13.1361C34.9819 12.7002 35.5097 12.4822 36.1293 12.4822C36.7504 12.4822 37.2805 12.6987 37.7194 13.1317C38.1584 13.5646 38.3771 14.0924 38.3756 14.7151C38.3741 15.3377 38.1561 15.8677 37.7217 16.3052C37.2872 16.7426 36.7601 16.9629 36.1405 16.9614Z"
+											fill="white" />
+									</g>
+									<defs>
+										<clipPath id="clip0_9282_6399">
+											<rect width="53.7505" height="53.7505" fill="white" transform="translate(0 0.249512)" />
+										</clipPath>
+									</defs>
+								</svg>
+							</div>
+							<p>Для перемещения:<br>
+								зажмите и тяните в любую сторону</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!--  ПАНОРАМНЫЕ
+			вИДЫ и   
+		особенные планировочные 
+			 решения -->
+			<section class="views section">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6 col-12">
+							<div class="views__left">
+								<h2 class="big-text title-animate"><span class="color">ПАНОРАМНЫЕ</span>
+									<span class="color">вИДЫ и</span>
+									<span>особенные</span> планировочные
+									<span>решения</span>
+								</h2>
+								<div class="views__desc mt-lg-5 mt-4">
+									<p>В ЖК FOR NEXT каждый найдет
+										квартиру на свой вкус:</p>
+									<ul>
+										<li>квартиры с террасами, </li>
+										<li>с высокими потолками, </li>
+										<li>с большими угловыми окнами из закаленного стекла</li>
+										<li>или квартиры с дневным светом в ванной комнате</li>
+									</ul>
+									<button class="btn-5 views__btn mt-lg-5 mt-4">Узнать о многообразии квартир</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6 col-12">
+							<div class="views__right position-relative mt-lg-0 mt-5">
+								<div class="views__group">
+									<h3 class="name">Решайте,<br>
+										чем наслаждаться
+										по утрам:</h3>
+									<div class="views__items mt-4 d-flex">
+										<div class="views__item">
+											<div class="views__icon">
+												<div class="views__box box">
+													<svg width="54" height="54" viewBox="0 0 54 54" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<g clip-path="url(#clip0_9249_7760)">
+															<path
+																d="M0.675144 54.064H53.3251C53.6979 54.064 54.0002 53.7622 54.0002 53.3888C54.0002 53.016 53.6979 52.7142 53.3251 52.7142H41.4809V48.5125H50.1728C50.4041 48.5125 50.6199 48.3935 50.7435 48.1978C50.8671 48.0021 50.882 47.757 50.7826 47.5479L47.0217 39.631H48.3689C48.6011 39.631 48.8179 39.511 48.941 39.3133C49.0646 39.1166 49.0775 38.8694 48.975 38.6603L45.607 31.7631H46.4608C46.7024 31.7631 46.9259 31.6339 47.0464 31.4243C47.1664 31.2147 47.1659 30.9572 47.0443 30.7486L41.3898 21.0417C41.1478 20.6266 40.4649 20.6266 40.2228 21.0417L34.5683 30.7486C34.4468 30.9572 34.4463 31.2147 34.5663 31.4243C34.6873 31.6339 34.9103 31.7631 35.1518 31.7631H36.0056L32.6371 38.6603C32.5352 38.8694 32.548 39.1166 32.6711 39.3133C32.7947 39.511 33.011 39.631 33.2438 39.631H34.5905L30.83 47.5479C30.7312 47.757 30.7456 48.0021 30.8692 48.1978C30.9928 48.3935 31.2086 48.5125 31.4398 48.5125H40.1312V52.7142H16.6752V47.0252H27.8766C28.1078 47.0252 28.3231 46.9067 28.4467 46.711C28.5703 46.5148 28.5852 46.2697 28.4864 46.0606L23.595 35.764H25.5891C25.8218 35.764 26.0381 35.644 26.1617 35.4463C26.2848 35.249 26.2977 35.0019 26.1957 34.7928L21.7977 25.7878H23.1697C23.4112 25.7878 23.6347 25.6585 23.7552 25.4489C23.8757 25.2393 23.8747 24.9818 23.7531 24.7732L16.5835 12.4651C16.3415 12.05 15.6586 12.05 15.4166 12.4651L8.24696 24.7732C8.12542 24.9818 8.12491 25.2393 8.2449 25.4489C8.3654 25.6585 8.58891 25.7878 8.83043 25.7878H10.2024L5.8049 34.7928C5.70242 35.0019 5.71529 35.249 5.83889 35.4463C5.96197 35.644 6.17827 35.764 6.41104 35.764H8.40506L3.51425 46.0606C3.41486 46.2697 3.42979 46.5148 3.55339 46.711C3.67699 46.9067 3.89225 47.0252 4.12399 47.0252H15.3249V52.7142H0.675144C0.302296 52.7142 0 53.016 0 53.3888C0 53.7622 0.302296 54.064 0.675144 54.064ZM40.8063 22.7221L45.2867 30.4133H36.326L40.8063 22.7221ZM37.5073 31.7631H44.1053L47.2879 38.2813H34.3247L37.5073 31.7631ZM36.0849 39.631H45.5277L49.1048 47.1622H32.5079L36.0849 39.631ZM16 14.1455L21.9955 24.438H10.0046L16 14.1455ZM11.7046 25.7878H20.2955L24.5081 34.4137H7.49199L11.7046 25.7878ZM9.89954 35.764H22.1011L26.8085 45.6754H5.19156L9.89954 35.764Z"
+																fill="#EAD587" />
+															<path
+																d="M46.7424 5.40404C47.6416 5.71303 48.2457 6.55348 48.2457 7.49487C48.2457 7.86772 48.5479 8.17002 48.9208 8.17002H53.3255C53.6983 8.17002 54.0006 7.86772 54.0006 7.49487C54.0006 7.12151 53.6983 6.81973 53.3255 6.81973H49.5311C49.322 5.74599 48.6242 4.82005 47.6375 4.32C47.4938 1.95725 45.5281 0.0791016 43.1324 0.0791016C40.6502 0.0791016 38.6299 2.09423 38.6185 4.57594C38.5995 4.57543 38.5799 4.57543 38.5609 4.57543C36.9103 4.57543 35.5312 5.70788 35.1249 7.23326C34.5672 6.98607 33.9528 6.84496 33.3049 6.84496C30.8232 6.84496 28.8024 8.8601 28.7911 11.3418C28.772 11.3413 28.7525 11.3413 28.7334 11.3413C26.7651 11.3413 25.1641 12.9434 25.1641 14.9137C25.1641 15.2871 25.4664 15.5889 25.8387 15.5889C26.2115 15.5889 26.5138 15.2871 26.5138 14.9137C26.5138 13.6886 27.5098 12.6911 28.7334 12.6911C28.9193 12.6911 29.1171 12.724 29.356 12.7941C29.5821 12.86 29.8298 12.8038 30.0034 12.6432C30.1785 12.482 30.2552 12.242 30.2073 12.0097C30.1635 11.7971 30.1409 11.5792 30.1409 11.3629C30.1409 9.61609 31.5602 8.19474 33.3049 8.19474C35.0492 8.19474 36.468 9.61609 36.4654 11.4227C36.4644 11.4288 36.4608 11.4989 36.4608 11.504C36.4484 11.8027 36.6333 12.0726 36.9155 12.1699C37.8141 12.4789 38.4182 13.3193 38.4182 14.2607C38.4182 14.6336 38.7205 14.9354 39.0934 14.9354H43.498C43.8709 14.9354 44.1732 14.6336 44.1732 14.2607C44.1732 13.8874 43.8709 13.5856 43.498 13.5856H39.7036C39.495 12.5118 38.7967 11.5849 37.81 11.0859C37.7369 9.88131 37.1884 8.80448 36.3526 8.03664C36.4118 6.86402 37.3749 5.9252 38.5609 5.9252C38.7468 5.9252 38.9445 5.95816 39.1835 6.0282C39.4096 6.09463 39.6567 6.03798 39.8308 5.87731C40.0059 5.71612 40.0826 5.47614 40.0347 5.24388C39.991 5.03119 39.9683 4.81335 39.9683 4.59706C39.9683 2.85023 41.3876 1.42887 43.1324 1.42887C44.8761 1.42887 46.2954 2.85023 46.2923 4.6604C46.2918 4.66504 46.2882 4.72941 46.2877 4.73404C46.2733 5.03325 46.4592 5.30619 46.7424 5.40404Z"
+																fill="#EAD587" />
+															<path
+																d="M0 9.37096C0 9.74381 0.302296 10.0456 0.675144 10.0456C1.04799 10.0456 1.34977 9.74381 1.34977 9.37096C1.34977 7.88111 2.5605 6.66884 4.04778 6.66884C4.27694 6.66884 4.51744 6.70849 4.80377 6.79346C5.03037 6.85887 5.27756 6.80325 5.45265 6.64309C5.62723 6.48241 5.70448 6.24243 5.65659 6.00966C5.60354 5.75371 5.57676 5.4921 5.57676 5.23306C5.57676 3.13553 7.28085 1.42887 9.37529 1.42887C11.4697 1.42887 13.1738 3.13553 13.1738 5.23306L13.1645 5.39837C13.1512 5.69706 13.336 5.96949 13.6188 6.06682C14.7121 6.44328 15.4464 7.46552 15.4464 8.61033C15.4464 8.98318 15.7487 9.28496 16.1216 9.28496H21.2544C21.6273 9.28496 21.9296 8.98318 21.9296 8.61033C21.9296 8.23697 21.6273 7.93518 21.2544 7.93518H16.7396C16.5217 6.65802 15.6952 5.5539 14.5174 4.98072C14.3856 2.25542 12.1294 0.0791016 9.37529 0.0791016C6.53669 0.0791016 4.22699 2.39138 4.22699 5.23306C4.22699 5.26345 4.22751 5.29383 4.22751 5.32318C1.90441 5.21143 0.000514984 7.07825 0 9.37096Z"
+																fill="#EAD587" />
+														</g>
+														<defs>
+															<clipPath id="clip0_9249_7760">
+																<rect width="54" height="54" fill="white" />
+															</clipPath>
+														</defs>
+													</svg>
+												</div>
+											</div>
+											<p class="mt-3">видом на густой
+												Арбековский лес</p>
+										</div>
+										<div class="views__or d-flex align-items-center">
+											<p>или</p>
+										</div>
+										<div class="views__item">
+											<div class="views__icon">
+												<div class="views__box box">
+													<svg width="54" height="54" viewBox="0 0 54 54" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<g clip-path="url(#clip0_9249_7780)">
+															<path
+																d="M15.9398 26.325C15.5664 26.325 15.2646 26.6272 15.2646 27.0001V28.7567C15.2646 29.1296 15.5664 29.4319 15.9398 29.4319C16.3126 29.4319 16.6144 29.1296 16.6144 28.7567V27.0001C16.6144 26.6272 16.3126 26.325 15.9398 26.325Z"
+																fill="#EAD587" />
+															<path
+																d="M19.9203 26.325C19.5469 26.325 19.2451 26.6272 19.2451 27.0001V28.7567C19.2451 29.1296 19.5469 29.4319 19.9203 29.4319C20.2931 29.4319 20.5949 29.1296 20.5949 28.7567V27.0001C20.5949 26.6272 20.2931 26.325 19.9203 26.325Z"
+																fill="#EAD587" />
+															<path
+																d="M15.9398 31.3193C15.5664 31.3193 15.2646 31.6216 15.2646 31.9945V33.7511C15.2646 34.1239 15.5664 34.4262 15.9398 34.4262C16.3126 34.4262 16.6144 34.1239 16.6144 33.7511V31.9945C16.6144 31.6216 16.3126 31.3193 15.9398 31.3193Z"
+																fill="#EAD587" />
+															<path
+																d="M19.9203 31.3193C19.5469 31.3193 19.2451 31.6216 19.2451 31.9945V33.7511C19.2451 34.1239 19.5469 34.4262 19.9203 34.4262C20.2931 34.4262 20.5949 34.1239 20.5949 33.7511V31.9945C20.5949 31.6216 20.2931 31.3193 19.9203 31.3193Z"
+																fill="#EAD587" />
+															<path
+																d="M15.9398 36.3135C15.5664 36.3135 15.2646 36.6158 15.2646 36.9886V38.7452C15.2646 39.1181 15.5664 39.4204 15.9398 39.4204C16.3126 39.4204 16.6144 39.1181 16.6144 38.7452V36.9886C16.6144 36.6158 16.3126 36.3135 15.9398 36.3135Z"
+																fill="#EAD587" />
+															<path
+																d="M19.9203 36.3135C19.5469 36.3135 19.2451 36.6158 19.2451 36.9886V38.7452C19.2451 39.1181 19.5469 39.4204 19.9203 39.4204C20.2931 39.4204 20.5949 39.1181 20.5949 38.7452V36.9886C20.5949 36.6158 20.2931 36.3135 19.9203 36.3135Z"
+																fill="#EAD587" />
+															<path
+																d="M15.9398 41.3079C15.5664 41.3079 15.2646 41.6102 15.2646 41.983V43.7396C15.2646 44.1125 15.5664 44.4148 15.9398 44.4148C16.3126 44.4148 16.6144 44.1125 16.6144 43.7396V41.983C16.6144 41.6102 16.3126 41.3079 15.9398 41.3079Z"
+																fill="#EAD587" />
+															<path
+																d="M19.9203 41.3079C19.5469 41.3079 19.2451 41.6102 19.2451 41.983V43.7396C19.2451 44.1125 19.5469 44.4148 19.9203 44.4148C20.2931 44.4148 20.5949 44.1125 20.5949 43.7396V41.983C20.5949 41.6102 20.2931 41.3079 19.9203 41.3079Z"
+																fill="#EAD587" />
+															<path
+																d="M15.9398 46.3022C15.5664 46.3022 15.2646 46.6045 15.2646 46.9774V48.734C15.2646 49.1068 15.5664 49.4091 15.9398 49.4091C16.3126 49.4091 16.6144 49.1068 16.6144 48.734V46.9774C16.6144 46.6045 16.3126 46.3022 15.9398 46.3022Z"
+																fill="#EAD587" />
+															<path
+																d="M19.9203 46.3022C19.5469 46.3022 19.2451 46.6045 19.2451 46.9774V48.734C19.2451 49.1068 19.5469 49.4091 19.9203 49.4091C20.2931 49.4091 20.5949 49.1068 20.5949 48.734V46.9774C20.5949 46.6045 20.2931 46.3022 19.9203 46.3022Z"
+																fill="#EAD587" />
+															<path
+																d="M29.5272 26.8637C29.9005 26.8637 30.2023 26.5619 30.2023 26.1891V23.9608C30.2023 23.5884 29.9005 23.2861 29.5272 23.2861C29.1543 23.2861 28.8525 23.5884 28.8525 23.9608V26.1891C28.8525 26.5619 29.1543 26.8637 29.5272 26.8637Z"
+																fill="#EAD587" />
+															<path
+																d="M33.5076 26.8637C33.881 26.8637 34.1828 26.5619 34.1828 26.1891V23.9608C34.1828 23.5884 33.881 23.2861 33.5076 23.2861C33.1348 23.2861 32.833 23.5884 32.833 23.9608V26.1891C32.833 26.5619 33.1348 26.8637 33.5076 26.8637Z"
+																fill="#EAD587" />
+															<path
+																d="M29.5272 33.1975C29.9005 33.1975 30.2023 32.8952 30.2023 32.5228V30.2945C30.2023 29.9217 29.9005 29.6199 29.5272 29.6199C29.1543 29.6199 28.8525 29.9217 28.8525 30.2945V32.5228C28.8525 32.8952 29.1543 33.1975 29.5272 33.1975Z"
+																fill="#EAD587" />
+															<path
+																d="M33.5076 33.1975C33.881 33.1975 34.1828 32.8952 34.1828 32.5228V30.2945C34.1828 29.9217 33.881 29.6199 33.5076 29.6199C33.1348 29.6199 32.833 29.9217 32.833 30.2945V32.5228C32.833 32.8952 33.1348 33.1975 33.5076 33.1975Z"
+																fill="#EAD587" />
+															<path
+																d="M29.5272 39.5312C29.9005 39.5312 30.2023 39.2289 30.2023 38.8566V36.6283C30.2023 36.2554 29.9005 35.9531 29.5272 35.9531C29.1543 35.9531 28.8525 36.2554 28.8525 36.6283V38.8566C28.8525 39.2289 29.1543 39.5312 29.5272 39.5312Z"
+																fill="#EAD587" />
+															<path
+																d="M33.5076 39.5312C33.881 39.5312 34.1828 39.2289 34.1828 38.8566V36.6283C34.1828 36.2554 33.881 35.9531 33.5076 35.9531C33.1348 35.9531 32.833 36.2554 32.833 36.6283V38.8566C32.833 39.2289 33.1348 39.5312 33.5076 39.5312Z"
+																fill="#EAD587" />
+															<path
+																d="M37.6012 26.8637C37.974 26.8637 38.2758 26.5619 38.2758 26.1891V23.9608C38.2758 23.5884 37.974 23.2861 37.6012 23.2861C37.2278 23.2861 36.926 23.5884 36.926 23.9608V26.1891C36.926 26.5619 37.2278 26.8637 37.6012 26.8637Z"
+																fill="#EAD587" />
+															<path
+																d="M37.6012 33.1975C37.974 33.1975 38.2758 32.8952 38.2758 32.5228V30.2945C38.2758 29.9217 37.974 29.6199 37.6012 29.6199C37.2278 29.6199 36.926 29.9217 36.926 30.2945V32.5228C36.926 32.8952 37.2278 33.1975 37.6012 33.1975Z"
+																fill="#EAD587" />
+															<path
+																d="M37.6012 39.5312C37.974 39.5312 38.2758 39.2289 38.2758 38.8566V36.6283C38.2758 36.2554 37.974 35.9531 37.6012 35.9531C37.2278 35.9531 36.926 36.2554 36.926 36.6283V38.8566C36.926 39.2289 37.2278 39.5312 37.6012 39.5312Z"
+																fill="#EAD587" />
+															<path
+																d="M54.0002 38.1165C54.0002 35.9623 52.2472 34.2098 50.093 34.2098C47.9388 34.2098 46.1858 35.9623 46.1858 38.1165C46.1858 39.595 47.0119 40.884 48.2262 41.5473C47.0119 42.2111 46.1858 43.5001 46.1858 44.9787C46.1858 46.9021 47.5851 48.5017 49.4179 48.823V52.6499H43.3179V9.70328C43.3179 9.47669 43.2046 9.26503 43.0156 9.13989C42.8261 9.01474 42.5871 8.99363 42.3786 9.08169L24.2207 16.8018C23.9715 16.9079 23.8103 17.1525 23.8103 17.4229V21.7266H11.3569C10.9841 21.7266 10.6818 22.0289 10.6818 22.4018V52.6499H4.58181V48.823C6.41516 48.5017 7.81386 46.9021 7.81386 44.9787C7.81386 42.824 6.06136 41.0715 3.90719 41.0715C1.75301 41.0715 0 42.824 0 44.9787C0 46.9021 1.3987 48.5017 3.23204 48.823V52.6499H0.675144C0.301781 52.6499 0 52.9522 0 53.325C0 53.6979 0.301781 54.0002 0.675144 54.0002H53.3251C53.6979 54.0002 54.0002 53.6979 54.0002 53.325C54.0002 52.9522 53.6979 52.6499 53.3251 52.6499H50.7682V48.823C52.601 48.5017 54.0002 46.9021 54.0002 44.9787C54.0002 43.5001 53.1742 42.2111 51.9598 41.5473C53.1742 40.884 54.0002 39.595 54.0002 38.1165ZM1.34977 44.9787C1.34977 43.5686 2.49716 42.4213 3.90719 42.4213C5.3167 42.4213 6.46408 43.5686 6.46408 44.9787C6.46408 46.3882 5.3167 47.5356 3.90719 47.5356C2.49716 47.5356 1.34977 46.3882 1.34977 44.9787ZM41.9681 10.7235V52.6499H38.1588V45.8675C38.1588 45.4947 37.8565 45.1929 37.4836 45.1929H29.6446C29.2717 45.1929 28.9694 45.4947 28.9694 45.8675V52.6499H25.1601V17.8699L41.9681 10.7235ZM36.8085 52.6499H30.3197V46.5427H36.8085V52.6499ZM12.0321 23.0764H23.8103V52.6499H12.0321V23.0764ZM50.093 47.5356C48.683 47.5356 47.5361 46.3882 47.5361 44.9787C47.5361 43.5686 48.683 42.4213 50.093 42.4213C51.5031 42.4213 52.6499 43.5686 52.6499 44.9787C52.6499 46.3882 51.5031 47.5356 50.093 47.5356ZM50.093 40.6734C48.683 40.6734 47.5361 39.5265 47.5361 38.1165C47.5361 36.7065 48.683 35.5596 50.093 35.5596C51.5031 35.5596 52.6499 36.7065 52.6499 38.1165C52.6499 39.5265 51.5031 40.6734 50.093 40.6734Z"
+																fill="#EAD587" />
+															<path
+																d="M11.2493 13.7635C12.0975 14.0549 12.666 14.8449 12.666 15.7302C12.666 16.103 12.9678 16.4053 13.3412 16.4053H17.5501C17.923 16.4053 18.2248 16.103 18.2248 15.7302C18.2248 15.3573 17.923 15.0556 17.5501 15.0556H13.9489C13.7424 14.0374 13.0796 13.1594 12.1433 12.6804C11.9966 10.4171 10.1086 8.62134 7.80922 8.62134C5.43154 8.62134 3.49365 10.5417 3.46584 12.9132C3.45812 12.9132 3.44936 12.9132 3.44112 12.9132C1.54392 12.9132 0 14.4566 0 16.3538C0 16.7262 0.301781 17.0285 0.675144 17.0285C1.04799 17.0285 1.34977 16.7262 1.34977 16.3538C1.34977 15.2008 2.28807 14.263 3.44112 14.263C3.61673 14.263 3.80264 14.2939 4.02615 14.3598C4.2548 14.4273 4.49942 14.3696 4.674 14.2094C4.84806 14.0493 4.92582 13.8093 4.87845 13.577C4.83725 13.3736 4.81613 13.1676 4.81613 12.9642C4.81613 11.3142 6.1587 9.97163 7.80922 9.97163C9.45974 9.97163 10.8028 11.3142 10.7992 13.0198C10.7992 13.025 10.7956 13.0868 10.7946 13.0924C10.7802 13.3922 10.9656 13.6661 11.2493 13.7635Z"
+																fill="#EAD587" />
+															<path
+																d="M32.8205 5.23996C33.6964 5.5402 34.2846 6.35748 34.2846 7.27261C34.2846 7.64546 34.5863 7.94775 34.9597 7.94775C35.3326 7.94775 35.6348 7.64546 35.6348 7.27261C35.6348 5.94704 34.8804 4.74815 33.715 4.15592C33.5692 1.83952 31.6391 0 29.2866 0C26.8523 0 24.8696 1.97084 24.8506 4.40105C22.8802 4.36243 21.2961 5.96146 21.2961 7.9117C21.2961 8.28455 21.5979 8.58685 21.9713 8.58685C22.3441 8.58685 22.6459 8.28455 22.6459 7.9117C22.6459 6.72003 23.6156 5.75083 24.8078 5.75083C24.9896 5.75083 25.1812 5.78224 25.4129 5.85074C25.6421 5.9182 25.8862 5.86103 26.0608 5.70036C26.2354 5.53968 26.3126 5.2997 26.2652 5.06796C26.222 4.85836 26.2003 4.64567 26.2003 4.43659C26.2003 2.73457 27.5846 1.34977 29.2866 1.34977C30.9887 1.34977 32.3735 2.73457 32.3704 4.49581C32.3704 4.50045 32.3662 4.5643 32.3657 4.56894C32.3513 4.86918 32.5372 5.14212 32.8205 5.23996Z"
+																fill="#EAD587" />
+														</g>
+														<defs>
+															<clipPath id="clip0_9249_7780">
+																<rect width="54" height="54" fill="white" />
+															</clipPath>
+														</defs>
+													</svg>
+												</div>
+											</div>
+											<p class="mt-3">красотой города
+												с высоты птичьего полета</p>
+										</div>
+									</div>
+								</div>
+								<div class="views__border p-4 d-flex flex-column">
+									<div class="views__text">
+										<p><span class="d-lg-block">Панорамные виды из окон </span> открывают безграничные горизонты, даря
+											ощущение простора и свободы</p>
+									</div>
+									<div class="views__text">
+										<p><span class="d-lg-block">Продуманное расположение зданий </span> обеспечивает приватность и
+											максимальный обзор</p>
+									</div>
+								</div>
+								<div class="views__decor position-absolute">виды</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- виды -->
+			<section class="images-views">
+				<div class="images-views__block position-relative">
+					<div class="images-views-slider-for">
+						<div class="images-views-slider-for__slide">
+							<img src="img/index/images-views/image-houses.jpg" alt="фото">
+						</div>
+						<div class="images-views-slider-for__slide">
+							<img src="img/index/images-views/image-center.jpg" alt="фото">
+						</div>
+						<div class="images-views-slider-for__slide">
+							<img src="img/index/images-views/image-forest.jpg" alt="фото">
+						</div>
+					</div>
+					<div class="images-views-slider__wrap z-1 start-0 w-100">
+						<div class="images-views-slider-nav">
+							<div class="images-views-slider-nav__slide position-relative">
+								<div class="images-views-slider-nav__btn">
+									<p>Вид на спальный район</p>
+								</div>
+								<div class="images-views-slider-nav__decor position-absolute">
+									<svg width="255" height="250" viewBox="0 0 255 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<circle cx="126.5" cy="148.5" r="101" stroke="#D6B264" />
+										<path d="M127 78V2M127 2L102 26.7154M127 2L152 26.7154" stroke="#D6B264" stroke-width="2"
+											stroke-linecap="round" />
+									</svg>
+								</div>
+							</div>
+							<div class="images-views-slider-nav__slide position-relative">
+								<div class="images-views-slider-nav__btn">
+									<p>Вид на центр города</p>
+								</div>
+								<div class="images-views-slider-nav__decor position-absolute">
+									<svg width="255" height="250" viewBox="0 0 255 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<circle cx="126.5" cy="148.5" r="101" stroke="#D6B264" />
+										<path d="M127 78V2M127 2L102 26.7154M127 2L152 26.7154" stroke="#D6B264" stroke-width="2"
+											stroke-linecap="round" />
+									</svg>
+								</div>
+							</div>
+							<div class="images-views-slider-nav__slide position-relative">
+								<div class="images-views-slider-nav__btn">
+									<p>Вид на Арбековский лес</p>
+								</div>
+								<div class="images-views-slider-nav__decor position-absolute">
+									<svg width="255" height="250" viewBox="0 0 255 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<circle cx="126.5" cy="148.5" r="101" stroke="#D6B264" />
+										<path d="M127 78V2M127 2L102 26.7154M127 2L152 26.7154" stroke="#D6B264" stroke-width="2"
+											stroke-linecap="round" />
+									</svg>
+								</div>
+							</div>
+						</div>
+						<button class="slick-prev slick-arrow images-views-slider-nav-prev" aria-label="Previous" type="button">
+							<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g clip-path="url(#clip0_9402_2005)">
+									<path
+										d="M34.146 25H11C10.716 25 10.478 24.9046 10.286 24.714C10.094 24.5233 9.99868 24.2853 10 24C10.0013 23.7146 10.0967 23.4766 10.286 23.286C10.4753 23.0953 10.7133 23 11 23H34.146L26.676 15.532C26.4813 15.336 26.38 15.106 26.372 14.842C26.364 14.578 26.4653 14.336 26.676 14.116C26.8973 13.8946 27.1353 13.7826 27.39 13.78C27.6447 13.7773 27.8827 13.8853 28.104 14.104L36.87 22.87C37.0433 23.0433 37.1653 23.2213 37.236 23.404C37.3067 23.5866 37.342 23.7853 37.342 24C37.342 24.2146 37.3067 24.4133 37.236 24.596C37.1653 24.7786 37.0433 24.9573 36.87 25.132L28.104 33.896C27.9093 34.0906 27.678 34.1926 27.41 34.202C27.142 34.2113 26.8973 34.1053 26.676 33.884C26.4627 33.664 26.3547 33.428 26.352 33.176C26.3493 32.924 26.4573 32.688 26.676 32.468L34.146 25Z"
+										fill="#EAD587" />
+								</g>
+								<defs>
+									<clipPath id="clip0_9402_2005">
+										<rect width="48" height="48" fill="white" />
+									</clipPath>
+								</defs>
+							</svg>
+						</button>
+						<button class="slick-next slick-arrow images-views-slider-nav-next" aria-label="Next" type="button">
+							<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g clip-path="url(#clip0_9402_2005)">
+									<path
+										d="M34.146 25H11C10.716 25 10.478 24.9046 10.286 24.714C10.094 24.5233 9.99868 24.2853 10 24C10.0013 23.7146 10.0967 23.4766 10.286 23.286C10.4753 23.0953 10.7133 23 11 23H34.146L26.676 15.532C26.4813 15.336 26.38 15.106 26.372 14.842C26.364 14.578 26.4653 14.336 26.676 14.116C26.8973 13.8946 27.1353 13.7826 27.39 13.78C27.6447 13.7773 27.8827 13.8853 28.104 14.104L36.87 22.87C37.0433 23.0433 37.1653 23.2213 37.236 23.404C37.3067 23.5866 37.342 23.7853 37.342 24C37.342 24.2146 37.3067 24.4133 37.236 24.596C37.1653 24.7786 37.0433 24.9573 36.87 25.132L28.104 33.896C27.9093 34.0906 27.678 34.1926 27.41 34.202C27.142 34.2113 26.8973 34.1053 26.676 33.884C26.4627 33.664 26.3547 33.428 26.352 33.176C26.3493 32.924 26.4573 32.688 26.676 32.468L34.146 25Z"
+										fill="#EAD587" />
+								</g>
+								<defs>
+									<clipPath id="clip0_9402_2005">
+										<rect width="48" height="48" fill="white" />
+									</clipPath>
+								</defs>
+							</svg>
+						</button>
+					</div>
+				</div>
+			</section>
+
+			<!-- Только для резидентов -->
+			<section class="residents section">
+				<div class="container">
+					<div class="row g-4">
+						<div class="col-lg-6 col-12">
+							<div class="residents__wrap d-flex flex-lg-column flex-column-reverse">
+								<div class="residents__top">
+									<h2 class="section-title title-animate"><span>Только для резидентов</span></h2>
+									<p class="mt-3">Поднимаем домашний отдых на новый уровень</p>
+									<div class="residents__items mt-3 pt-lg-5 pt-4 d-flex flex-column">
+										<div class="residents__item d-flex align-items-start justify-content-between pb-lg-3 pb-2">
+											<p class="residents__num text-border">01</p>
+											<p class="residents__text py-lg-2 ps-lg-4 ps-3">Многофункциональная спортивная площадка
+												Sport&Power
+											</p>
+											<button class="residents__btn" data-bs-toggle="modal" data-bs-target="#residents-modal-1">
+												<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M23 25H12V23H23V12H25V23H36V25H25V36H23V25Z" fill="#EAD587" />
+												</svg>
+											</button>
+										</div>
+										<div class="residents__item d-flex align-items-start justify-content-between pb-lg-3 pb-2">
+											<p class="residents__num text-border">02</p>
+											<p class="residents__text py-lg-2 ps-lg-4 ps-3">Детский игровой клуб
+												Play & Win<br> Игровая, созданная
+												для любопытных детей
+											</p>
+											<button class="residents__btn" data-bs-toggle="modal" data-bs-target="#residents-modal-2">
+												<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M23 25H12V23H23V12H25V23H36V25H25V36H23V25Z" fill="#EAD587" />
+												</svg>
+											</button>
+										</div>
+										<div class="residents__item d-flex align-items-start justify-content-between pb-lg-3 pb-2">
+											<p class="residents__num text-border">03</p>
+											<p class="residents__text py-lg-2 ps-lg-4 ps-3">Собственный фитнес-зал Fit & Relax.
+												<br>Зал, созданный для спокойных тренировок
+											</p>
+											<button class="residents__btn" data-bs-toggle="modal" data-bs-target="#residents-modal-3">
+												<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M23 25H12V23H23V12H25V23H36V25H25V36H23V25Z" fill="#EAD587" />
+												</svg>
+											</button>
+										</div>
+										<div class="residents__item d-flex align-items-start justify-content-between pb-lg-3 pb-2">
+											<p class="residents__num text-border">04</p>
+											<p class="residents__text py-lg-2 ps-lg-4 ps-3">Пространство для работы Work & Talk.
+												<br>Коворкинг, созданный для работы и общения
+											</p>
+											<button class="residents__btn" data-bs-toggle="modal" data-bs-target="#residents-modal-4">
+												<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M23 25H12V23H23V12H25V23H36V25H25V36H23V25Z" fill="#EAD587" />
+												</svg>
+											</button>
+										</div>
+									</div>
+								</div>
+								<div class="residents__bottom align-items-end">
+									<div class="residents__img_one box">
+										<img src="img/index/residents/small-image-1.jpg" alt="фото">
+									</div>
+									<div class="residents__group">
+										<p class="px-lg-3 py-2 mb-3">Фитнес-зал</p>
+										<div class="residents__img_two box">
+											<img src="img/index/residents/small-image-2.jpg" alt="фото">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="offset-lg-1 col-lg-5 col-12">
+							<div class="residents__image image-parallax-big box w-100">
+								<img src="img/index/residents/big-image.jpg" alt="фото">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- NEXT SPACE Двор на высоте 5-го этажа -->
+			<section class="next-space section">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-7 col-12 position-relative">
+							<h2 class="section-title position-relative z-1 title-animate"><span class="color">NEXT SPACE</span>
+								Двор на высоте 5-го этажа</h2>
+							<div class="next-space__decor position-absolute">
+								<svg width="162" height="209" viewBox="0 0 162 209" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M0.499992 81C0.499996 36.5411 36.5411 0.500004 81 0.500008C125.459 0.500012 161.5 36.5411 161.5 81C161.5 125.459 125.459 161.5 81 161.5C36.5411 161.5 0.499988 125.459 0.499992 81Z"
+										stroke="#EAD587" />
+									<path d="M80.0498 131L80.0498 207M80.0498 207L105.05 182.285M80.0498 207L55.0498 182.285"
+										stroke="#EAD587" stroke-width="2" stroke-linecap="round" />
+								</svg>
+							</div>
+						</div>
+						<div class="offset-lg-1 col-lg-4 col-12">
+							<div class="next-space__item mt-4 mt-lg-0 pe-5 pe-sm-0">
+								<h3 class="name">Энергия города
+									и умиротворение</h3>
+								<div class="next-space__text mt-lg-3 mt-2">
+									<p>Здесь гармонично сочетается динамика города и умиротворение. Башни отражают ваш стремительный ритм
+										жизни, а «NEXT SPACE» дарит атмосферу покоя.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-12">
+							<div
+								class="next-space__stroke d-flex align-items-start justify-content-between px-sm-4 flex-lg-row flex-column-reverse">
+								<div class="next-space__item">
+									<h3 class="name">Двор для всех возрастов</h3>
+									<div class="next-space__text mt-lg-3 mt-2">
+										<p>Ландшафтный двор на уровне 5 этажа создан для резидентов разного возраста, ведь в нем сочетаются
+											зоны для тех,
+											кто любит тишину и уединённые прогулки,
+											и игровые зоны для детей разных возрастов. Всё это сопровождается великолепными пейзажами
+											городских горизонтов.</p>
+									</div>
+								</div>
+								<div class="next-space__image d-flex align-items-end">
+									<div class="next-space__box_1 image-parallax-small box">
+										<img src="img/index/next-space/image-1.jpg" alt="фото">
+									</div>
+									<p class="py-2 px-lg-3 ms-lg-4 ms-3">Детская площадка</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							<div
+								class="next-space__wrap d-flex align-items-center justify-content-between px-sm-4 flex-lg-row flex-column">
+								<div class="next-space__left">
+									<div class="next-space__image d-flex align-items-end position-relative flex-row-reverse flex-lg-row">
+										<div class="next-space__box_2 image-parallax-small box">
+											<img src="img/index/next-space/image-2.jpg" alt="фото">
+										</div>
+										<p class="py-2 px-lg-3 ms-lg-4 me-3 me-lg-0 position-lg-absolute">Прогулочная
+											зона</p>
+									</div>
+								</div>
+								<div class="next-space__center d-flex flex-column">
+									<h2 class="big-text title-animate"><span>Небывалая</span>
+										по своему
+										<span>наполнению</span>
+										<span>зона отдыха,</span>
+										<span class="color">доступная</span>
+										<span class="color">только для</span>
+										<span class="color">жителей</span>
+									</h2>
+									<div class="next-space__item">
+										<h3 class="name">Частный и безопасный двор с доступом к Wi-Fi</h3>
+										<div class="next-space__text mt-3">
+											<p>В жилом комплексе двор запроектирован таким образом, что туда не смогут попасть посторонние,
+												что
+												создаёт
+												полную приватность и безопасность.
+											</p>
+											<p>На всей территории ландшафтного двора работает Wi-Fi, что создает комфортную атмосферу для
+												работы
+												или общения в любое время.</p>
+										</div>
+									</div>
+								</div>
+								<div class="next-space__right d-flex flex-column me-lg-5">
+									<div class="next-space__image d-flex flex-lg-column align-items-end align-items-lg-start">
+										<div class="next-space__box_3 box image-parallax-small">
+											<img src="img/index/next-space/image-3.jpg" alt="фото">
+										</div>
+										<p class="py-2 px-lg-3 mt-lg-4 ms-lg-0 ms-3">Качели</p>
+									</div>
+									<div class="next-space__border py-4">
+										<p>Также в каждой зоне Вас
+											ждут уютные уголки для отдыха, где Вы сможете насладиться мгновением покоя
+											и перезагрузить свои мысли</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Способы приобретения -->
+			<section class="methods section">
+				<div class="container">
+					<div class="row mb-5">
+						<div class="col-12">
+							<h2 class="section-title">Способы <span>приобретения</span></h2>
+						</div>
+					</div>
+					<div class="row g-lg-5 g-4">
+						<div class="col-lg-4 col-12">
+							<div class="methods__card methods__card_1 p-5">
+								<h3 class="name">100% оплата</h3>
+								<p>Ваши личные деньги
+									одним платежом
+									без кредита и банка</p>
+								<span class="methods__num">100<span>%</span></span>
+							</div>
+						</div>
+						<div class="col-lg-4 col-12">
+							<div class="methods__card methods__card_2 p-5">
+								<h3 class="name">Ипотека</h3>
+								<p>Обращаться в банк и подавать заявку не придётся — мы обо всём позаботимся сами!</p>
+								<button class="btn-2 methods__btn">Ипотечный калькулятор</button>
+								<span class="methods__num">6<span>%</span></span>
+							</div>
+						</div>
+						<div class="col-lg-4 col-12">
+							<div class="methods__card methods__card_3 p-5">
+								<h3 class="name">Рассрочка</h3>
+								<p>Беспроцентная рассрочка от застройщика на индивидуальных условиях до конца строительства</p>
+								<span class="methods__num">0<span>%</span></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- ПРИЕЗЖАЙТЕ НА ПЕРСОНАЛЬНУЮ ПРЕЗЕТАЦИЮ -->
+			<section class="form">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div class="form__block d-flex flex-column flex-lg-row">
+								<div class="d-flex flex-column flex-lg-row">
+									<div class="form__icon me-5">
+										<img src="img/form/icon.svg" alt="иконка">
+									</div>
+									<h2 class="section-title mt-4 mt-lg-0">ПРИЕЗЖАЙТЕ
+										НА <span>ПЕРСОНАЛЬНУЮ
+											ПРЕЗЕТАЦИЮ</span></h2>
+								</div>
+								<div class="form__content mt-4 mt-lg-0">
+									<div class="form__inputs d-flex flex-column mb-4">
+										<input type="text" class="form-control input form__input" placeholder="Имя">
+										<input type="text" class="form-control input form__input" placeholder="Телефон">
+									</div>
+									<div class="form__bottom d-flex flex-column flex-lg-row">
+										<div class="form__check">
+											<div class="checkbox d-flex">
+												<input class="custom-checkbox" type="checkbox" id="remember" name="remember" value="remember">
+												<label for="remember">Нажимая на кнопку, Вы соглашаетесь с условиями обработки персональных
+													данных</label>
+											</div>
+										</div>
+										<button class="btn-3 form__btn ms-lg-3 mt-3 mt-lg-0">записаться</button>
+									</div>
+								</div>
+								<span class="form__text">презентация</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Паркинг и келлеры -->
+			<section class="parking section">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 position-relative">
+							<div class="parking__main d-flex flex-column flex-lg-row">
+								<ul class="nav nav-tabs d-sm-flex flex-lg-column" id="myTab" role="tablist">
+									<li class="nav-item" role="presentation">
+										<button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+											type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">ПАРКИНГ</button>
+									</li>
+									<li class="nav-item" role="presentation">
+										<button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
+											type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Келлеры</button>
+									</li>
+								</ul>
+								<div class="tab-content" id="myTabContent">
+									<div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+										tabindex="0">
+										<div class="parking__general">
+											<div class="parking__top d-flex align-items-lg-end flex-column flex-lg-row">
+												<div class="parking-slider">
+													<div class="parking-slider__slide">
+														<img src="img/index/parking/image-1-1.jpg" alt="фото">
+													</div>
+													<div class="parking-slider__slide">
+														<img src="img/index/parking/image-1-1.jpg" alt="фото">
+													</div>
+													<div class="parking-slider__slide">
+														<img src="img/index/parking/image-1-1.jpg" alt="фото">
+													</div>
+												</div>
+												<div class="parking__navig">
+													<div class="slider__counter"></div>
+													<div
+														class="parking-arrows d-flex flex-lg-column justify-content-between justify-content-lg-start">
+														<button class="slick-prev slick-arrow parking-arrows-prev" aria-label="Previous"
+															type="button">
+															<svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+																xmlns="http://www.w3.org/2000/svg">
+																<g clip-path="url(#clip0_9378_1637)">
+																	<path
+																		d="M34.146 24.9998H11C10.716 24.9998 10.478 24.9045 10.286 24.7138C10.094 24.5232 9.99868 24.2852 10 23.9998C10.0013 23.7145 10.0967 23.4765 10.286 23.2858C10.4753 23.0952 10.7133 22.9998 11 22.9998H34.146L26.676 15.5318C26.4813 15.3358 26.38 15.1058 26.372 14.8418C26.364 14.5778 26.4653 14.3358 26.676 14.1158C26.8973 13.8945 27.1353 13.7825 27.39 13.7798C27.6447 13.7772 27.8827 13.8852 28.104 14.1038L36.87 22.8698C37.0433 23.0432 37.1653 23.2212 37.236 23.4038C37.3067 23.5865 37.342 23.7852 37.342 23.9998C37.342 24.2145 37.3067 24.4132 37.236 24.5958C37.1653 24.7785 37.0433 24.9572 36.87 25.1318L28.104 33.8958C27.9093 34.0905 27.678 34.1925 27.41 34.2018C27.142 34.2112 26.8973 34.1052 26.676 33.8838C26.4627 33.6638 26.3547 33.4278 26.352 33.1758C26.3493 32.9238 26.4573 32.6878 26.676 32.4678L34.146 24.9998Z"
+																		fill="#333439" />
+																</g>
+																<defs>
+																	<clipPath id="clip0_9378_1637">
+																		<rect width="48" height="48" fill="white" />
+																	</clipPath>
+																</defs>
+															</svg>
+														</button>
+														<button class="slick-next slick-arrow parking-arrows-next" aria-label="Next" type="button">
+															<svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+																xmlns="http://www.w3.org/2000/svg">
+																<g clip-path="url(#clip0_9378_1637)">
+																	<path
+																		d="M34.146 24.9998H11C10.716 24.9998 10.478 24.9045 10.286 24.7138C10.094 24.5232 9.99868 24.2852 10 23.9998C10.0013 23.7145 10.0967 23.4765 10.286 23.2858C10.4753 23.0952 10.7133 22.9998 11 22.9998H34.146L26.676 15.5318C26.4813 15.3358 26.38 15.1058 26.372 14.8418C26.364 14.5778 26.4653 14.3358 26.676 14.1158C26.8973 13.8945 27.1353 13.7825 27.39 13.7798C27.6447 13.7772 27.8827 13.8852 28.104 14.1038L36.87 22.8698C37.0433 23.0432 37.1653 23.2212 37.236 23.4038C37.3067 23.5865 37.342 23.7852 37.342 23.9998C37.342 24.2145 37.3067 24.4132 37.236 24.5958C37.1653 24.7785 37.0433 24.9572 36.87 25.1318L28.104 33.8958C27.9093 34.0905 27.678 34.1925 27.41 34.2018C27.142 34.2112 26.8973 34.1052 26.676 33.8838C26.4627 33.6638 26.3547 33.4278 26.352 33.1758C26.3493 32.9238 26.4573 32.6878 26.676 32.4678L34.146 24.9998Z"
+																		fill="#333439" />
+																</g>
+																<defs>
+																	<clipPath id="clip0_9378_1637">
+																		<rect width="48" height="48" fill="white" />
+																	</clipPath>
+																</defs>
+															</svg>
+														</button>
+													</div>
+												</div>
+											</div>
+											<div class="parking__bottom">
+												<div class="parking__desc">
+													<div class="parking__group">
+														<p class="parking__sub mb-2">Красивый и просторный</p>
+														<h2 class="section-title"><span>PArKing</span></h2>
+													</div>
+													<div class="parking__text">
+														<p>В ЖК предусмотрен удобный и безопасный паркинг на четырёх уровнях, с доступом на лифте с
+															жилых
+															этажей</p>
+													</div>
+													<div class="parking__text">
+														<p>Мы позаботились о том, чтобы
+															это пространство было не только функциональным, но и эстетичным,
+															создавая атмосферу уюта с первых
+															шагов после выхода из автомобиля</p>
+														<button class="parking__btn btn-5">Схема паркинга</button>
+													</div>
+													<div class="parking__text">
+														<p>Кроме того, на всей территории паркинга будет реализована современная сиситема
+															видионаблюдения,
+															которая обеспечит безопасность вашего авто</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
+										tabindex="0">
+										<div class="parking__general">
+											<div class="parking__top d-flex align-items-lg-end flex-column flex-lg-row">
+												<div class="parking-slider-2">
+													<div class="parking-slider__slide">
+														<img src="img/index/parking/image-2-1.jpg" alt="фото">
+													</div>
+													<div class="parking-slider__slide">
+														<img src="img/index/parking/image-2-1.jpg" alt="фото">
+													</div>
+													<div class="parking-slider__slide">
+														<img src="img/index/parking/image-2-1.jpg" alt="фото">
+													</div>
+												</div>
+												<div class="parking__navig">
+													<div class="slider__counter-2"></div>
+													<div
+														class="parking-arrows d-flex flex-lg-column justify-content-between justify-content-lg-start">
+														<button class="slick-prev slick-arrow parking-arrows-prev-2" aria-label="Previous"
+															type="button">
+															<svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+																xmlns="http://www.w3.org/2000/svg">
+																<g clip-path="url(#clip0_9378_1637)">
+																	<path
+																		d="M34.146 24.9998H11C10.716 24.9998 10.478 24.9045 10.286 24.7138C10.094 24.5232 9.99868 24.2852 10 23.9998C10.0013 23.7145 10.0967 23.4765 10.286 23.2858C10.4753 23.0952 10.7133 22.9998 11 22.9998H34.146L26.676 15.5318C26.4813 15.3358 26.38 15.1058 26.372 14.8418C26.364 14.5778 26.4653 14.3358 26.676 14.1158C26.8973 13.8945 27.1353 13.7825 27.39 13.7798C27.6447 13.7772 27.8827 13.8852 28.104 14.1038L36.87 22.8698C37.0433 23.0432 37.1653 23.2212 37.236 23.4038C37.3067 23.5865 37.342 23.7852 37.342 23.9998C37.342 24.2145 37.3067 24.4132 37.236 24.5958C37.1653 24.7785 37.0433 24.9572 36.87 25.1318L28.104 33.8958C27.9093 34.0905 27.678 34.1925 27.41 34.2018C27.142 34.2112 26.8973 34.1052 26.676 33.8838C26.4627 33.6638 26.3547 33.4278 26.352 33.1758C26.3493 32.9238 26.4573 32.6878 26.676 32.4678L34.146 24.9998Z"
+																		fill="#333439" />
+																</g>
+																<defs>
+																	<clipPath id="clip0_9378_1637">
+																		<rect width="48" height="48" fill="white" />
+																	</clipPath>
+																</defs>
+															</svg>
+														</button>
+														<button class="slick-next slick-arrow parking-arrows-next-2" aria-label="Next"
+															type="button">
+															<svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+																xmlns="http://www.w3.org/2000/svg">
+																<g clip-path="url(#clip0_9378_1637)">
+																	<path
+																		d="M34.146 24.9998H11C10.716 24.9998 10.478 24.9045 10.286 24.7138C10.094 24.5232 9.99868 24.2852 10 23.9998C10.0013 23.7145 10.0967 23.4765 10.286 23.2858C10.4753 23.0952 10.7133 22.9998 11 22.9998H34.146L26.676 15.5318C26.4813 15.3358 26.38 15.1058 26.372 14.8418C26.364 14.5778 26.4653 14.3358 26.676 14.1158C26.8973 13.8945 27.1353 13.7825 27.39 13.7798C27.6447 13.7772 27.8827 13.8852 28.104 14.1038L36.87 22.8698C37.0433 23.0432 37.1653 23.2212 37.236 23.4038C37.3067 23.5865 37.342 23.7852 37.342 23.9998C37.342 24.2145 37.3067 24.4132 37.236 24.5958C37.1653 24.7785 37.0433 24.9572 36.87 25.1318L28.104 33.8958C27.9093 34.0905 27.678 34.1925 27.41 34.2018C27.142 34.2112 26.8973 34.1052 26.676 33.8838C26.4627 33.6638 26.3547 33.4278 26.352 33.1758C26.3493 32.9238 26.4573 32.6878 26.676 32.4678L34.146 24.9998Z"
+																		fill="#333439" />
+																</g>
+																<defs>
+																	<clipPath id="clip0_9378_1637">
+																		<rect width="48" height="48" fill="white" />
+																	</clipPath>
+																</defs>
+															</svg>
+														</button>
+													</div>
+												</div>
+											</div>
+											<div class="parking__bottom">
+												<div class="parking__desc">
+													<div class="parking__group">
+														<h2 class="section-title">Келлеры</h2>
+													</div>
+													<div class="parking__text">
+														<p></p>
+													</div>
+													<div class="parking__text">
+														<p>В новом жилом комплексе FOR NEXT предусмотрены удобные и вместительные келлеры, которые
+															станут отличным решением для хранения ваших вещей</p>
+														<button class="parking__btn btn-5">Схема келлеров</button>
+													</div>
+													<div class="parking__text">
+														<p>Эти функциональные пространства обеспечивают легкий доступ к личным принадлежностям и
+															помогут
+															поддерживать порядок в квартире, позволяя использовать жилое пространство максимально
+															эффективно</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- ХОД СТРОИТЕЛЬСТВА -->
+			<section class="progress-block section">
+				<div class="container">
+					<div class="row g-5 align-items-center">
+						<div class="col-lg-5 col-12 mb-3">
+							<div class="progress__left d-flex flex-column align-items-end">
+								<div class="progress-banner p-sm-5 p-4">
+									<h2 class="section-title mb-sm-4 mb-3">ХОД
+										СТРОИТЕЛЬСТВА</h2>
+									<div class="progress-banner__group mb-sm-4 mb-3">
+										<h3 class="name">Ноябрь 2024</h3>
+										<p>готовность:</p>
+									</div>
+									<p class="progress-banner__percent">20<span>%</span></p>
+								</div>
+								<ul class="nav nav-tabs mt-sm-5 mt-4" id="progressTab" role="tablist">
+									<li class="nav-item" role="presentation">
+										<button class="nav-link active btn-4" id="2024-year" data-bs-toggle="tab"
+											data-bs-target="#2024-year-pane" type="button" role="tab" aria-controls="2024-year-pane"
+											aria-selected="true">2024</button>
+									</li>
+									<li class="nav-item" role="presentation">
+										<button class="nav-link btn-4" id="2025-year" data-bs-toggle="tab" data-bs-target="#2025-year-pane"
+											type="button" role="tab" aria-controls="2025-year-pane" aria-selected="false">2025</button>
+									</li>
+									<li class="nav-item" role="presentation">
+										<button class="nav-link btn-4" id="2026-year" data-bs-toggle="tab" data-bs-target="#2026-year-pane"
+											type="button" role="tab" aria-controls="2026-year-pane" aria-selected="false">2026</button>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-lg-7 col-12 position-relative">
+							<div class="tab-content" id="progressTabs">
+								<div class="tab-pane fade show active" id="2024-year-pane" role="tabpanel" aria-labelledby="2024-year"
+									tabindex="0">
+									<div class="progress-slider">
+										<div class="progress-slider-for">
+											<div class="progress-slider-for__slide">
+												<img src="img/index/progress/image-big.jpg" alt="фото">
+											</div>
+											<div class="progress-slider-for__slide">
+												<img src="img/index/progress/image-small-2.jpg" alt="фото">
+											</div>
+											<div class="progress-slider-for__slide">
+												<img src="img/index/progress/image-small-3.jpg" alt="фото">
+											</div>
+											<div class="progress-slider-for__slide">
+												<img src="img/index/progress/image-big.jpg" alt="фото">
+											</div>
+											<div class="progress-slider-for__slide">
+												<img src="img/index/progress/image-small-2.jpg" alt="фото">
+											</div>
+											<div class="progress-slider-for__slide">
+												<img src="img/index/progress/image-small-3.jpg" alt="фото">
+											</div>
+										</div>
+										<div class="progress-slider-nav__wrap mt-sm-4 mt-3 position-relative">
+											<div class="progress-slider-nav">
+												<div class="progress-slider-nav__slide">
+													<img src="img/index/progress/image-small-1.jpg" alt="фото">
+													<p class="text-center mt-2">октябрь</p>
+												</div>
+												<div class="progress-slider-nav__slide">
+													<img src="img/index/progress/image-small-2.jpg" alt="фото">
+													<p class="text-center mt-2">ноябрь</p>
+												</div>
+												<div class="progress-slider-nav__slide">
+													<img src="img/index/progress/image-small-3.jpg" alt="фото">
+													<p class="text-center mt-2">декабрь</p>
+												</div>
+												<div class="progress-slider-nav__slide">
+													<img src="img/index/progress/image-small-1.jpg" alt="фото">
+													<p class="text-center mt-2">октябрь</p>
+												</div>
+												<div class="progress-slider-nav__slide">
+													<img src="img/index/progress/image-small-2.jpg" alt="фото">
+													<p class="text-center mt-2">ноябрь</p>
+												</div>
+												<div class="progress-slider-nav__slide">
+													<img src="img/index/progress/image-small-3.jpg" alt="фото">
+													<p class="text-center mt-2">декабрь</p>
+												</div>
+											</div>
+											<div class="progress-arrows d-flex flex-lg-column flex-row-reverse">
+												<button class="slick-next slick-arrow progress-arrows-next" aria-label="Next" type="button">
+													<svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<g clip-path="url(#clip0_9402_2423)">
+															<path
+																d="M34.146 24.9998H11C10.716 24.9998 10.478 24.9045 10.286 24.7138C10.094 24.5232 9.99868 24.2852 10 23.9998C10.0013 23.7145 10.0967 23.4765 10.286 23.2858C10.4753 23.0952 10.7133 22.9998 11 22.9998H34.146L26.676 15.5318C26.4813 15.3358 26.38 15.1058 26.372 14.8418C26.364 14.5778 26.4653 14.3358 26.676 14.1158C26.8973 13.8945 27.1353 13.7825 27.39 13.7798C27.6447 13.7772 27.8827 13.8852 28.104 14.1038L36.87 22.8698C37.0433 23.0432 37.1653 23.2212 37.236 23.4038C37.3067 23.5865 37.342 23.7852 37.342 23.9998C37.342 24.2145 37.3067 24.4132 37.236 24.5958C37.1653 24.7785 37.0433 24.9572 36.87 25.1318L28.104 33.8958C27.9093 34.0905 27.678 34.1925 27.41 34.2018C27.142 34.2112 26.8973 34.1052 26.676 33.8838C26.4627 33.6638 26.3547 33.4278 26.352 33.1758C26.3493 32.9238 26.4573 32.6878 26.676 32.4678L34.146 24.9998Z"
+																fill="#EAD587" />
+														</g>
+														<defs>
+															<clipPath id="clip0_9402_2423">
+																<rect width="48" height="48" fill="white" />
+															</clipPath>
+														</defs>
+													</svg>
+												</button>
+												<button class="slick-prev slick-arrow progress-arrows-prev" aria-label="Previous" type="button">
+													<svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<g clip-path="url(#clip0_9402_2423)">
+															<path
+																d="M34.146 24.9998H11C10.716 24.9998 10.478 24.9045 10.286 24.7138C10.094 24.5232 9.99868 24.2852 10 23.9998C10.0013 23.7145 10.0967 23.4765 10.286 23.2858C10.4753 23.0952 10.7133 22.9998 11 22.9998H34.146L26.676 15.5318C26.4813 15.3358 26.38 15.1058 26.372 14.8418C26.364 14.5778 26.4653 14.3358 26.676 14.1158C26.8973 13.8945 27.1353 13.7825 27.39 13.7798C27.6447 13.7772 27.8827 13.8852 28.104 14.1038L36.87 22.8698C37.0433 23.0432 37.1653 23.2212 37.236 23.4038C37.3067 23.5865 37.342 23.7852 37.342 23.9998C37.342 24.2145 37.3067 24.4132 37.236 24.5958C37.1653 24.7785 37.0433 24.9572 36.87 25.1318L28.104 33.8958C27.9093 34.0905 27.678 34.1925 27.41 34.2018C27.142 34.2112 26.8973 34.1052 26.676 33.8838C26.4627 33.6638 26.3547 33.4278 26.352 33.1758C26.3493 32.9238 26.4573 32.6878 26.676 32.4678L34.146 24.9998Z"
+																fill="#EAD587" />
+														</g>
+														<defs>
+															<clipPath id="clip0_9402_2423">
+																<rect width="48" height="48" fill="white" />
+															</clipPath>
+														</defs>
+													</svg>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="tab-pane fade" id="2025-year-pane" role="tabpanel" aria-labelledby="2025-year" tabindex="0">
+									<div class="progress-slider">
+										<div class="progress-slider-for">
+											<div class="progress-slider-for__slide">
+												<img src="img/index/progress/image-big.jpg" alt="фото">
+											</div>
+											<div class="progress-slider-for__slide">
+												<img src="img/index/progress/image-small-2.jpg" alt="фото">
+											</div>
+											<div class="progress-slider-for__slide">
+												<img src="img/index/progress/image-small-3.jpg" alt="фото">
+											</div>
+											<div class="progress-slider-for__slide">
+												<img src="img/index/progress/image-small-3.jpg" alt="фото">
+											</div>
+										</div>
+										<div class="progress-slider-nav__wrap mt-sm-4 mt-3 position-relative">
+											<div class="progress-slider-nav">
+												<div class="progress-slider-nav__slide">
+													<img src="img/index/progress/image-small-1.jpg" alt="фото">
+													<p class="text-center mt-2">октябрь</p>
+												</div>
+												<div class="progress-slider-nav__slide">
+													<img src="img/index/progress/image-small-2.jpg" alt="фото">
+													<p class="text-center mt-2">ноябрь</p>
+												</div>
+												<div class="progress-slider-nav__slide">
+													<img src="img/index/progress/image-small-3.jpg" alt="фото">
+													<p class="text-center mt-2">декабрь</p>
+												</div>
+												<div class="progress-slider-nav__slide">
+													<img src="img/index/progress/image-small-3.jpg" alt="фото">
+													<p class="text-center mt-2">декабрь</p>
+												</div>
+											</div>
+											<div class="progress-arrows d-flex flex-lg-column flex-row-reverse">
+												<button class="slick-next slick-arrow progress-arrows-next" aria-label="Next" type="button">
+													<svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<g clip-path="url(#clip0_9402_2423)">
+															<path
+																d="M34.146 24.9998H11C10.716 24.9998 10.478 24.9045 10.286 24.7138C10.094 24.5232 9.99868 24.2852 10 23.9998C10.0013 23.7145 10.0967 23.4765 10.286 23.2858C10.4753 23.0952 10.7133 22.9998 11 22.9998H34.146L26.676 15.5318C26.4813 15.3358 26.38 15.1058 26.372 14.8418C26.364 14.5778 26.4653 14.3358 26.676 14.1158C26.8973 13.8945 27.1353 13.7825 27.39 13.7798C27.6447 13.7772 27.8827 13.8852 28.104 14.1038L36.87 22.8698C37.0433 23.0432 37.1653 23.2212 37.236 23.4038C37.3067 23.5865 37.342 23.7852 37.342 23.9998C37.342 24.2145 37.3067 24.4132 37.236 24.5958C37.1653 24.7785 37.0433 24.9572 36.87 25.1318L28.104 33.8958C27.9093 34.0905 27.678 34.1925 27.41 34.2018C27.142 34.2112 26.8973 34.1052 26.676 33.8838C26.4627 33.6638 26.3547 33.4278 26.352 33.1758C26.3493 32.9238 26.4573 32.6878 26.676 32.4678L34.146 24.9998Z"
+																fill="#EAD587" />
+														</g>
+														<defs>
+															<clipPath id="clip0_9402_2423">
+																<rect width="48" height="48" fill="white" />
+															</clipPath>
+														</defs>
+													</svg>
+												</button>
+												<button class="slick-prev slick-arrow progress-arrows-prev" aria-label="Previous" type="button">
+													<svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<g clip-path="url(#clip0_9402_2423)">
+															<path
+																d="M34.146 24.9998H11C10.716 24.9998 10.478 24.9045 10.286 24.7138C10.094 24.5232 9.99868 24.2852 10 23.9998C10.0013 23.7145 10.0967 23.4765 10.286 23.2858C10.4753 23.0952 10.7133 22.9998 11 22.9998H34.146L26.676 15.5318C26.4813 15.3358 26.38 15.1058 26.372 14.8418C26.364 14.5778 26.4653 14.3358 26.676 14.1158C26.8973 13.8945 27.1353 13.7825 27.39 13.7798C27.6447 13.7772 27.8827 13.8852 28.104 14.1038L36.87 22.8698C37.0433 23.0432 37.1653 23.2212 37.236 23.4038C37.3067 23.5865 37.342 23.7852 37.342 23.9998C37.342 24.2145 37.3067 24.4132 37.236 24.5958C37.1653 24.7785 37.0433 24.9572 36.87 25.1318L28.104 33.8958C27.9093 34.0905 27.678 34.1925 27.41 34.2018C27.142 34.2112 26.8973 34.1052 26.676 33.8838C26.4627 33.6638 26.3547 33.4278 26.352 33.1758C26.3493 32.9238 26.4573 32.6878 26.676 32.4678L34.146 24.9998Z"
+																fill="#EAD587" />
+														</g>
+														<defs>
+															<clipPath id="clip0_9402_2423">
+																<rect width="48" height="48" fill="white" />
+															</clipPath>
+														</defs>
+													</svg>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="tab-pane fade" id="2026-year-pane" role="tabpanel" aria-labelledby="2026-year" tabindex="0">
+									<div class="progress-slider">
+										<div class="progress-slider-for">
+											<div class="progress-slider-for__slide">
+												<img src="img/index/progress/image-big.jpg" alt="фото">
+											</div>
+											<div class="progress-slider-for__slide">
+												<img src="img/index/progress/image-small-2.jpg" alt="фото">
+											</div>
+											<div class="progress-slider-for__slide">
+												<img src="img/index/progress/image-small-3.jpg" alt="фото">
+											</div>
+											<div class="progress-slider-for__slide">
+												<img src="img/index/progress/image-small-3.jpg" alt="фото">
+											</div>
+										</div>
+										<div class="progress-slider-nav__wrap mt-sm-4 mt-3 position-relative">
+											<div class="progress-slider-nav">
+												<div class="progress-slider-nav__slide">
+													<img src="img/index/progress/image-small-1.jpg" alt="фото">
+													<p class="text-center mt-2">октябрь</p>
+												</div>
+												<div class="progress-slider-nav__slide">
+													<img src="img/index/progress/image-small-2.jpg" alt="фото">
+													<p class="text-center mt-2">ноябрь</p>
+												</div>
+												<div class="progress-slider-nav__slide">
+													<img src="img/index/progress/image-small-3.jpg" alt="фото">
+													<p class="text-center mt-2">декабрь</p>
+												</div>
+												<div class="progress-slider-nav__slide">
+													<img src="img/index/progress/image-small-3.jpg" alt="фото">
+													<p class="text-center mt-2">декабрь</p>
+												</div>
+											</div>
+											<div class="progress-arrows d-flex flex-lg-column flex-row-reverse">
+												<button class="slick-next slick-arrow progress-arrows-next" aria-label="Next" type="button">
+													<svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<g clip-path="url(#clip0_9402_2423)">
+															<path
+																d="M34.146 24.9998H11C10.716 24.9998 10.478 24.9045 10.286 24.7138C10.094 24.5232 9.99868 24.2852 10 23.9998C10.0013 23.7145 10.0967 23.4765 10.286 23.2858C10.4753 23.0952 10.7133 22.9998 11 22.9998H34.146L26.676 15.5318C26.4813 15.3358 26.38 15.1058 26.372 14.8418C26.364 14.5778 26.4653 14.3358 26.676 14.1158C26.8973 13.8945 27.1353 13.7825 27.39 13.7798C27.6447 13.7772 27.8827 13.8852 28.104 14.1038L36.87 22.8698C37.0433 23.0432 37.1653 23.2212 37.236 23.4038C37.3067 23.5865 37.342 23.7852 37.342 23.9998C37.342 24.2145 37.3067 24.4132 37.236 24.5958C37.1653 24.7785 37.0433 24.9572 36.87 25.1318L28.104 33.8958C27.9093 34.0905 27.678 34.1925 27.41 34.2018C27.142 34.2112 26.8973 34.1052 26.676 33.8838C26.4627 33.6638 26.3547 33.4278 26.352 33.1758C26.3493 32.9238 26.4573 32.6878 26.676 32.4678L34.146 24.9998Z"
+																fill="#EAD587" />
+														</g>
+														<defs>
+															<clipPath id="clip0_9402_2423">
+																<rect width="48" height="48" fill="white" />
+															</clipPath>
+														</defs>
+													</svg>
+												</button>
+												<button class="slick-prev slick-arrow progress-arrows-prev" aria-label="Previous" type="button">
+													<svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<g clip-path="url(#clip0_9402_2423)">
+															<path
+																d="M34.146 24.9998H11C10.716 24.9998 10.478 24.9045 10.286 24.7138C10.094 24.5232 9.99868 24.2852 10 23.9998C10.0013 23.7145 10.0967 23.4765 10.286 23.2858C10.4753 23.0952 10.7133 22.9998 11 22.9998H34.146L26.676 15.5318C26.4813 15.3358 26.38 15.1058 26.372 14.8418C26.364 14.5778 26.4653 14.3358 26.676 14.1158C26.8973 13.8945 27.1353 13.7825 27.39 13.7798C27.6447 13.7772 27.8827 13.8852 28.104 14.1038L36.87 22.8698C37.0433 23.0432 37.1653 23.2212 37.236 23.4038C37.3067 23.5865 37.342 23.7852 37.342 23.9998C37.342 24.2145 37.3067 24.4132 37.236 24.5958C37.1653 24.7785 37.0433 24.9572 36.87 25.1318L28.104 33.8958C27.9093 34.0905 27.678 34.1925 27.41 34.2018C27.142 34.2112 26.8973 34.1052 26.676 33.8838C26.4627 33.6638 26.3547 33.4278 26.352 33.1758C26.3493 32.9238 26.4573 32.6878 26.676 32.4678L34.146 24.9998Z"
+																fill="#EAD587" />
+														</g>
+														<defs>
+															<clipPath id="clip0_9402_2423">
+																<rect width="48" height="48" fill="white" />
+															</clipPath>
+														</defs>
+													</svg>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="progress-video">
+								<div class="progress-video__wrap position-relative">
+									<div class="progress-video__preview">
+										<img src="img/index/progress/video-preview.jpg" alt="фото">
+									</div>
+									<!-- <div class="progress-video__play">
+										<svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<g clip-path="url(#clip0_9402_2716)">
+												<path fill-rule="evenodd" clip-rule="evenodd"
+													d="M11.1461 6.33875C11.39 6.20823 11.6859 6.22254 11.916 6.37596L25.416 15.376C25.6247 15.5151 25.75 15.7492 25.75 16C25.75 16.2508 25.6247 16.4849 25.416 16.624L11.916 25.624C11.6859 25.7775 11.39 25.7918 11.1461 25.6613C10.9022 25.5307 10.75 25.2766 10.75 25V7C10.75 6.7234 10.9022 6.46926 11.1461 6.33875ZM12.25 8.40139V23.5986L23.6479 16L12.25 8.40139Z"
+													fill="white" />
+											</g>
+											<defs>
+												<clipPath id="clip0_9402_2716">
+													<rect width="32" height="32" fill="white" transform="translate(0.5)" />
+												</clipPath>
+											</defs>
+										</svg>
+									</div> -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Проектная документация -->
+			<section class="documentation section">
+				<div class="container">
+					<div class="row mb-lg-5 mb-4">
+						<div class="col-12">
+							<h2 class="section-title">Проектная документация</h2>
+						</div>
+					</div>
+					<div class="row g-3 g-lg-4 mb-lg-5 mb-4">
+						<div class="col-lg-4 col-sm-6 col-12">
+							<a href="#" download="" class="documentation__doc d-flex align-items-center p-lg-4 p-3">
+								<div class="documentation__icon me-lg-4 me-3">
+									<div class="documentation__box box">
+										<img src="img/documentation/icon.svg" alt="иконка">
+									</div>
+								</div>
+								<p class="item-name">Заключение
+									о соответствии</p>
+							</a>
+						</div>
+						<div class="col-lg-4 col-sm-6 col-12">
+							<a href="#" download="" class="documentation__doc d-flex align-items-center p-lg-4 p-3">
+								<div class="documentation__icon me-lg-4 me-3">
+									<div class="documentation__box box">
+										<img src="img/documentation/icon.svg" alt="иконка">
+									</div>
+								</div>
+								<p class="item-name">Отчет
+									о строительных работах за мой</p>
+							</a>
+						</div>
+						<div class="col-lg-4 col-sm-6 col-12">
+							<a href="#" download="" class="documentation__doc d-flex align-items-center p-lg-4 p-3">
+								<div class="documentation__icon me-lg-4 me-3">
+									<div class="documentation__box box">
+										<img src="img/documentation/icon.svg" alt="иконка">
+									</div>
+								</div>
+								<p class="item-name">Проектная декларация</p>
+							</a>
+						</div>
+						<div class="col-lg-4 col-sm-6 col-12">
+							<a href="#" download="" class="documentation__doc d-flex align-items-center p-lg-4 p-3">
+								<div class="documentation__icon me-lg-4 me-3">
+									<div class="documentation__box box">
+										<img src="img/documentation/icon.svg" alt="иконка">
+									</div>
+								</div>
+								<p class="item-name">Заключение
+									о соответствии</p>
+							</a>
+						</div>
+						<div class="col-lg-4 col-sm-6 col-12">
+							<a href="#" download="" class="documentation__doc d-flex align-items-center p-lg-4 p-3">
+								<div class="documentation__icon me-lg-4 me-3">
+									<div class="documentation__box box">
+										<img src="img/documentation/icon.svg" alt="иконка">
+									</div>
+								</div>
+								<p class="item-name">Отчет
+									о строительных работах за мой</p>
+							</a>
+						</div>
+						<div class="col-lg-4 col-sm-6 col-12">
+							<a href="#" download="" class="documentation__doc d-flex align-items-center p-lg-4 p-3">
+								<div class="documentation__icon me-lg-4 me-3">
+									<div class="documentation__box box">
+										<img src="img/documentation/icon.svg" alt="иконка">
+									</div>
+								</div>
+								<p class="item-name">Проектная декларация</p>
+							</a>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12 d-flex justify-content-center">
+							<button class="btn-1 documentation__btn">показать еще</button>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</main>
+
+		<footer class="footer section">
+			<div class="container">
+				<div class="row g-5 align-items-stretch">
+					<div class="col-lg-5 col-12">
+						<div class="footer__contacts p-lg-5 p-4">
+							<div class="footer__top mb-5">
+								<h2 class="section-title mb-3">Офис продаж</h2>
+								<p class="mb-3">г. Пенза, ул. Лозицкой, 1А, первый этаж, центральный вход <span>(со стороны пр.
+										Строителей)</span></p>
+								<a href="tel:+78412515515">8 (8412) 515-515</a>
+							</div>
+							<div class="footer__center mb-5">
+								<h4 class="item-name mb-3">Режим работы:</h4>
+								<div class="footer-schedule mb-3">
+									<div class="footer-schedule__wrap">
+										<div class="footer-schedule__col py-2 px-3">
+											<p class="">ПН - ПТ</p>
+										</div>
+										<div class="footer-schedule__col py-2 px-3">
+											<p class="">9:00-18:00</p>
+										</div>
+										<div class="footer-schedule__col py-2 px-3">
+											<p>СБ</p>
+										</div>
+										<div class="footer-schedule__col py-2 px-3">
+											<p>10:00-13:00</p>
+										</div>
+									</div>
+								</div>
+								<p class="footer__text">Встречи по предварительной записи</p>
+							</div>
+							<div class="footer__bottom">
+								<div class="footer__link d-flex align-items-center">
+									<p class="me-3">Email:</p>
+									<a href="mailto:info@grandpark.house">info@grandpark.house</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-7 col-12">
+						<div class="footer__address">
+							<div class="footer__map">
+								<iframe
+									src="https://yandex.ru/map-widget/v1/?um=constructor%3A3a83b190bc0332fb5cb4b55fa0c60989e8c5c819f3e1b1166995a06bd5cdb034&amp;source=constructor"></iframe>
+							</div>
+							<div class="footer__socials d-flex pt-4 ps-sm-4 p-0">
+								<p>Для быстрой связи
+									напишите нам в чат:</p>
+								<div class="footer__links d-flex ms-3">
+									<a href="#" target="_blank">
+										<div class="footer__box box">
+											<img src="img/footer/vk.svg" alt="vk">
+										</div>
+									</a>
+									<a href="#" target="_blank">
+										<div class="footer__box box">
+											<img src="img/footer/whatsapp.svg" alt="whatsapp">
+										</div>
+									</a>
+									<a href="#" target="_blank">
+										<div class="footer__box box">
+											<img src="img/footer/viber.svg" alt="viber">
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<script src="js/jquery-3.7.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+		crossorigin="anonymous"></script>
+	<script src="js/gsap.min.js"></script>
+	<script src="js/ScrollTrigger.min.js"></script>
+	<script src="js/locomotive-scroll.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.14.0/jquery-ui.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+
+	<script src="js/script.js"></script>
+	<script src="js/common.js"></script>
+</body>
+
+</html>
